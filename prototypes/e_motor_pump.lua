@@ -14,6 +14,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 1,
 				base_level = 1,
@@ -65,6 +66,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 1,
 				base_level = 1,
@@ -121,6 +123,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 1,
 				base_level = 1,
@@ -129,6 +132,7 @@ data:extend({
 				}
 			},										
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
@@ -178,6 +182,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 2,
 				base_level = 1,
@@ -188,6 +193,7 @@ data:extend({
 				}
 			},										
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 2,
 				base_level = -1,

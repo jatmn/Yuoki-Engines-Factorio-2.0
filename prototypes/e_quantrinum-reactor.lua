@@ -14,6 +14,7 @@ data:extend(
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 100,
 				base_level = 1,

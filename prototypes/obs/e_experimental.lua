@@ -62,6 +62,7 @@ data:extend(
 		{
 			off_when_no_fluid_recipe = true,			
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
@@ -70,6 +71,7 @@ data:extend(
 				}
 			},							
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 5,
 				base_level = 1,
@@ -127,6 +129,7 @@ data:extend(
 		{
 			off_when_no_fluid_recipe = true,			
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
@@ -177,7 +180,7 @@ data:extend(
 		ingredients = {
 			{ type = "item", name = "y_greensign", amount = 60000},
 		},
-		result = "ye_green_ultimate",
+		results = {{type="item", name="ye_green_ultimate", amount=1},},
 		group = "yuoki-energy", subgroup = "y_ultimate_products",					
 		order="a0",
 	},		

@@ -13,6 +13,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 150,
 				base_level = 0,
@@ -21,6 +22,7 @@ data:extend({
 				}
 			},					
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 2,
 				base_level = 0,
@@ -132,6 +134,7 @@ data:extend({
 		{
 			off_when_no_fluid_recipe = true,
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
@@ -140,6 +143,7 @@ data:extend({
 				}
 			},							
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
@@ -148,6 +152,7 @@ data:extend({
 				}
 			},										
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 5,
 				base_level = 1,

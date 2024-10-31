@@ -12,6 +12,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 3,
 				base_level = -1,
@@ -20,6 +21,7 @@ data:extend({
 				}
 			},					
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 48,
 				base_level = 1,
@@ -118,6 +120,7 @@ data:extend({
 		fluid_boxes =
 		{
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 3,
 				base_level = -1,
@@ -133,6 +136,7 @@ data:extend({
 			},										
 			-- mf
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 3,
 				base_level = 1,
@@ -143,6 +147,7 @@ data:extend({
 			},		
 			-- water
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 3,
 				base_level = 1,
@@ -225,6 +230,7 @@ data:extend({
 		maximum_temperature = 400,		
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 3,
 			height = 2,
 			base_level = -1,			
@@ -284,6 +290,7 @@ data:extend({
 		maximum_temperature = 1000,		
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 3,
 			height = 2,
 			base_level = -1,			

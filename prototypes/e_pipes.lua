@@ -422,6 +422,7 @@ data:extend(
 		fast_replaceable_group = "pipe",
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 0.75,
 			pipe_connections =
 			{				
@@ -449,6 +450,7 @@ data:extend(
 		fast_replaceable_group = "pipe",
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 0.75,
 			pipe_connections =
 			{				
@@ -477,6 +479,7 @@ data:extend(
 		fast_replaceable_group = "pipe",
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 0.75,
 			--pipe_covers = pipecoverspictures(),
 			pipe_connections =
@@ -541,6 +544,7 @@ data:extend(
 		fast_replaceable_group = "pipe",
 		fluid_box =
 		{
+			volume = 200,
 			base_area = 0.75,
 			--pipe_covers = pipecoverspictures(),
 			pipe_connections =

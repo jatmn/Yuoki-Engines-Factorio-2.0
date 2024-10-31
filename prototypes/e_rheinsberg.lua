@@ -14,6 +14,7 @@ data:extend({
 		
 		fluid_boxes = {
 			{
+				volume = 200,
 				production_type = "input",
 				base_area = 10,
 				height = 2,
@@ -26,6 +27,7 @@ data:extend({
 				filter = "water"
 			},
 			{
+				volume = 200,
 				production_type = "output",
 				base_area = 5,
 				height = 2,
