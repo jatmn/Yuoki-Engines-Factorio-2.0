@@ -8,7 +8,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "ye_blood", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/blood.png", 
 		default_temperature = 6, 
 		max_temperature = 42, 
@@ -24,7 +24,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "ye_cornoil", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/steam-low.png", 
 		default_temperature = 25, 
 		max_temperature = 90, 
@@ -40,7 +40,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "ye_liquid_quantrinum", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/fluid_quantrinum.png", 
 		default_temperature = 10, 
 		max_temperature = 110, 
@@ -56,7 +56,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "ye_slurry", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/slurry.png", 
 		default_temperature = 20, 
 		max_temperature = 40, 
@@ -72,7 +72,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "ye_steam", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/steam.png", 
 		default_temperature = 110, 
 		max_temperature = 1000, 
@@ -88,7 +88,7 @@ data:extend({
     {
 		type = "fluid", 
 		name = "yie_refrigerant", 
-		icon_size = "32", 
+		icon_size = 32, 
 		icon = "__yi_engines_F2__/graphics/hydraulik-fluid.png", 
 		default_temperature = -150, 
 		max_temperature = 50, 

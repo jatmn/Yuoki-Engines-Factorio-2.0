@@ -5,7 +5,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_mf_mfheatmotor_m_recipe",
 	  category = "yrcat_mfheatmotor_m", 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		--{ type = "fluid", name = "water" , amount = 500.0, minimum_temperature = 15},
@@ -22,7 +22,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_water2mf_recipe",
 	  category = "yrcat_transform", 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 500.0, minimum_temperature = 15},
@@ -40,7 +40,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_makesteam_recipe",
 	  category = "yrcat-heater", -- overheater for steam
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 200.0, minimum_temperature = 15},
@@ -57,7 +57,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2b-recipe",
 	  category = "yrcat-mf2", -- gearbox
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 0.50,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 1.6, minimum_temperature = 100, },
@@ -75,7 +75,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_steam2mf_recipe",
 	  category = "yrcat_turbine", -- steam to mechanical power
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "steam" , amount = 560, minimum_temperature = 500},
@@ -93,7 +93,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_steam3mf_recipe",
 	  category = "yrcat_turbine", -- steam to mechanical power
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.0,
 	  ingredients = {
 		{ type = "fluid", name = "steam" , amount = 800, minimum_temperature = 950},
@@ -112,7 +112,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1-q1-recipe",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "y-infused-uca2" , amount = 1.0, },
@@ -129,7 +129,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1-q2-recipe",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "y-quantrinum" , amount = 1.0, },
@@ -146,7 +146,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1-q3-recipe",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "y-quantrinum-charge" , amount = 1.0, },
@@ -163,7 +163,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2a-recipe",
 	  category = "yrcat-mf2", -- gearbox
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 0.25,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 2.6, minimum_temperature = 100,},
@@ -183,7 +183,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_mfhp_gearbox1-recipe",
 	  category = "yrcat-mf2b", -- gearbox
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.5,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 24, minimum_temperature = 200 },
@@ -202,7 +202,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_mfhp_gearbox2-recipe",
 	  category = "yrcat-mf2b", -- gearbox
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 30, minimum_temperature = 200 },
@@ -221,7 +221,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1a1-recipe",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 20.0, },
@@ -237,7 +237,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1a-recipe",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 100, },
@@ -255,7 +255,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1f-recipe",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 	  },
@@ -273,7 +273,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2a-recipe",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "heavy-oil" , amount = 30, },
@@ -292,7 +292,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2b-recipe",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "light-oil" , amount = 20, },
@@ -311,7 +311,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2e-recipe",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "ye_cornoil" , amount = 30, },
@@ -330,7 +330,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2c-recipe",
 	  category = "yrcat-mf1gm", -- mechanical force primary 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 	    { type = "fluid", name = "petroleum-gas" , amount = 30, },
@@ -349,7 +349,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2d-recipe",
 	  category = "yrcat-mf1gm", -- mechanical force primary 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 	    { type = "fluid", name = "y_hydrogen" , amount = 25, },
@@ -368,7 +368,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_mpump_mf_recipe",
 	  category = "yrcat_pump_2", -- Medium Pump
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 1800.0, },

@@ -83,7 +83,7 @@ data:extend({
 		type = "recipe",
 		name = "ye_rheins_HT_recipe",
 		category = "yrcat_rheinsberg", -- rheinsberg
-		enabled = "true",
+		enabled = true,
 		energy_required = 1.00,
 		ingredients = {			
 			{type = "fluid", name = "water", amount = 160}
@@ -102,7 +102,7 @@ data:extend({
 		type = "recipe",
 		name = "ye_rheins_MT_recipe",
 		category = "yrcat_rheinsberg", -- rheinsberg
-		enabled = "true",
+		enabled = true,
 		energy_required = 1.00,
 		ingredients = {			
 			{type = "fluid", name = "water", amount = 320}
@@ -121,7 +121,7 @@ data:extend({
 		type = "recipe",
 		name = "ye_rheins_LT_recipe",
 		category = "yrcat_rheinsberg", -- rheinsberg
-		enabled = "true",
+		enabled = true,
 		energy_required = 1.00,
 		ingredients = {			
 			{type = "fluid", name = "water", amount = 640}

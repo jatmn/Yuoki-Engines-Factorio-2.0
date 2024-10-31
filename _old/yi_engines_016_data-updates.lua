@@ -10,7 +10,7 @@ if data.raw.recipe["ye_slurry2ethanol_recipe"] then
 		type = "recipe",
 		name = "ye_slurry2rawsyngas3_recipe",
 		category = "chemistry", -- 
-		enabled = "true",
+		enabled = true,
 		energy_required = 90.00,
 		ingredients = {
 			{ type = "fluid", name = "ye_slurry" , amount = 150.0, },
@@ -33,7 +33,7 @@ if data.raw.recipe["ye_biofuel_recipe"] then
 		type = "recipe",
 		name = "ye_granulate_rabio_recipe",
 		category = "y-crushing-recipe", -- 
-		enabled = "true",
+		enabled = true,
 		energy_required = 1.00,
 		ingredients = {
 			{ type = "item", name = "ye_biomixed" , amount = 1.0, },

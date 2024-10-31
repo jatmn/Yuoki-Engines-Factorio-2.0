@@ -6,7 +6,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_mfheatmotor_m_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_emotor_m" , amount = 1.0, },

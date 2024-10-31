@@ -9,7 +9,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_mfheatmotor_m_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_emotor_m" , amount = 1.0, },
@@ -21,7 +21,7 @@ data:extend({
 	  },
 	  main_product = "ye_mfheatmotor_m",
 	  icon = "__yi_engines_F2__/graphics/entity/mf_heater_icon.png",
-	  icon_size = "64",
+	  icon_size = 64,
 	  order = "m3", group = "yi_engines", subgroup = "yie-engines",
 	},
 
@@ -30,7 +30,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tfmw_turbine-s-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_emotor_m" , amount = 5.0, },
@@ -43,7 +43,7 @@ data:extend({
 	  },
 	  main_product = "ye_tfmw_turbine-s",
 	  icon = "__yi_engines_F2__/graphics/entity/turbine_70_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "2", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -52,7 +52,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_pureiron_recipe",
 	  category = "smelting", -- all furnace stuff
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_organic_metall" , amount = 2.0, },
@@ -62,7 +62,7 @@ data:extend({
 	  },
 	  main_product = "y-pure-iron",
 	  icon = "__Yuoki__/graphics/icons/pure-iron-n.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "C", group = "yie_harvest", subgroup = "yie-processed",
 	},
 
@@ -71,7 +71,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_motorm_mf_recipe",
 	  category = "yrcat_motor", -- medium motor
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 	  },
@@ -80,7 +80,7 @@ data:extend({
 	  },
 	  main_product = "y-mechanical-force",
 	  icon = "__yi_engines_F2__/graphics/gear_basic.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -89,7 +89,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_mpump_mf_recipe",
 	  category = "yrcat_pump_2", -- Medium Pump
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 1200.0, },
@@ -99,7 +99,7 @@ data:extend({
 	  },
 	  main_product = "y-mechanical-force",
 	  icon = "__yi_engines_F2__/graphics/mf-1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -108,7 +108,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_mpump_water_recipe",
 	  category = "yrcat_pump_2", -- Medium Pump
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 2.0, },
@@ -118,7 +118,7 @@ data:extend({
 	  },
 	  main_product = "water",
 	  icon = "__yi_engines_F2__/graphics/water-clean2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -127,7 +127,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_wpump_m_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "y-mftrans-shaft" , amount = 4.0, },
@@ -140,7 +140,7 @@ data:extend({
 	  },
 	  main_product = "ye_wpump_m",
 	  icon = "__yi_engines_F2__/graphics/entity/pump3x3_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "t2", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -149,7 +149,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_emotor_m_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "y-iron-case" , amount = 4.0, },
@@ -162,7 +162,7 @@ data:extend({
 	  },
 	  main_product = "ye_emotor_m",
 	  icon = "__yi_engines_F2__/graphics/entity/e-motor-m_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "m2", group = "yi_engines", subgroup = "yie-engines",
 	},
 
@@ -171,7 +171,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_pool_slurry_recipe",
 	  category = "yrcat-fish", -- fishing things
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 180.00,
 	  ingredients = {
 		{ type = "fluid", name = "ye_blood" , amount = 200.0, },
@@ -183,7 +183,7 @@ data:extend({
 	  },
 	  main_product = "ye_slurry",
 	  icon = "__yi_engines_F2__/graphics/slurry.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "x", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -192,7 +192,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_green_splitter_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechsenblech" , amount = 6.0, },
@@ -205,7 +205,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_green_splitter",
 	  icon = "__yi_engines_F2__/graphics/icons/green_splitter_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b6", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -214,7 +214,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_orange_splitter_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 6.0, },
@@ -227,7 +227,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_orange_splitter",
 	  icon = "__yi_engines_F2__/graphics/icons/orange_splitter_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b5", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -236,7 +236,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_import_sealing_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ypfw_trader_sign" , amount = 1.0, },
@@ -246,7 +246,7 @@ data:extend({
 	  },
 	  main_product = "ye_sealing",
 	  icon = "__yi_engines_F2__/graphics/icons/sealing_import.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a10", group = "yi_engines", subgroup = "yie_engines_import_a",
 	},
 
@@ -255,7 +255,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_import_blech_blau_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ypfw_trader_sign" , amount = 10.0, },
@@ -265,7 +265,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechsenblech",
 	  icon = "__yi_engines_F2__/graphics/icons/blech_blue_import.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a1", group = "yi_engines", subgroup = "yie_engines_import_a",
 	},
 
@@ -274,7 +274,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_green_underground_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_tranport_tube_green" , amount = 10.0, },
@@ -285,7 +285,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_green_underground",
 	  icon = "__yi_engines_F2__/graphics/icons/ubg_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b4", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -294,7 +294,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_orange_underground_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_tranport_tube_orange" , amount = 10.0, },
@@ -305,7 +305,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_orange_underground",
 	  icon = "__yi_engines_F2__/graphics/icons/ubo_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b3", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -314,7 +314,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_green_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "y-winding" , amount = 6.0, },
@@ -326,7 +326,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_green",
 	  icon = "__yi_engines_F2__/graphics/icons/ye_transport_green_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b2", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -335,7 +335,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_orange_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 4.0, },
@@ -346,7 +346,7 @@ data:extend({
 	  },
 	  main_product = "ye_tranport_tube_orange",
 	  icon = "__yi_engines_F2__/graphics/icons/ye_transport_orange_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "b1", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -355,7 +355,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_weiss_export_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_white" , amount = 2.0, },
@@ -366,7 +366,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/export_buechse_weiss.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f2", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -375,7 +375,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_rosa_export_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_rosa" , amount = 2.0, },
@@ -386,7 +386,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/export_buechse_rosa.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f2", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -395,7 +395,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_fleisch_export_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_braun" , amount = 2.0, },
@@ -406,7 +406,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/export_buechse_fleisch.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f3", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -415,7 +415,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_gelb_export_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_gelb" , amount = 4.0, },
@@ -426,7 +426,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/export_buechse_gelb.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f2", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -435,7 +435,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_blau_export_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_blau" , amount = 2.0, },
@@ -446,7 +446,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/export_buechse_blau.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f1", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -455,7 +455,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_smoker_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "stone-brick" , amount = 24.0, },
@@ -468,7 +468,7 @@ data:extend({
 	  },
 	  main_product = "ye_smoker",
 	  icon = "__yi_engines_F2__/graphics/entity/yie_smoker_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "5", group = "yi_engines", subgroup = "yie_agromachinery",
 	},
 
@@ -477,7 +477,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_smoked_meat_recipe",
 	  category = "yrcat_smoker", -- smoker
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_rawmeat" , amount = 4.0, },
@@ -488,7 +488,7 @@ data:extend({
 	  },
 	  main_product = "ye_smoked_meat",
 	  icon = "__yi_engines_F2__/graphics/icons/dry_meat.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d14", group = "yie_harvest", subgroup = "yie_agroproducts_crafted",
 	},
 
@@ -497,7 +497,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_smoked_fish_recipe",
 	  category = "yrcat_smoker", -- smoker
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_fish4" , amount = 3.0, },
@@ -508,7 +508,7 @@ data:extend({
 	  },
 	  main_product = "ye_smoked_fish",
 	  icon = "__yi_engines_F2__/graphics/icons/smoked_fisch_2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d13", group = "yi_engines", subgroup = "yie_agroproducts_crafted",
 	},
 
@@ -517,7 +517,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_animal3fast_recipe",
 	  category = "yrcat_meat", -- meat-category
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 900.00,
 	  ingredients = {
 		{ type = "item", name = "ye_krakon2" , amount = 1.0, },
@@ -531,7 +531,7 @@ data:extend({
 	  },
 	  main_product = "ye_verotin",
 	  icon = "__yi_engines_F2__/graphics/icons/animal_3.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "fa3", group = "yie_harvest", subgroup = "yie_animals",
 	},
 
@@ -540,7 +540,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_futtermittel_d_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_sugar" , amount = 8.0, },
@@ -552,7 +552,7 @@ data:extend({
 	  },
 	  main_product = "ye_futtermittel_d",
 	  icon = "__yi_engines_F2__/graphics/icons/futtermittel_white.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f4", group = "yie_harvest", subgroup = "yie_agroproducts_crafted",
 	},
 
@@ -561,7 +561,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_futtermittel_c_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_celluose" , amount = 1.0, },
@@ -573,7 +573,7 @@ data:extend({
 	  },
 	  main_product = "ye_futtermittel_c",
 	  icon = "__yi_engines_F2__/graphics/icons/futtermittel_rose.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f3", group = "yie_harvest", subgroup = "yie_agroproducts_crafted",
 	},
 
@@ -582,7 +582,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_futtermittel_b_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ypfw_trader_sign" , amount = 9000.0, },
@@ -592,7 +592,7 @@ data:extend({
 	  },
 	  main_product = "ye_futtermittel_b",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_fish_3_imp.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f2", group = "yie_harvest", subgroup = "yie_trades_import_line1",
 	},
 
@@ -601,7 +601,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_futtermittel_a_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ypfw_trader_sign" , amount = 4000.0, },
@@ -611,7 +611,7 @@ data:extend({
 	  },
 	  main_product = "ye_futtermittel_a",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_fish_1_imp.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f1", group = "yie_harvest", subgroup = "yie_trades_import_line1",
 	},
 
@@ -620,7 +620,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_bloodfrommeat_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 4.0, },
@@ -631,7 +631,7 @@ data:extend({
 	  },
 	  main_product = "ye_blood",
 	  icon = "__yi_engines_F2__/graphics/blood.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a3", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -640,7 +640,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_white_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_empty" , amount = 12.0, },
@@ -654,7 +654,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_white",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_weiss.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "e5", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -663,7 +663,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_rosa_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_empty" , amount = 12.0, },
@@ -676,7 +676,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_rosa",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_rosa.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "e4", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -685,7 +685,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_braun_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_empty" , amount = 12.0, },
@@ -698,7 +698,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_braun",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_fleisch.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "e3", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -707,7 +707,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_gelb_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_buechse_empty" , amount = 12.0, },
@@ -720,7 +720,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_gelb",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_gelb.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "e2", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -729,7 +729,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fish4_recipe",
 	  category = "yrcat-fish", -- fishing things
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 300.00,
 	  ingredients = {
 		{ type = "item", name = "ye_futtermittel_b" , amount = 1.0, },
@@ -741,7 +741,7 @@ data:extend({
 	  },
 	  main_product = "ye_fish4",
 	  icon = "__yi_engines_F2__/graphics/icons/fisch_2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d12", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -750,7 +750,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fish3_recipe",
 	  category = "yrcat-fish", -- fishing things
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 360.00,
 	  ingredients = {
 		{ type = "item", name = "ye_futtermittel_a" , amount = 1.0, },
@@ -762,7 +762,7 @@ data:extend({
 	  },
 	  main_product = "ye_fish3",
 	  icon = "__yi_engines_F2__/graphics/icons/fisch_1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d11", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -771,7 +771,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_blau_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_fish3" , amount = 3.0, },
@@ -784,7 +784,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_blau",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_blau.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "e1", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -793,7 +793,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechsenblech_recipe",
 	  category = "yuoki-formpress-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_verotin" , amount = 9.0, },
@@ -804,7 +804,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechsenblech",
 	  icon = "__yi_engines_F2__/graphics/icons/blech_blue.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "c2", group = "yi_engines", subgroup = "yie-processed",
 	},
 
@@ -813,7 +813,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_buechse_empty_recipe",
 	  category = "yuoki-formpress-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 3.0, },
@@ -824,7 +824,7 @@ data:extend({
 	  },
 	  main_product = "ye_buechse_empty",
 	  icon = "__yi_engines_F2__/graphics/icons/buechse_leer.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "s4", group = "yie_harvest", subgroup = "yie_agroproducts_packages",
 	},
 
@@ -833,7 +833,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export_fish2_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_fish2" , amount = 2.0, },
@@ -844,7 +844,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_red_export.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp10", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -853,7 +853,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_fish2_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_fish2" , amount = 10.0, },
@@ -864,7 +864,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_fish2",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_red.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d10", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -873,7 +873,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fish2_recipe",
 	  category = "yrcat-fish", -- fishing things
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 270.00,
 	  ingredients = {
 		{ type = "item", name = "ye_dna_fish2" , amount = 1.0, },
@@ -887,7 +887,7 @@ data:extend({
 	  },
 	  main_product = "ye_fish2",
 	  icon = "__yi_engines_F2__/graphics/icons/ematrix_rot_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d10", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -896,7 +896,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_fish2_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ypfw_trader_sign" , amount = 5000.0, },
@@ -906,7 +906,7 @@ data:extend({
 	  },
 	  main_product = "ye_dna_fish2",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_fish_2_imp.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "imp1", group = "yie_harvest", subgroup = "yie_trades_import_line1",
 	},
 
@@ -915,7 +915,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export_fish1_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_fish1" , amount = 6.0, },
@@ -926,7 +926,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_lachs_export.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp09", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -935,7 +935,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_fish1",
 	  category = "yrcat-fish", -- fishing things
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 210.00,
 	  ingredients = {
 		{ type = "item", name = "raw-fish" , amount = 3.0, },
@@ -948,7 +948,7 @@ data:extend({
 	  },
 	  main_product = "raw-fish",
 	  icon = "__base__/graphics/icons/fish.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -957,7 +957,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_fish1_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 1.0, },
@@ -968,7 +968,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_fish1",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_lachs.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a9", group = "yie_harvest", subgroup = "yie_agro_package_l2",
 	},
 
@@ -977,7 +977,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_pool_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "y-mwater-pump" , amount = 2.0, },
@@ -988,7 +988,7 @@ data:extend({
 	  },
 	  main_product = "ye_pool",
 	  icon = "__yi_engines_F2__/graphics/icons/pool_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d4", group = "yie_harvest", subgroup = "yie_agromachinery",
 	},
 
@@ -997,7 +997,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y_unlimited_wood",
 	  category = "yuoki_green_ultimate", -- Green-Ultimates
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 	  },
@@ -1006,7 +1006,7 @@ data:extend({
 	  },
 	  main_product = "wood",
 	  icon = "__base__/graphics/icons/wood.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1", group = "yuoki-energy", subgroup = "y_ultimate_products",
 	},
 
@@ -1015,7 +1015,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_plant4_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 10.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 8.0, },
@@ -1027,7 +1027,7 @@ data:extend({
 	  },
 	  main_product = "ye_plant_carni",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_plant_4.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p3", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1036,7 +1036,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_plant2_recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 450.00,
 	  ingredients = {
 		{ type = "item", name = "ye_plant_carni" , amount = 1.0, },
@@ -1049,7 +1049,7 @@ data:extend({
 	  },
 	  main_product = "ye_chitrotin",
 	  icon = "__yi_engines_F2__/graphics/icons/carni.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a15", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -1058,7 +1058,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_carni_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_empty" , amount = 1.0, },
@@ -1069,7 +1069,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_carni",
 	  icon = "__yi_engines_F2__/graphics/icons/package_carni.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d9", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1078,7 +1078,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export06_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_carni" , amount = 5.0, },
@@ -1089,7 +1089,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package_carni_retrade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp08", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1098,7 +1098,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_neutralisatzion_recipe",
 	  category = "yuoki-archaeology-wash", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "fluid", name = "sulfuric-acid" , amount = 9.0, },
@@ -1111,7 +1111,7 @@ data:extend({
 	  },
 	  main_product = "y-con_water",
 	  icon = "__yi_engines_F2__/graphics/icons/wh_plateq32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "v4", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -1120,7 +1120,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_canister2plates_smelt",
 	  category = "smelting", -- all furnace stuff
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_canister" , amount = 1.0, },
@@ -1130,7 +1130,7 @@ data:extend({
 	  },
 	  main_product = "iron-plate",
 	  icon = "__yi_engines_F2__/graphics/canister.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "y-parts",
 	},
 
@@ -1139,7 +1139,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export05_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_spliced_cells" , amount = 10.0, },
@@ -1151,7 +1151,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package_cells_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp07", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1160,7 +1160,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export04_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_organic" , amount = 10.0, },
@@ -1171,7 +1171,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package_om_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp06", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1180,7 +1180,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export03_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_verotin" , amount = 10.0, },
@@ -1192,7 +1192,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package_verotin_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp05", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1201,7 +1201,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export02_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_omtrinit" , amount = 10.0, },
@@ -1212,7 +1212,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package-omtrinit-trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp04", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1221,7 +1221,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_export01_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_substratin" , amount = 10.0, },
@@ -1233,7 +1233,7 @@ data:extend({
 	  },
 	  main_product = "ypfw_trader_sign",
 	  icon = "__yi_engines_F2__/graphics/icons/package_substrat_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp03", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -1242,7 +1242,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_plant3_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 12.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 8.0, },
@@ -1255,7 +1255,7 @@ data:extend({
 	  },
 	  main_product = "ye_seed_b",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_plant_2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p2", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1264,7 +1264,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_icemaker_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_fassembly1" , amount = 1.0, },
@@ -1278,7 +1278,7 @@ data:extend({
 	  },
 	  main_product = "ye_icemaker",
 	  icon = "__yi_engines_F2__/graphics/entity/icemaker_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f1", group = "yi_engines", subgroup = "yie_machinery2",
 	},
 
@@ -1287,7 +1287,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_ice_container_empty_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "y-heat-pipe" , amount = 2.0, },
@@ -1298,7 +1298,7 @@ data:extend({
 	  },
 	  main_product = "ye_ice_container_empty",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_empty.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "s2", group = "yie_harvest", subgroup = "yie_agroproducts_packages",
 	},
 
@@ -1307,7 +1307,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_spliced_cells_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 1.0, },
@@ -1319,7 +1319,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_spliced_cells",
 	  icon = "__yi_engines_F2__/graphics/icons/package_cells.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d8", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1328,7 +1328,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_verotin_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_empty" , amount = 1.0, },
@@ -1339,7 +1339,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_verotin",
 	  icon = "__yi_engines_F2__/graphics/icons/package_verotin.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d6", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1348,7 +1348,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_omtrinit_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_empty" , amount = 1.0, },
@@ -1359,7 +1359,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_omtrinit",
 	  icon = "__yi_engines_F2__/graphics/icons/package-omtrinit.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d5", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1368,7 +1368,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_organic_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 1.0, },
@@ -1381,7 +1381,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_organic",
 	  icon = "__yi_engines_F2__/graphics/icons/package_om.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d7", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1390,7 +1390,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_substratin_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 1.0, },
@@ -1403,7 +1403,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_substratin",
 	  icon = "__yi_engines_F2__/graphics/icons/package_substrat.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d4", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1412,7 +1412,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_c_meat_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 1.0, },
@@ -1425,7 +1425,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_c_meat",
 	  icon = "__yi_engines_F2__/graphics/icons/package_cooked_meat.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d2", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1434,7 +1434,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_r_meat_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_filled" , amount = 2.0, },
@@ -1447,7 +1447,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_r_meat",
 	  icon = "__yi_engines_F2__/graphics/icons/package_raw_meat.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d1", group = "yi_engines", subgroup = "yie_agro_package",
 	},
 
@@ -1456,7 +1456,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_package_empty_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "y-iron-case" , amount = 1.0, },
@@ -1467,7 +1467,7 @@ data:extend({
 	  },
 	  main_product = "ye_package_empty",
 	  icon = "__yi_engines_F2__/graphics/icons/package_empty.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "s1", group = "yie_harvest", subgroup = "yie_agroproducts_packages",
 	},
 
@@ -1476,7 +1476,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_ice_container_filled_recipe",
 	  category = "yrcat_icemaker", -- Ice-Maker
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 60.00,
 	  ingredients = {
 		{ type = "item", name = "ye_ice_container_empty" , amount = 20.0, },
@@ -1488,7 +1488,7 @@ data:extend({
 	  },
 	  main_product = "ye_ice_container_filled",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_filled.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "s3", group = "yie_harvest", subgroup = "yie_agroproducts_packages",
 	},
 
@@ -1497,7 +1497,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_animal4_recipe",
 	  category = "yrcat_meat", -- meat-category
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 600.00,
 	  ingredients = {
 		{ type = "item", name = "ye_krakon3" , amount = 1.0, },
@@ -1513,7 +1513,7 @@ data:extend({
 	  },
 	  main_product = "ye_organic_metall",
 	  icon = "__yi_engines_F2__/graphics/icons/animal_4.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "fa4", group = "yie_harvest", subgroup = "yie_animals",
 	},
 
@@ -1522,7 +1522,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_animal4_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 20.00,
 	  ingredients = {
 		{ type = "item", name = "ye_verotin" , amount = 3.0, },
@@ -1537,7 +1537,7 @@ data:extend({
 	  },
 	  main_product = "ye_krakon3",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_meat_4.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "g3", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1546,7 +1546,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_plant0_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 10.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_a" , amount = 20.0, },
@@ -1559,7 +1559,7 @@ data:extend({
 	  },
 	  main_product = "ye_seed_a",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_plant_1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p1", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1568,7 +1568,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_plant1_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 20.00,
 	  ingredients = {
 		{ type = "item", name = "ye_zells" , amount = 9.0, },
@@ -1580,7 +1580,7 @@ data:extend({
 	  },
 	  main_product = "ye_base_green",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_plant_3.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p2", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1589,7 +1589,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_plant1_recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 450.00,
 	  ingredients = {
 		{ type = "item", name = "ye_base_green" , amount = 1.0, },
@@ -1601,7 +1601,7 @@ data:extend({
 	  },
 	  main_product = "ye_substrat",
 	  icon = "__yi_engines_F2__/graphics/icons/substrat_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a14", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -1610,7 +1610,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_animal3_recipe",
 	  category = "yrcat_meat", -- meat-category
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1200.00,
 	  ingredients = {
 		{ type = "item", name = "ye_krakon2" , amount = 1.0, },
@@ -1625,7 +1625,7 @@ data:extend({
 	  },
 	  main_product = "ye_verotin",
 	  icon = "__yi_engines_F2__/graphics/icons/animal_3.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "fa3", group = "yie_harvest", subgroup = "yie_animals",
 	},
 
@@ -1634,7 +1634,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_animal2_recipe",
 	  category = "yrcat_meat", -- meat-category
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 900.00,
 	  ingredients = {
 		{ type = "item", name = "ye_krakon1" , amount = 1.0, },
@@ -1650,7 +1650,7 @@ data:extend({
 	  },
 	  main_product = "ye_rawmeat",
 	  icon = "__yi_engines_F2__/graphics/icons/animal_2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "fa2", group = "yie_harvest", subgroup = "yie_animals",
 	},
 
@@ -1659,7 +1659,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_animal3_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 20.00,
 	  ingredients = {
 		{ type = "item", name = "ye_science_blue" , amount = 1.0, },
@@ -1671,7 +1671,7 @@ data:extend({
 	  },
 	  main_product = "ye_krakon2",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_meat_3.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "g2", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1680,7 +1680,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_animal2_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 20.00,
 	  ingredients = {
 		{ type = "item", name = "ye_dna" , amount = 1.0, },
@@ -1692,7 +1692,7 @@ data:extend({
 	  },
 	  main_product = "ye_krakon1",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_meat_2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "g1", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -1701,7 +1701,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dnasplicer_recipe",
 	  category = "yuoki-wonder-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_fassembly2" , amount = 1.0, },
@@ -1714,7 +1714,7 @@ data:extend({
 	  },
 	  main_product = "ye_dnasplicer",
 	  icon = "__yi_engines_F2__/graphics/entity/dna_splicer_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie_agromachinery",
 	},
 
@@ -1723,7 +1723,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fassembly1_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "arithmetic-combinator" , amount = 1.0, },
@@ -1736,7 +1736,7 @@ data:extend({
 	  },
 	  main_product = "ye_fassembly1",
 	  icon = "__yi_engines_F2__/graphics/entity/factory_var_1_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "as-a", group = "yi_engines", subgroup = "yie_machinery2",
 	},
 
@@ -1745,7 +1745,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fassembly_sp_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_science_blue" , amount = 3.0, },
@@ -1758,7 +1758,7 @@ data:extend({
 	  },
 	  main_product = "ye_fassembly_sp",
 	  icon = "__yi_engines_F2__/graphics/entity/factory_var_3_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "as-c", group = "yi_engines", subgroup = "yie_machinery2",
 	},
 
@@ -1767,7 +1767,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_fassembly2_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_science_blue" , amount = 1.0, },
@@ -1780,7 +1780,7 @@ data:extend({
 	  },
 	  main_product = "ye_fassembly2",
 	  icon = "__yi_engines_F2__/graphics/entity/factory_var_2_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "as-b", group = "yi_engines", subgroup = "yie_machinery2",
 	},
 
@@ -1789,7 +1789,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_uc_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_unicomp" , amount = 1.0, },
@@ -1800,7 +1800,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_uc_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f85", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -1809,7 +1809,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_science_blue_recipe",
 	  category = "yrcat_science", -- Science-Way
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 20.00,
 	  ingredients = {
 	  },
@@ -1818,7 +1818,7 @@ data:extend({
 	  },
 	  main_product = "ye_science_blue",
 	  icon = "__yi_engines_F2__/graphics/icons/tech02_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -1827,7 +1827,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_science_blue_gen_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 10.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 10.0, },
@@ -1839,7 +1839,7 @@ data:extend({
 	  },
 	  main_product = "yie_science_blue_gen",
 	  icon = "__yi_engines_F2__/graphics/entity/science_gen_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie_machinery2",
 	},
 
@@ -1848,7 +1848,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_center_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "y-infused-uca2" , amount = 1.0, },
@@ -1860,7 +1860,7 @@ data:extend({
 	  },
 	  main_product = "ye_center",
 	  icon = "__yi_engines_F2__/graphics/icons/uni-k_zer_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -1869,7 +1869,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-quantrinum-reactor_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 30.0, },
@@ -1883,7 +1883,7 @@ data:extend({
 	  },
 	  main_product = "y-quantrinum-reactor",
 	  icon = "__yi_engines_F2__/graphics/entity/energy2/qr-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie-engines",
 	},
 
@@ -1892,7 +1892,7 @@ data:extend({
 	  type = "recipe",
 	  name = "yie_hard_metals_recipe",
 	  category = "yuoki-formpress-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "steel-plate" , amount = 2.0, },
@@ -1903,7 +1903,7 @@ data:extend({
 	  },
 	  main_product = "yie_hard_metals",
 	  icon = "__yi_engines_F2__/graphics/icons/blechrolle_grau.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "c1", group = "yi_engines", subgroup = "yie-processed",
 	},
 
@@ -1912,7 +1912,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_petrol_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_petrol" , amount = 1.0, },
@@ -1923,7 +1923,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_petrol_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f84", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -1932,7 +1932,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_co_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_co" , amount = 1.0, },
@@ -1943,7 +1943,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_co_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f81", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -1952,7 +1952,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_ho_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_ho" , amount = 1.0, },
@@ -1963,7 +1963,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_ho_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f82", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -1972,7 +1972,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_sa_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_sa" , amount = 4.0, },
@@ -1983,7 +1983,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_sa_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f83", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -1992,7 +1992,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_granulate_trifitan_recipe",
 	  category = "y-crushing-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_celluose" , amount = 1.0, },
@@ -2003,7 +2003,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "4", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2012,7 +2012,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_granulate_vuger_recipe",
 	  category = "y-crushing-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_b" , amount = 1.0, },
@@ -2022,7 +2022,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "2", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2031,7 +2031,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_granulate_corn_recipe",
 	  category = "y-crushing-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_a" , amount = 1.0, },
@@ -2041,7 +2041,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2050,7 +2050,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-corn2fluid-recipe",
 	  category = "yuoki-formpress-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 30.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 0.3, },
@@ -2062,7 +2062,7 @@ data:extend({
 	  },
 	  main_product = "ye_cornoil",
 	  icon = "__yi_engines_F2__/graphics/steam-low.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a1", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2071,7 +2071,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_cooking_meat",
 	  category = "smelting", -- all furnace stuff
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_rawmeat" , amount = 1.0, },
@@ -2081,7 +2081,7 @@ data:extend({
 	  },
 	  main_product = "ye_meatcooked",
 	  icon = "__yi_engines_F2__/graphics/cooked_meat.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p07", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2090,7 +2090,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_trademeat2_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_c_meat" , amount = 1.0, },
@@ -2100,7 +2100,7 @@ data:extend({
 	  },
 	  main_product = "y-quantrinum",
 	  icon = "__yi_engines_F2__/graphics/icons/package_cooked_meat_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "t01", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -2109,7 +2109,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_trademeat1_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_package_r_meat" , amount = 4.0, },
@@ -2120,7 +2120,7 @@ data:extend({
 	  },
 	  main_product = "y-unicomp-a2",
 	  icon = "__yi_engines_F2__/graphics/icons/package_raw_meat_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "t00", group = "yie_harvest", subgroup = "yie_trades_line1",
 	},
 
@@ -2129,7 +2129,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_slurry2ethanol_recipe",
 	  category = "chemistry", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 90.00,
 	  ingredients = {
 		{ type = "fluid", name = "ye_slurry" , amount = 150.0, },
@@ -2140,7 +2140,7 @@ data:extend({
 	  },
 	  main_product = "y_syngas_raw",
 	  icon = "__Yuoki__/graphics/icons/obs/h2o_c_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "c04", group = "yuoki_liquids", subgroup = "y-fluid",
 	},
 
@@ -2149,7 +2149,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tradeblood_recipe",
 	  category = "yuoki-stargate-recipe", -- stargate-trades
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_blood" , amount = 10.0, },
@@ -2159,7 +2159,7 @@ data:extend({
 	  },
 	  main_product = "y-fame",
 	  icon = "__yi_engines_F2__/graphics/icons/ice_container_blood_trade.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "exp8", group = "yie_harvest", subgroup = "yie_trades_line2",
 	},
 
@@ -2168,7 +2168,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_cornb_ws_recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 270.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 500.0, },
@@ -2180,7 +2180,7 @@ data:extend({
 	  },
 	  main_product = "ye_corn_b",
 	  icon = "__yi_engines_F2__/graphics/icons/icon_sugarcane_ws.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a14", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -2189,7 +2189,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-growcorn_ws-recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 200.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 500.0, },
@@ -2201,7 +2201,7 @@ data:extend({
 	  },
 	  main_product = "ye_corn_a",
 	  icon = "__yi_engines_F2__/graphics/icons/icon_corn_ws.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a11", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -2210,7 +2210,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_animal1_recipe",
 	  category = "yrcat_dna", -- DNA-Line
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 8.00,
 	  ingredients = {
 		{ type = "item", name = "ye_rawmeat" , amount = 3.0, },
@@ -2224,7 +2224,7 @@ data:extend({
 	  },
 	  main_product = "ye_dna",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_meat_1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p06", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -2233,7 +2233,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_grow_animal_a",
 	  category = "yrcat_meat", -- meat-category
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 600.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 600.0, },
@@ -2248,7 +2248,7 @@ data:extend({
 	  },
 	  main_product = "ye_rawmeat",
 	  icon = "__yi_engines_F2__/graphics/icons/animal_1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "fa1", group = "yie_harvest", subgroup = "yie_animals",
 	},
 
@@ -2257,7 +2257,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_dna_animal0_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 30.00,
 	  ingredients = {
 		{ type = "item", name = "logistic-science-pack" , amount = 100.0, },
@@ -2269,7 +2269,7 @@ data:extend({
 	  },
 	  main_product = "ye_dna",
 	  icon = "__yi_engines_F2__/graphics/icons/dna_meat_1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p05", group = "yie_harvest", subgroup = "yie_dnaline",
 	},
 
@@ -2278,7 +2278,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_meatfarm_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "stone-brick" , amount = 12.0, },
@@ -2290,7 +2290,7 @@ data:extend({
 	  },
 	  main_product = "ye_meatfarm",
 	  icon = "__yi_engines_F2__/graphics/entity/cage_empty_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "mf2", group = "yie_harvest", subgroup = "yie_agromachinery",
 	},
 
@@ -2299,7 +2299,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_blood_fill_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 3.00,
 	  ingredients = {
 		{ type = "item", name = "ye_canister" , amount = 1.0, },
@@ -2314,7 +2314,7 @@ data:extend({
 	  },
 	  main_product = "ye_can_blood",
 	  icon = "__yi_engines_F2__/graphics/can_red_f.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f07", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2323,7 +2323,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_blood_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_blood" , amount = 1.0, },
@@ -2334,7 +2334,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_red_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f61", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2343,7 +2343,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_slurry_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_slurry" , amount = 1.0, },
@@ -2354,7 +2354,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_dg_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f51", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2363,7 +2363,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_mf_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_mf" , amount = 1.0, },
@@ -2374,7 +2374,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_mf_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f41", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2383,7 +2383,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_lub_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_lub" , amount = 1.0, },
@@ -2394,7 +2394,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_lub_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f41", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2403,7 +2403,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_veg_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_veg" , amount = 1.0, },
@@ -2414,7 +2414,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_veg_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f21", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2423,7 +2423,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_can_eth_empty_recipe",
 	  category = "crafting-with-fluid", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "ye_can_eth" , amount = 1.0, },
@@ -2434,7 +2434,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/can_eth_e.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f11", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2443,7 +2443,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_sealing",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "copper-plate" , amount = 8.0, },
@@ -2455,7 +2455,7 @@ data:extend({
 	  },
 	  main_product = "ye_sealing",
 	  icon = "__yi_engines_F2__/graphics/sealing.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f00", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -2464,7 +2464,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_canmachine_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "y-sfe" , amount = 1.0, },
@@ -2476,7 +2476,7 @@ data:extend({
 	  },
 	  main_product = "ye_canmachine",
 	  icon = "__yi_engines_F2__/graphics/canning-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yuoki_liquids", subgroup = "y_refine_machinery",
 	},
 
@@ -2485,7 +2485,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_canister_recipe",
 	  category = "yrcat_fluidhandle", -- fluid handling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "y_structure_vessel" , amount = 1.0, },
@@ -2497,7 +2497,7 @@ data:extend({
 	  },
 	  main_product = "ye_canister",
 	  icon = "__yi_engines_F2__/graphics/canister.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "f01", group = "yi_engines", subgroup = "yie_fluid_handle",
 	},
 
@@ -2506,7 +2506,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tfmw_generator-s-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 30.0, },
@@ -2518,7 +2518,7 @@ data:extend({
 	  },
 	  main_product = "ye_tfmw_generator-s",
 	  icon = "__yi_engines_F2__/graphics/entity/energy2/hngen-o-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -2527,7 +2527,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_biofuel_recipe",
 	  category = "y-crushing-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "ye_biomixed" , amount = 1.0, },
@@ -2538,7 +2538,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p04", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2547,7 +2547,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_synwood_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "ye_celluose" , amount = 18.0, },
@@ -2558,7 +2558,7 @@ data:extend({
 	  },
 	  main_product = "wood",
 	  icon = "__base__/graphics/icons/wood.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p05", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2567,7 +2567,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_sugar_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 6.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_b" , amount = 30.0, },
@@ -2578,7 +2578,7 @@ data:extend({
 	  },
 	  main_product = "ye_sugar",
 	  icon = "__yi_engines_F2__/graphics/sugar.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p03", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2587,7 +2587,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_biomixed_recipe",
 	  category = "advanced-crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "ye_sugar" , amount = 4.0, },
@@ -2599,7 +2599,7 @@ data:extend({
 	  },
 	  main_product = "ye_biomixed",
 	  icon = "__yi_engines_F2__/graphics/biomixed.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p02", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2608,7 +2608,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_seed_b_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_a" , amount = 20.0, },
@@ -2620,7 +2620,7 @@ data:extend({
 	  },
 	  main_product = "ye_seed_b",
 	  icon = "__yi_engines_F2__/graphics/sugar-seed.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a03", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -2629,7 +2629,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_celluose_recipe",
 	  category = "y-crushing-recipe", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_a" , amount = 40.0, },
@@ -2642,7 +2642,7 @@ data:extend({
 	  },
 	  main_product = "ye_celluose",
 	  icon = "__yi_engines_F2__/graphics/cellulose.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "p01", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2651,7 +2651,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_cornb_recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 420.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 500.0, },
@@ -2662,7 +2662,7 @@ data:extend({
 	  },
 	  main_product = "ye_corn_b",
 	  icon = "__yi_engines_F2__/graphics/sugarcane.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a13", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -2671,7 +2671,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_rheinsberg_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_science_blue" , amount = 25.0, },
@@ -2686,7 +2686,7 @@ data:extend({
 	  },
 	  main_product = "ye_rheinsberg",
 	  icon = "__yi_engines_F2__/graphics/entity/rheinsberg-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -2695,7 +2695,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_steam2mf_recipe",
 	  category = "yrcat_turbine", -- steam to mechanical power
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.20,
 	  ingredients = {
 		{ type = "fluid", name = "ye_steam" , amount = 480.0, },
@@ -2706,7 +2706,7 @@ data:extend({
 	  },
 	  main_product = "y-mechanical-force",
 	  icon = "__yi_engines_F2__/graphics/mf-1.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -2715,7 +2715,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_sturbine_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 20.0, },
@@ -2726,7 +2726,7 @@ data:extend({
 	  },
 	  main_product = "ye_sturbine",
 	  icon = "__yi_engines_F2__/graphics/entity/energy2/turbine_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-engines",
 	},
 
@@ -2735,7 +2735,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_overheater_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 10.0, },
@@ -2746,7 +2746,7 @@ data:extend({
 	  },
 	  main_product = "ye_overheater",
 	  icon = "__yi_engines_F2__/graphics/entity/heater55_icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -2755,7 +2755,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_makesteam_recipe",
 	  category = "yrcat-heater", -- overheater for steam
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 20.0, },
@@ -2765,7 +2765,7 @@ data:extend({
 	  },
 	  main_product = "ye_steam",
 	  icon = "__yi_engines_F2__/graphics/steam.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -2774,7 +2774,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf2b-recipe",
 	  category = "yrcat-mf2", -- gearbox
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 0.50,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 1.6, },
@@ -2785,7 +2785,7 @@ data:extend({
 	  },
 	  main_product = "y-mechanical-force",
 	  icon = "__yi_engines_F2__/graphics/gears_br.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -2794,7 +2794,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mfwater-recipe",
 	  category = "yrcat-pump", -- water-pump
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "fluid", name = "y-mechanical-force" , amount = 0.1, },
@@ -2804,7 +2804,7 @@ data:extend({
 	  },
 	  main_product = "water",
 	  icon = "__yi_engines_F2__/graphics/water-clean2.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -2813,7 +2813,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mf1c-recipe",
 	  category = "yrcat-mf1c", -- mechanical force primary - stirling
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 	  },
@@ -2822,7 +2822,7 @@ data:extend({
 	  },
 	  main_product = "y-mechanical-force",
 	  icon = "__yi_engines_F2__/graphics/gear_basic.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -2831,7 +2831,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-emotor-s-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "copper-cable" , amount = 2.0, },
@@ -2844,7 +2844,7 @@ data:extend({
 	  },
 	  main_product = "y-emotor-s",
 	  icon = "__yi_engines_F2__/graphics/entity/e-motor-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "m1", group = "yi_engines", subgroup = "yie-engines",
 	},
 
@@ -2853,7 +2853,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-1stirling-engine-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "iron-gear-wheel" , amount = 3.0, },
@@ -2865,7 +2865,7 @@ data:extend({
 	  },
 	  main_product = "y-1stirling-engine",
 	  icon = "__yi_engines_F2__/graphics/icons/fce-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yuoki-energy", subgroup = "y-parts",
 	},
 
@@ -2874,7 +2874,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-electric-air-heater-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "engine-unit" , amount = 1.0, },
@@ -2887,7 +2887,7 @@ data:extend({
 	  },
 	  main_product = "y-electric-air-heater",
 	  icon = "__yi_engines_F2__/graphics/entity/energy2/air-heater-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "d", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
@@ -2896,7 +2896,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-shaft-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 1.0, },
@@ -2906,7 +2906,7 @@ data:extend({
 	  },
 	  main_product = "y-mftrans-shaft",
 	  icon = "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1a", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -2915,7 +2915,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-shaft-r-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 1.0, },
@@ -2925,7 +2925,7 @@ data:extend({
 	  },
 	  main_product = "y-mftrans-shaft-red",
 	  icon = "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-r-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1c", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -2934,7 +2934,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-shaft-ground-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 10.0, },
@@ -2944,7 +2944,7 @@ data:extend({
 	  },
 	  main_product = "y-mftrans-shaft-ground",
 	  icon = "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-ground-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1b", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -2953,7 +2953,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-growcorn-recipe",
 	  category = "yrcat-farm", -- farm itself
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 300.00,
 	  ingredients = {
 		{ type = "item", name = "ye_seed_a" , amount = 1.0, },
@@ -2964,7 +2964,7 @@ data:extend({
 	  },
 	  main_product = "ye_corn_a",
 	  icon = "__yi_engines_F2__/graphics/corn-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a10", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -2973,7 +2973,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-cf2lubricant-recipe",
 	  category = "chemistry", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "fluid", name = "ye_cornoil" , amount = 30.0, },
@@ -2984,7 +2984,7 @@ data:extend({
 	  },
 	  main_product = "lubricant",
 	  icon = "__yi_engines_F2__/graphics/lubricant.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a2", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2993,7 +2993,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-shaft-ground-r-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 10.0, },
@@ -3003,7 +3003,7 @@ data:extend({
 	  },
 	  main_product = "y-mftrans-shaft-ground-red",
 	  icon = "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-ground-r-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "1d", group = "yi_engines", subgroup = "yie_tubes",
 	},
 
@@ -3012,7 +3012,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-seed_a2-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "ye_corn_a" , amount = 20.0, },
@@ -3023,7 +3023,7 @@ data:extend({
 	  },
 	  main_product = "ye_seed_a",
 	  icon = "__yi_engines_F2__/graphics/seed-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a01", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -3032,7 +3032,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye-seed_a1-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 7.00,
 	  ingredients = {
 		{ type = "item", name = "logistic-science-pack" , amount = 35.0, },
@@ -3043,7 +3043,7 @@ data:extend({
 	  },
 	  main_product = "ye_seed_a",
 	  icon = "__yi_engines_F2__/graphics/icons/icon_iseed.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a00", group = "yie_harvest", subgroup = "yie_farming",
 	},
 
@@ -3052,7 +3052,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-iron-case-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 2.0, },
@@ -3062,7 +3062,7 @@ data:extend({
 	  },
 	  main_product = "y-iron-case",
 	  icon = "__yi_engines_F2__/graphics/caseing-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -3071,7 +3071,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_farm_recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "stone-brick" , amount = 12.0, },
@@ -3083,7 +3083,7 @@ data:extend({
 	  },
 	  main_product = "ye_farm",
 	  icon = "__yi_engines_F2__/graphics/entity/farm-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "mf1", group = "yie_harvest", subgroup = "yie_agromachinery",
 	},
 
@@ -3092,7 +3092,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-rmvpol-recipe",
 	  category = "yrcat-eg4", -- stirlings
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "fluid", name = "water" , amount = 60.0, },
@@ -3103,7 +3103,7 @@ data:extend({
 	  },
 	  main_product = "y-pol-waste",
 	  icon = "__yi_engines_F2__/graphics/icons/kalkstein_32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a1", group = "yi_engines", subgroup = "yie-processed",
 	},
 
@@ -3112,7 +3112,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-winding-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 1.00,
 	  ingredients = {
 		{ type = "item", name = "iron-plate" , amount = 2.0, },
@@ -3123,7 +3123,7 @@ data:extend({
 	  },
 	  main_product = "y-winding",
 	  icon = "__yi_engines_F2__/graphics/winding-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "i1", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -3132,7 +3132,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-quantrinum-charge-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 30.00,
 	  ingredients = {
 		{ type = "item", name = "y-iron-case" , amount = 1.0, },
@@ -3143,7 +3143,7 @@ data:extend({
 	  },
 	  main_product = "y-quantrinum-charge",
 	  icon = "__yi_engines_F2__/graphics/quantrinum-32.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "a", group = "yi_engines", subgroup = "yie-parts",
 	},
 
@@ -3152,7 +3152,7 @@ data:extend({
 	  type = "recipe",
 	  name = "y-mwater-pump-recipe",
 	  category = "crafting", -- 
-	  enabled = "true",
+	  enabled = true,
 	  energy_required = 2.00,
 	  ingredients = {
 		{ type = "item", name = "iron-gear-wheel" , amount = 4.0, },
@@ -3163,7 +3163,7 @@ data:extend({
 	  },
 	  main_product = "y-mwater-pump",
 	  icon = "__yi_engines_F2__/graphics/entity/pump-icon.png",
-	  icon_size = "32",
+	  icon_size = 32,
 	  order = "t1", group = "yi_engines", subgroup = "yie_machinery",
 	},
 
