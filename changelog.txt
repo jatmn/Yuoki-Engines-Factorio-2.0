@@ -1,0 +1,88 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.02
+Date: 9. 5. 2022
+  Features:
+	- Added Gas-Fuel-Engine for Hydrogen & Petroleum
+  Balancing:
+    - Recipe-Chain for Hydrogen tweaked
+	- Recipes for MF-Generation in Fluid-Engine changed
+	- Overheater and Turbine different working recipes
+	- Rheinsberg different working behavior to work with 70 MW Turbine  
+---------------------------------------------------------------------------------------------------
+Version: 1.1.00
+Date: 26. 11. 2020
+  Major Features:
+    - Factorio 1.1 compatibility
+---------------------------------------------------------------------------------------------------
+Version: 1.0.45
+Date: 07. 08. 2020
+  Major Features:
+    - Factorio 1.0 final version
+---------------------------------------------------------------------------------------------------
+Version: 0.8.43
+Date: 07. 08. 2020
+  Major Features:
+    - Release Candidate for Factorio 1.0.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.42
+Date: 07. 08. 2020
+  Fixes:
+    - Fix changelog so it appears in game.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.41
+Date: 06. 08. 2020
+  Features:
+    - Add YIE intermediate products to the vanilla list.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.40
+Date: 02. 08. 2020
+  Balancing:
+    - Belt mining times reduced to match vanilla 
+---------------------------------------------------------------------------------------------------
+Version: 0.8.39
+Date: 13. 04. 2020
+  Fixes:
+    - pollution-fix provided by ChurchOrganist
+---------------------------------------------------------------------------------------------------
+Version: 0.8.38
+  Major Features:
+    - compatible with factorio 0.18.3
+  Fixes:
+    - Small Electric Motor - Fluid output tiny change to avoid connecting problems
+  Additions:
+    - Added MF-Heater (generates MF from electricity ... MF can used as fluid-battery)
+---------------------------------------------------------------------------------------------------
+Version: 0.8.37
+  Major Feature:
+    - compatible with factorio 0.18.0
+---------------------------------------------------------------------------------------------------
+Version: 0.7.36
+  Changes:
+    - 70 MW Turbine feeded from Rheinsberg 
+    - recipe to use petroleum-gas in fluid-fuel-engine 
+    - recipe to use hydrotin-gas in fluid-fuel-engine 
+  Features:
+    - tested with factorio 0.17.79
+---------------------------------------------------------------------------------------------------
+Version: 0.7.35
+  Fixes:
+    - fixed error-message with belts
+---------------------------------------------------------------------------------------------------
+Version: 0.7.34
+  Features:
+    - tested with factorio 0.17.48
+  Changes:
+    - recipes for Rheinsberg changed
+    - added new recipe for transforming 1000°C steam through turbine (need a little more balance)
+    - most (sell)-trade recipes changed to get more value (other materials)
+    - Fatmice-Cycle now useful again to remove a lot of pollution
+---------------------------------------------------------------------------------------------------
+Version: 0.7.33
+  Features:
+    - tested with factorio 0.17.25
+  Fixes:
+    - fix the double-entry bug
+---------------------------------------------------------------------------------------------------
+Version: 0.7.32
+  Major Features:
+    - first version for factorio 0.17.0
