@@ -174,8 +174,12 @@ data:extend(
 	{
 		type = "recipe",
 		name = "ye_green_ultimate_recipe",
-		ingredients = {{"y_greensign", 60000},},
-		result = "ye_green_ultimate",
+		ingredients = {
+			{ type = "item", name = "y_greensign", amount = 60000},
+		},
+		results = {
+			{ type="item", name="ye_green_ultimate", amount=1},
+		},
 		group = "yuoki-energy", subgroup = "y_ultimate_products",					
 		order="a0",
 	},		
