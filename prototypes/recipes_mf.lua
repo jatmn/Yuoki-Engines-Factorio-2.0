@@ -13,7 +13,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 8.0, temperature = 150, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/mf-1.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/mf-1.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -30,7 +30,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 5.0, temperature = 90, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/steam.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/steam.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -48,7 +48,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "steam", amount = 565.0, temperature = 500, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/steam.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/steam.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -66,7 +66,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 1.4, temperature = 215, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gears_br.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears_br.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -84,7 +84,7 @@ data:extend({
 		{ type = "fluid", name = "y-mechanical-force", amount = 25.0, temperature = 400, },
 		{ type = "fluid", name = "water", amount = 180, temperature = 75,},
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/mf-1.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/mf-1.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -102,7 +102,7 @@ data:extend({
 		{ type = "fluid", name = "y-mechanical-force", amount = 75.0, temperature = 400, },
 		{ type = "fluid", name = "steam", amount = 75, temperature = 265,},
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/mf-3.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/mf-3.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -120,7 +120,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 60.0, temperature = 150,},
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gear_xtra.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_xtra.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -137,7 +137,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 100.0, temperature = 150,},
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_xtra.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_xtra.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -154,7 +154,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 300.0, temperature = 400,},
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_xtra.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_xtra.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -172,7 +172,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 2.5, temperature = 250, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gears_br.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears_br.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 	
@@ -192,7 +192,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 18, temperature = 340, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gears_br.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears_br.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 	
@@ -211,7 +211,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 27, temperature = 400, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gears_br.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears_br.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 	]]
@@ -229,7 +229,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 5, temperature = 150, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_basic.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_basic.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -246,7 +246,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 6, temperature = 150, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_wet.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_wet.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -262,7 +262,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 4.5, temperature = 150, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_basic.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_basic.png",
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -283,7 +283,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 6, temperature = 150, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_wet.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_wet.png",
 	  order = "1", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -302,7 +302,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 7, temperature = 150, },
 	  },
-	   icon_size = 32, icon =  "__yi_engines__/graphics/gear_wet.png",
+	   icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_wet.png",
 	  order = "2", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -320,7 +320,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 4, temperature = 150, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gear_wet.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gear_wet.png",
 	  order = "3", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -340,7 +340,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 8, temperature = 150, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gears2-lub.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears2-lub.png",
 	  order = "4", group = "yi_engines", subgroup = "yie-fluids",
 	},
 
@@ -358,7 +358,7 @@ data:extend({
 	  results = {
 		{ type = "fluid", name = "y-mechanical-force", amount = 6, temperature = 150, },
 	  },
-	  icon_size = 32, icon =  "__yi_engines__/graphics/gears2-lub.png",
+	  icon_size = 32, icon =  "__yi_engines_F2__/graphics/gears2-lub.png",
 	  order = "5", group = "yi_engines", subgroup = "yie-fluids",
 	},
 	
@@ -377,7 +377,7 @@ data:extend({
 		{ type = "fluid", name = "y-mechanical-force", amount = 2.0, temperature = 150, },
 	  },
 	  main_product = "y-mechanical-force",
-	  icon = "__yi_engines__/graphics/mf-1.png",
+	  icon = "__yi_engines_F2__/graphics/mf-1.png",
 	  icon_size = 32,  
 	  order = "0", group = "yi_engines", subgroup = "yie-fluids",
 	},	

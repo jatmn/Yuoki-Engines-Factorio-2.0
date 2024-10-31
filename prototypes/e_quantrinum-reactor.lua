@@ -5,7 +5,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-quantrinum-reactor",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/qr-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/qr-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-quantrinum-reactor"},
 		max_health = 250,
@@ -30,7 +30,7 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{
-			filename = "__yi_engines__/graphics/entity/energy2/qr-anim.png",			
+			filename = "__yi_engines_F2__/graphics/entity/energy2/qr-anim.png",			
 			width = 200,
 			height = 180,
 			shift = {0.35, 0.0},

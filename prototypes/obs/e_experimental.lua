@@ -4,7 +4,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly1",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_1_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_1_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly1"},
 		max_health = 250,
@@ -16,7 +16,7 @@ data:extend(
 
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/av1_sheet.png",			
+			filename = "__yi_engines_F2__/graphics/entity/av1_sheet.png",			
 			width = 320,
 			height = 320,			
 			shift = {1.0, -1.0},
@@ -48,7 +48,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly2",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_2_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_2_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly2"},
 		max_health = 250,
@@ -81,7 +81,7 @@ data:extend(
 				
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/av2_sheet.png",			
+			filename = "__yi_engines_F2__/graphics/entity/av2_sheet.png",			
 			width = 256,
 			height = 256,			
 			shift = {0.5, -0.5},
@@ -113,7 +113,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly_sp",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_3_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_3_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly_sp"},
 		max_health = 250,
@@ -138,7 +138,7 @@ data:extend(
 		
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/av3_sheet.png",			
+			filename = "__yi_engines_F2__/graphics/entity/av3_sheet.png",			
 			width = 256,
 			height = 256,
 			shift = {0.3, -0.5},
@@ -180,14 +180,14 @@ data:extend(
 		order="a0",
 	},		
 	{
-		type="item", name="ye_green_ultimate",  icon_size = 32, icon = "__yi_engines__/graphics/entity/green_ultimate_icon.png", flags = {"goes-to-quickbar"},
+		type="item", name="ye_green_ultimate",  icon_size = 32, icon = "__yi_engines_F2__/graphics/entity/green_ultimate_icon.png", flags = {"goes-to-quickbar"},
 		group="yuoki-energy", subgroup="y_ultimate_products", order="a0", place_result = "ye_green_ultimate", 
 		stack_size = 1, default_request_amount = 1,
 	},	
 	{
 		type = "assembling-machine",
 		name = "ye_green_ultimate",
-		 icon_size = 32, icon = "__yi_engines__/graphics/entity/green_ultimate_icon.png",
+		 icon_size = 32, icon = "__yi_engines_F2__/graphics/entity/green_ultimate_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_green_ultimate"},
 		max_health = 5000,
@@ -198,7 +198,7 @@ data:extend(
 		--fast_replaceable_group = "assembling-machine",		
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/green_ultimate.png",			
+			filename = "__yi_engines_F2__/graphics/entity/green_ultimate.png",			
 			width = 480,
 			height = 480,
 			shift = {1, -1},
@@ -230,7 +230,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly2",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/fastassembly1_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/fastassembly1_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly2"},
 		max_health = 250,
@@ -280,7 +280,7 @@ data:extend(
 		
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/tut-2.png",			
+			filename = "__yi_engines_F2__/graphics/entity/tut-2.png",			
 			width = 160,
 			height = 160,
 			shift = {0.0, 0.0},
@@ -314,7 +314,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-injector1",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-injector1"},
 		max_health = 150,
@@ -343,14 +343,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/32x64o.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x64o.png",			
 			width = 32,
 			height = 64,
 			shift = {0.0, 0.0},
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/32x64o.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x64o.png",			
 			width = 32,
 			height = 64,
 			shift = {0.0, 0.0},
@@ -369,7 +369,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-injector2",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-injector2"},
 		max_health = 150,
@@ -398,14 +398,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/32x64g.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x64g.png",			
 			width = 32,
 			height = 64,
 			shift = {0.0, 0.0},
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/32x64g.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x64g.png",			
 			width = 32,
 			height = 64,
 			shift = {0.0, 0.0},
@@ -424,7 +424,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-ring1",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-ring1"},
 		max_health = 150,
@@ -455,14 +455,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/32x96.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x96.png",			
 			width = 32,
 			height = 96,
 			shift = {0.0, 0.0}
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/32x96.png",			
+			filename = "__yi_engines_F2__/graphics/tests/32x96.png",			
 			width = 32,
 			height = 96,
 			shift = {0.0, 0.0},
@@ -480,7 +480,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-ring2",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-ring2"},
 		max_health = 150,
@@ -511,14 +511,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/64x96.png",			
+			filename = "__yi_engines_F2__/graphics/tests/64x96.png",			
 			width = 64,
 			height = 96,
 			shift = {0.0, 0.0},
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/64x96.png",			
+			filename = "__yi_engines_F2__/graphics/tests/64x96.png",			
 			width = 64,
 			height = 96,
 			shift = {0.0, 0.0},
@@ -537,7 +537,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-emitter",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-emitter"},
 		max_health = 150,
@@ -558,14 +558,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/96x96xlila.png",			
+			filename = "__yi_engines_F2__/graphics/tests/96x96xlila.png",			
 			width = 96,
 			height = 96,
 			shift = {0.0, 0.0},
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/96x96xlila.png",			
+			filename = "__yi_engines_F2__/graphics/tests/96x96xlila.png",			
 			width = 96,
 			height = 96,
 			shift = {0.0, 0.0},
@@ -583,7 +583,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-collector",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/tests/a-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/tests/a-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-collector"},
 		max_health = 150,
@@ -604,14 +604,14 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/tests/96x96xcyan.png",			
+			filename = "__yi_engines_F2__/graphics/tests/96x96xcyan.png",			
 			width = 96,
 			height = 96,
 			shift = {0.0, 0.0},
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/tests/96x96xcyan.png",			
+			filename = "__yi_engines_F2__/graphics/tests/96x96xcyan.png",			
 			width = 96,
 			height = 96,
 			shift = {0.0, 0.0},

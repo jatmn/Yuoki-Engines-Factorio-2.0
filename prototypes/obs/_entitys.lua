@@ -4,7 +4,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_farm",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/farm-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/farm-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_farm"},
 		max_health = 250,
@@ -34,10 +34,10 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{
-			north = { filename = "__yi_engines__/graphics/entity/farm-sheet-ns.png", width = 192, height = 192, shift = {0.44, -0.22}, frame_count = 16, line_length = 4, animation_speed=0.01, },						
-			east = { filename = "__yi_engines__/graphics/entity/farm-sheet-ew.png", width = 192, height = 192, shift = {0.19, -0.34}, frame_count = 16, line_length = 4, animation_speed=0.01, }	,					
-			south = { filename = "__yi_engines__/graphics/entity/farm-sheet-ns.png", width = 192, height = 192, shift = {0.44, -0.22}, frame_count = 16, line_length = 4, animation_speed=0.01, },						
-			west = { filename = "__yi_engines__/graphics/entity/farm-sheet-ew.png", width = 192, height = 192, shift = {0.19, -0.34}, frame_count = 16, line_length = 4, animation_speed=0.01, }	,					
+			north = { filename = "__yi_engines_F2__/graphics/entity/farm-sheet-ns.png", width = 192, height = 192, shift = {0.44, -0.22}, frame_count = 16, line_length = 4, animation_speed=0.01, },						
+			east = { filename = "__yi_engines_F2__/graphics/entity/farm-sheet-ew.png", width = 192, height = 192, shift = {0.19, -0.34}, frame_count = 16, line_length = 4, animation_speed=0.01, }	,					
+			south = { filename = "__yi_engines_F2__/graphics/entity/farm-sheet-ns.png", width = 192, height = 192, shift = {0.44, -0.22}, frame_count = 16, line_length = 4, animation_speed=0.01, },						
+			west = { filename = "__yi_engines_F2__/graphics/entity/farm-sheet-ew.png", width = 192, height = 192, shift = {0.19, -0.34}, frame_count = 16, line_length = 4, animation_speed=0.01, }	,					
 		},		
 		crafting_categories = {"yrcat-farm"},
 		crafting_speed = 1.0,
@@ -57,7 +57,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_meatfarm",
-		icon_size = 32, icon =  "__yi_engines__/graphics/entity/cage_empty_icon.png",
+		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/cage_empty_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_meatfarm"},
 		max_health = 250,
@@ -103,10 +103,10 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{			
-			north = { filename = "__yi_engines__/graphics/entity/cage/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
-			south = { filename = "__yi_engines__/graphics/entity/cage/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
-			east = { filename = "__yi_engines__/graphics/entity/cage/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,								
-			west = { filename = "__yi_engines__/graphics/entity/cage/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,					
+			north = { filename = "__yi_engines_F2__/graphics/entity/cage/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
+			south = { filename = "__yi_engines_F2__/graphics/entity/cage/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
+			east = { filename = "__yi_engines_F2__/graphics/entity/cage/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,								
+			west = { filename = "__yi_engines_F2__/graphics/entity/cage/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,					
 		},		
 		crafting_categories = {"yrcat_meat"},
 		crafting_speed = 1.0,
@@ -126,7 +126,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_pool",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/pool_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/pool_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_pool"},
 		max_health = 250,
@@ -164,10 +164,10 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{
-			north = { filename = "__yi_engines__/graphics/entity/pool_sn_sheet.png", width = 384, height = 384, shift = {0.44, -0.22}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5, },						
-			east = { filename = "__yi_engines__/graphics/entity/pool_we_sheet.png", width = 384, height = 384, shift = {0.19, -0.34}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,}	,					
-			south = { filename = "__yi_engines__/graphics/entity/pool_ns_sheet.png", width = 384, height = 384, shift = {0.44, -0.22}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,},						
-			west = { filename = "__yi_engines__/graphics/entity/pool_ew_sheet.png", width = 384, height = 384, shift = {0.19, -0.34}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,}	,					
+			north = { filename = "__yi_engines_F2__/graphics/entity/pool_sn_sheet.png", width = 384, height = 384, shift = {0.44, -0.22}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5, },						
+			east = { filename = "__yi_engines_F2__/graphics/entity/pool_we_sheet.png", width = 384, height = 384, shift = {0.19, -0.34}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,}	,					
+			south = { filename = "__yi_engines_F2__/graphics/entity/pool_ns_sheet.png", width = 384, height = 384, shift = {0.44, -0.22}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,},						
+			west = { filename = "__yi_engines_F2__/graphics/entity/pool_ew_sheet.png", width = 384, height = 384, shift = {0.19, -0.34}, frame_count = 9, line_length = 3, animation_speed=0.05, scale=0.5,}	,					
 		},		
 		crafting_categories = {"yrcat-fish"},
 		crafting_speed = 1.0,
@@ -187,7 +187,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_icemaker",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/icemaker_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/icemaker_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_icemaker"},
 		max_health = 450,
@@ -225,7 +225,7 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{
-			filename = "__yi_engines__/graphics/entity/refrig_v2_sheet.png",			
+			filename = "__yi_engines_F2__/graphics/entity/refrig_v2_sheet.png",			
 			width = 256,
 			height = 256,
 			shift = {0.3, -0.12},
@@ -253,7 +253,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_smoker",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/yie_smoker_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/yie_smoker_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_smoker"},
 		max_health = 250,
@@ -265,7 +265,7 @@ data:extend({
 
 		animation =
 		{			
-			filename = "__yi_engines__/graphics/entity/yie_smoker.png",			
+			filename = "__yi_engines_F2__/graphics/entity/yie_smoker.png",			
 			width = 320,
 			height = 320,
 			shift = {0.875, 0},

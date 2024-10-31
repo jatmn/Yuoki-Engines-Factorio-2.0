@@ -1,11 +1,15 @@
 
 {
-"name": "yi_engines",
-"title": "Yuoki Industries - Engines (Addon)",
-"version": "1.1.02",
-"date": "2022-05-09",
-"author": "Yuoki Tani",
-"factorio_version": "1.1",
-"dependencies": ["base >= 0.18.35", "Yuoki >= 0.8.95"],
-"description": "additional/alternate power generation, MF, agriculture in a different way"
+"name": "yi_engines_F2",
+"title": "Yuoki Industries - Engines (Addon) (Factorio 2.0)",
+"version": "1.2.0",
+"date": "2024-10-30",
+"author": "JATMN",
+"contact": "https://discord.gg/fM6NjWabAA",
+"homepage": "https://github.com/jatmn/Yuoki-Engines-Factorio-2.0",
+"factorio_version": "2.0",
+"dependencies": ["base >= 2.0.0",
+ "Yuoki >= 1.2.0"
+],
+"description": "Yuoki Industris - Engines (Addon) for Factorio 2.0 \n additional/alternate power generation, MF, agriculture in a different way \n \n Original Creator: YuokiTani"
 }

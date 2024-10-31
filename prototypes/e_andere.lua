@@ -4,7 +4,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "y-electric-air-heater",
-		icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/air-heater-icon.png",
+		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/air-heater-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.1, result = "y-electric-air-heater"},
 		max_health = 350,
@@ -35,14 +35,14 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		picture =
 		{
-			filename = "__yi_engines__/graphics/entity/energy2/air-heater.png",			
+			filename = "__yi_engines_F2__/graphics/entity/energy2/air-heater.png",			
 			width = 130,
 			height = 128,
 			shift = {0.825, 0.0}
 		},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/entity/energy2/ah-a.png",			
+			filename = "__yi_engines_F2__/graphics/entity/energy2/ah-a.png",			
 			width = 130,
 			height = 128,
 			shift = {0.825, 0.0},
@@ -68,7 +68,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "yie_science_blue_gen",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/science_gen_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/science_gen_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.1, result = "yie_science_blue_gen"},
 		max_health = 500,
@@ -77,10 +77,10 @@ data:extend({
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},		
 		animation =
 		{
-			south = { filename = "__yi_engines__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
-			west  = { filename = "__yi_engines__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,					
-			north = { filename = "__yi_engines__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
-			east  = { filename = "__yi_engines__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
+			south = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
+			west  = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,					
+			north = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
+			east  = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
 		},		
 		crafting_categories = {"yrcat_science"},
 		crafting_speed = 1.0,
@@ -99,7 +99,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_trade_node",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/icons/trade_node_icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/icons/trade_node_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.1, result = "ye_trade_node"},
 		max_health = 500,
@@ -108,7 +108,7 @@ data:extend({
 		selection_box = {{-1, -1}, {1, 1}},		
 		animation =
 		{
-			filename = "__yi_engines__/graphics/entity/trade_node_sheet.png", width = 192, height = 192, scale = 0.5, shift = {0.5, -0.5}, frame_count = 9, line_length = 3, animation_speed=0.5, 							
+			filename = "__yi_engines_F2__/graphics/entity/trade_node_sheet.png", width = 192, height = 192, scale = 0.5, shift = {0.5, -0.5}, frame_count = 9, line_length = 3, animation_speed=0.5, 							
 		},		
 		crafting_categories = {"yuoki-stargate-recipe"},
 		crafting_speed = 0.5,		
@@ -123,7 +123,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_canmachine",
-		 icon_size = 32, icon =  "__yi_engines__/graphics/canning-icon.png",
+		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/canning-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.1, result = "ye_canmachine"},
 		max_health = 550,
@@ -161,10 +161,10 @@ data:extend({
 		fast_replaceable_group = "assembling-machine",
 		animation =
 		{
-			south = { filename = "__yi_engines__/graphics/entity/can-n.png", width = 128, height = 128, shift = {0.5, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
-			west  = { filename = "__yi_engines__/graphics/entity/can-e.png", width = 128, height = 128, shift = {0.25, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,					
-			north = { filename = "__yi_engines__/graphics/entity/can-s.png", width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
-			east  = { filename = "__yi_engines__/graphics/entity/can-w.png", width = 128, height = 128, shift = {0.5, -0.3125}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
+			south = { filename = "__yi_engines_F2__/graphics/entity/can-n.png", width = 128, height = 128, shift = {0.5, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
+			west  = { filename = "__yi_engines_F2__/graphics/entity/can-e.png", width = 128, height = 128, shift = {0.25, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,					
+			north = { filename = "__yi_engines_F2__/graphics/entity/can-s.png", width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
+			east  = { filename = "__yi_engines_F2__/graphics/entity/can-w.png", width = 128, height = 128, shift = {0.5, -0.3125}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
 		},		
 		crafting_categories = {"yrcat_fluidhandle", "crafting-with-fluid"},
 		crafting_speed = 1.75,

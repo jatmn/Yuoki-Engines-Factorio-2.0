@@ -60,7 +60,7 @@ data:extend({
 			{ type="item", name="y-mixed-fuel", amount=2, },
 			{ type = "item", name = "y_greensign", amount = 1.0, },			
 		},		
-		icon_size = 32, icon =  "__yi_engines__/graphics/waste1-icon.png",
+		icon_size = 32, icon =  "__yi_engines_F2__/graphics/waste1-icon.png",
 		subgroup = "yie-processed",	order="a2",		
 	},	
 	
