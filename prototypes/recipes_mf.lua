@@ -3,7 +3,7 @@ data:extend({
 	-- 2020 mfheatmotor 3.2 MW
 	{
 	  type = "recipe",
-	  name = "ye_mf_mfheatmotor_m_recipe",
+	  name = "ye_mf_mfheatmotor_m",
 	  category = "yrcat_mfheatmotor_m", 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -20,7 +20,7 @@ data:extend({
 	-- water->MF heat-transmission
 	{
 	  type = "recipe",
-	  name = "ye_water2mf_recipe",
+	  name = "ye_water2mf",
 	  category = "yrcat_transform", 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -38,7 +38,7 @@ data:extend({
 	-- make steam - needs lua-code
 	{
 	  type = "recipe",
-	  name = "ye_makesteam_recipe",
+	  name = "ye_makesteam",
 	  category = "yrcat-heater", -- overheater for steam
 	  enabled = true,
 	  energy_required = 1.00,
@@ -55,7 +55,7 @@ data:extend({
 	-- gearbox transmission without lubricant
 	{
 	  type = "recipe",
-	  name = "y-mf2b-recipe",
+	  name = "y-mf2b",
 	  category = "yrcat-mf2", -- gearbox
 	  enabled = true,
 	  energy_required = 0.50,
@@ -73,7 +73,7 @@ data:extend({
 	-- steam to mechanical power
 	{
 	  type = "recipe",
-	  name = "ye_steam2mf_recipe",
+	  name = "ye_steam2mf",
 	  category = "yrcat_turbine", -- steam to mechanical power
 	  enabled = true,
 	  energy_required = 1.00,
@@ -91,7 +91,7 @@ data:extend({
 	-- steam to mechanical power
 	{
 	  type = "recipe",
-	  name = "ye_steam3mf_recipe",
+	  name = "ye_steam3mf",
 	  category = "yrcat_turbine", -- steam to mechanical power
 	  enabled = true,
 	  energy_required = 1.0,
@@ -110,7 +110,7 @@ data:extend({
 	-- quantrium-reactor power-generation recipe 1
 	{
 	  type = "recipe",
-	  name = "y-mf1-q1-recipe",
+	  name = "y-mf1-q1",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
 	  enabled = true,
 	  energy_required = 2.00,
@@ -127,7 +127,7 @@ data:extend({
 	-- quantrium-reactor power-generation recipe 2
 	{
 	  type = "recipe",
-	  name = "y-mf1-q2-recipe",
+	  name = "y-mf1-q2",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
 	  enabled = true,
 	  energy_required = 2.00,
@@ -144,7 +144,7 @@ data:extend({
 	-- quantrium-reactor power-generation recipe 3
 	{
 	  type = "recipe",
-	  name = "y-mf1-q3-recipe",
+	  name = "y-mf1-q3",
 	  category = "yrcat-mf1q", -- mechanical force quantrinum-reactor
 	  enabled = true,
 	  energy_required = 2.00,
@@ -161,7 +161,7 @@ data:extend({
 	-- gearbox transmission with lubricant
 	{
 	  type = "recipe",
-	  name = "y-mf2a-recipe",
+	  name = "y-mf2a",
 	  category = "yrcat-mf2", -- gearbox
 	  enabled = true,
 	  energy_required = 0.25,
@@ -181,7 +181,7 @@ data:extend({
 	-- HP gearbox transmission without lubricant
 	{
 	  type = "recipe",
-	  name = "y_mfhp_gearbox1-recipe",
+	  name = "y_mfhp_gearbox1",
 	  category = "yrcat-mf2b", -- gearbox
 	  enabled = true,
 	  energy_required = 1.5,
@@ -200,7 +200,7 @@ data:extend({
 	-- HP gearbox transmission with lubricant
 	{
 	  type = "recipe",
-	  name = "y_mfhp_gearbox2-recipe",
+	  name = "y_mfhp_gearbox2",
 	  category = "yrcat-mf2b", -- gearbox
 	  enabled = true,
 	  energy_required = 1,
@@ -219,7 +219,7 @@ data:extend({
 	-- without lubricant, still water for cooling - sfe
 	{
 	  type = "recipe",
-	  name = "y-mf1a1-recipe",
+	  name = "y-mf1a1",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -235,7 +235,7 @@ data:extend({
 
 	{
 	  type = "recipe",
-	  name = "y-mf1a-recipe",
+	  name = "y-mf1a",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -253,7 +253,7 @@ data:extend({
 	-- SFE trocken
 	{
 	  type = "recipe",
-	  name = "y-mf1f-recipe",
+	  name = "y-mf1f",
 	  category = "yrcat-mf1a", -- mechanical force primary - sfe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -271,7 +271,7 @@ data:extend({
 	-- FFE - Hydromechanical Power
 	{
 	  type = "recipe",
-	  name = "y-mf2a-recipe",
+	  name = "y-mf2a",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -290,7 +290,7 @@ data:extend({
 	-- 
 	{
 	  type = "recipe",
-	  name = "y-mf2b-recipe",
+	  name = "y-mf2b",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -309,7 +309,7 @@ data:extend({
 	-- FFE - burn corn-oil - self lubricant
 	{
 	  type = "recipe",
-	  name = "y-mf2e-recipe",
+	  name = "y-mf2e",
 	  category = "yrcat-mf1b", -- mechanical force primary - ffe
 	  enabled = true,
 	  energy_required = 1.00,
@@ -328,7 +328,7 @@ data:extend({
 	-- ab 4.5.2022 gasmotor
 	{
 	  type = "recipe",
-	  name = "y-mf2c-recipe",
+	  name = "y-mf2c",
 	  category = "yrcat-mf1gm", -- mechanical force primary 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -347,7 +347,7 @@ data:extend({
 	-- GM - burn hydrogen - need lubricant
 	{
 	  type = "recipe",
-	  name = "y-mf2d-recipe",
+	  name = "y-mf2d",
 	  category = "yrcat-mf1gm", -- mechanical force primary 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -366,7 +366,7 @@ data:extend({
 	--ID:330 
 	{
 	  type = "recipe",
-	  name = "y_mpump_mf_recipe",
+	  name = "y_mpump_mf",
 	  category = "yrcat_pump_2", -- Medium Pump
 	  enabled = true,
 	  energy_required = 1.00,

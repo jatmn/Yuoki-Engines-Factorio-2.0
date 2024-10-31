@@ -60,14 +60,14 @@ data:extend(
 
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-0,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-0,-2}},								
 				}
 			},							
 			{
@@ -76,11 +76,11 @@ data:extend(
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {-0, 2}},								
+					{flow_direction="output", direction = defines.direction.north, position = {-0, 2}},								
 				}
 			},
 		},
-				
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		animation =
 		{			
 			filename = "__yi_engines_F2__/graphics/entity/av2_sheet.png",			
@@ -127,18 +127,18 @@ data:extend(
 
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-0,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-0,-2}},								
 				}
 			},							
 		},
-		
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		animation =
 		{			
 			filename = "__yi_engines_F2__/graphics/entity/av3_sheet.png",			
@@ -176,7 +176,7 @@ data:extend(
 	
 	{
 		type = "recipe",
-		name = "ye_green_ultimate_recipe",
+		name = "ye_green_ultimate",
 		ingredients = {
 			{ type = "item", name = "y_greensign", amount = 60000},
 		},

@@ -2,14 +2,14 @@
 Copyright joshrick (Codec) © August 2020
 adds Yuoki intermediate products to the vanilla intermediates list--]]
 local productivity_item_list=
-                      { "y-iron-case-recipe",
-					    "y-quantrinum-charge-recipe",
-						"ye_center_recipe",
+                      { "y-iron-case",
+					    "y-quantrinum-charge",
+						"ye_center",
 						"ye_sealing",
-						"y-winding-recipe",
-						"yie_pureiron_recipe",
-						"yie_hard_metals_recipe",
-						"ye_buechsenblech_recipe"
+						"y-winding",
+						"yie_pureiron",
+						"yie_hard_metals",
+						"ye_buechsenblech"
                       }
 
 for _, module in pairs(data.raw.module) do

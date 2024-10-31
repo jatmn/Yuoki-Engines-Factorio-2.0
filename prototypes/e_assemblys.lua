@@ -31,7 +31,7 @@ data:extend(
 		{
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 4.8
+			emissions_per_minute = { pollution  = 4.8 },
 		},
 		energy_usage = "300kW",
 		ingredient_count = 6,				
@@ -60,14 +60,14 @@ data:extend(
 
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-0,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-0,-1}},								
 				}
 			},							
 			{
@@ -76,11 +76,11 @@ data:extend(
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {-0, 2}},								
+					{flow_direction="output", direction = defines.direction.north, position = {-0, 1}},								
 				}
 			},
 		},
-				
+		fluid_boxes_off_when_no_fluid_recipe = true,	
 		animation =
 		{			
 			filename = "__yi_engines_F2__/graphics/entity/av2_sheet.png",			
@@ -98,7 +98,7 @@ data:extend(
 		{
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 8
+			emissions_per_minute = { pollution  = 8 },
 		},
 		energy_usage = "500kW",
 		ingredient_count = 6,				
@@ -127,18 +127,18 @@ data:extend(
 
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-0,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-0,-1}},								
 				}
 			},							
 		},
-		
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		animation =
 		{			
 			filename = "__yi_engines_F2__/graphics/entity/av3_sheet.png",			
@@ -156,7 +156,7 @@ data:extend(
 		{
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 11.2
+			emissions_per_minute = { pollution  = 11.2 },
 		},
 		energy_usage = "700kW",
 		ingredient_count = 6,				
@@ -176,7 +176,7 @@ data:extend(
 	
 	{
 		type = "recipe",
-		name = "ye_green_ultimate_recipe",
+		name = "ye_green_ultimate",
 		ingredients = {
 			{ type = "item", name = "y_greensign", amount = 60000},
 		},
@@ -220,7 +220,7 @@ data:extend(
 		{
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 11.2
+			emissions_per_minute = { pollution  = 11.2},
 		},
 		energy_usage = "700kW",
 		ingredient_count = 6,				

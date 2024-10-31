@@ -20,7 +20,7 @@ data:extend(
 				base_area = 2,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
 				}
 			},					
 			{
@@ -29,7 +29,7 @@ data:extend(
 				base_area = 20,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = {  1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = {  1, -1}},					
 				}
 			},
 			{
@@ -38,7 +38,7 @@ data:extend(
 				base_area = 20,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { -1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { -1, -1}},					
 				}
 			},			
 			
@@ -87,10 +87,10 @@ data:extend(
 		energy_source =
 		{		
 			type = "burner",
-			fuel_category = "chemical",
+			fuel_categories = {"chemical"},
 			effectivity = 0.85,
 			fuel_inventory_size = 1,
-			emissions_per_minute = 60,
+			emissions_per_minute = { pollution  = 60,},
 			smoke =
 			{
 				{
@@ -123,7 +123,7 @@ data:extend(
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
 				}
 			},					
 			{
@@ -132,7 +132,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { 0, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { 0, -1}},					
 				}
 			},
 			{
@@ -141,7 +141,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { -1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { -1, -1}},					
 				}
 			},
 			{
@@ -150,7 +150,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { 1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { 1, -1}},					
 				}
 			},			
 		},
@@ -198,7 +198,7 @@ data:extend(
 		energy_source = {		
 			type = "electric",
 			usage_priority = "primary-input",
-			emissions_per_minute = 0.03, 
+			emissions_per_minute = { pollution  = 0.03, },
 		},
 		energy_usage = "150kW",						
 		ingredient_count = 3,
@@ -234,7 +234,7 @@ data:extend(
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
 				}
 			},					
 			{
@@ -243,7 +243,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { 0, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { 0, -1}},					
 				}
 			},
 			{
@@ -252,7 +252,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { -1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { -1, -1}},					
 				}
 			},
 			{
@@ -261,7 +261,7 @@ data:extend(
 				base_area = 30,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = { 1, -2}},					
+					{ flow_direction="input", direction = defines.direction.north, position = { 1, -1}},					
 				}
 			},			
 		},
@@ -313,7 +313,7 @@ data:extend(
 		energy_source = {		
 			type = "electric",
 			usage_priority = "primary-input",
-			emissions_per_minute = 0.03, 
+			emissions_per_minute = { pollution  = 0.03, },
 		},
 		energy_usage = "250kW",						
 		ingredient_count = 3,
@@ -341,7 +341,7 @@ data:extend(
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0.5, 1.5}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0.5, 0.5}},										
 				}
 			},					
 		},
@@ -362,10 +362,10 @@ data:extend(
 		energy_source =
 		{		
 			type = "burner",
-			fuel_category = "chemical",
+			fuel_categories = {"chemical"},
 			effectivity = 0.7,
 			fuel_inventory_size = 1,
-			emissions_per_minute = 15,
+			emissions_per_minute = { pollution  = 15,},
 			smoke =
 			{
 				{

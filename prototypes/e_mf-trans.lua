@@ -17,7 +17,7 @@ data:extend({
 				base_area = 3,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0, -3}},										
+					{flow_direction="input", direction = defines.direction.north, position = {0, -2}},										
 				}
 			},					
 			{
@@ -26,13 +26,13 @@ data:extend({
 				base_area = 48,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = { -3, 0}},										
+					{flow_direction="output", direction = defines.direction.north, position = { -2, 0}},										
 					--{type="output", position = { -3, 1}},										
-					{type="output", direction = defines.direction.north, position = { -3, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = { -2, 2}},										
 					--{type="output", position = { -3, 3}},										
-					{type="output", direction = defines.direction.north, position = {  3, 0}},										
+					{flow_direction="output", direction = defines.direction.north, position = {  2, 0}},										
 					--{type="output", position = {  3, 1}},										
-					{type="output", direction = defines.direction.north, position = {  3, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = {  2, 2}},										
 					--{type="output", position = {  3, 3}},										
 				}
 			},												
@@ -89,10 +89,10 @@ data:extend({
 		energy_source =
 		{
 			type = "burner",
-			fuel_category = "chemical",
+			fuel_categories = {"chemical"},
 			effectivity = 0.8,
 			fuel_inventory_size = 2,						
-			emissions_per_minute = 448,			
+			emissions_per_minute = { pollution  = 448,	},		
 		},
 		energy_usage = "28MW",
 		--[[	
@@ -125,12 +125,12 @@ data:extend({
 				base_area = 3,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = { -1, -4}},										
+					{flow_direction="input", direction = defines.direction.north, position = { -1, -3}},										
 					--{type="input", position = { -2, -4}},										
-					{type="input", direction = defines.direction.north, position = { -3, -4}},															
-					{type="input", direction = defines.direction.north, position = { 1, -4}},										
+					{flow_direction="input", direction = defines.direction.north, position = { -3, -3}},															
+					{flow_direction="input", direction = defines.direction.north, position = { 1, -3}},										
 					--{type="input", position = { 2, -4}},										
-					{type="input", direction = defines.direction.north, position = { 3, -4}},															
+					{flow_direction="input", direction = defines.direction.north, position = { 3, -3}},															
 					--{type="input", position = {-2, 0}},										
 				}
 			},										
@@ -141,7 +141,7 @@ data:extend({
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, 4}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, 3}},										
 					
 				}
 			},		
@@ -152,8 +152,8 @@ data:extend({
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = { 4, 2}},	
-					{type="output", direction = defines.direction.north, position = {-4, 2}},	
+					{flow_direction="output", direction = defines.direction.north, position = { 3, 2}},	
+					{flow_direction="output", direction = defines.direction.north, position = {-3, 2}},	
 				}
 			},							
 		},
@@ -206,7 +206,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "primary-input",
-			emissions_per_minute = 0.13, 
+			emissions_per_minute = { pollution  = 0.13, },
 		},
 		energy_usage = "1500kW",						
 		ingredient_count = 1,
@@ -236,13 +236,13 @@ data:extend({
 			base_level = -1,			
 			pipe_connections =
 			{
-				{ type = "input-output", direction = defines.direction.north,  position = { 0,  3.0} },
-				{ type = "input-output", direction = defines.direction.north,  position = { 1,  3.0} },
-				{ type = "input-output", direction = defines.direction.north,  position = {-1,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 1,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = {-1,  3.0} },
 				
-				{ type = "input-output", direction = defines.direction.north,  position = { 0, -3.0} },
-				{ type = "input-output", direction = defines.direction.north,  position = { 1, -3.0} },
-				{ type = "input-output", direction = defines.direction.north,  position = {-1, -3.0} },				
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0, -3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 1, -3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = {-1, -3.0} },				
 			},
 			production_type = "input-output",
 			filter = "y-mechanical-force",
@@ -296,10 +296,10 @@ data:extend({
 			base_level = -1,			
 			pipe_connections =
 			{
-				{ type = "input-output", direction = defines.direction.north,  position = { 0,  4} },
-				{ type = "input-output", direction = defines.direction.north,  position = { 4,  0} },				
-				{ type = "input-output", direction = defines.direction.north,  position = { 0, -4} },
-				{ type = "input-output", direction = defines.direction.north,  position = {-4,  0} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0,  3.1} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 3,  0} },				
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0, -3.1} },
+				{ flow_direction = "input-output", direction = defines.direction.north,  position = {-3,  0} },
 			},
 			production_type = "input-output",
 			filter = "steam",

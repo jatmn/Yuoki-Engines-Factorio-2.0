@@ -11,14 +11,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {2,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {2,-3}},								
 				}
 			},							
 			{
@@ -27,10 +27,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-2, 3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-2, 3}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -66,14 +67,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{	
-			off_when_no_fluid_recipe = true,
+
 			{
 				volume = 200,
 				production_type = "output",
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {1, 3}},										
+					{flow_direction="output", direction = defines.direction.north, position = {1, 3}},										
 				}
 			},			
 			{
@@ -82,7 +83,7 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {-1, 3}},										
+					{flow_direction="output", direction = defines.direction.north, position = {-1, 3}},										
 				}
 			},						
 			{
@@ -91,7 +92,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {1,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,-3}},								
 				}
 			},							
 			{
@@ -100,10 +101,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-1,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,-3}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -139,14 +141,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+		
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{ direction = defines.direction.north, position = {-1,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,-3}},								
 				}
 			},							
 			{
@@ -155,7 +157,7 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{ direction = defines.direction.north, position = {1,-3}},								
+					{flow_direction="output", direction = defines.direction.north, position = {1,-3}},								
 				}
 			},										
 			{
@@ -164,10 +166,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0, 3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {0, 3}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,	
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -203,14 +206,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,
+
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-1,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,-2}},								
 				}
 			},							
 			{
@@ -219,7 +222,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {1,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,-2}},								
 				}
 			},										
 			{
@@ -228,10 +231,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-2,1}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-2,1}},								
 				}
 			},	
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",

@@ -11,14 +11,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {2,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1.8,-2.1}},								
 				}
 			},							
 			{
@@ -27,10 +27,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-2, 3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1.8, 2.1}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -47,7 +48,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 5, 
+			emissions_per_minute = { pollution  = 5, },
 		},
 		energy_usage = "50kW",						
 		ingredient_count = 3,
@@ -66,14 +67,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{	
-			off_when_no_fluid_recipe = true,
+
 			{
 				volume = 200,
 				production_type = "output",
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {1, 3}},										
+					{flow_direction="output", direction = defines.direction.north, position = {1, 2}},										
 				}
 			},			
 			{
@@ -82,7 +83,7 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {-1, 3}},										
+					{flow_direction="output", direction = defines.direction.north, position = {-1, 2}},										
 				}
 			},						
 			{
@@ -91,7 +92,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {1,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,-2}},								
 				}
 			},							
 			{
@@ -100,10 +101,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-1,-3}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,-2}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -120,7 +122,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 25, 
+			emissions_per_minute = { pollution  = 25, },
 		},
 		energy_usage = "250kW",						
 		ingredient_count = 4,
@@ -139,14 +141,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,			
+			
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{ direction = defines.direction.north, position = {-1,-3}},								
+					{ flow_direction="output", direction = defines.direction.north, position = {-1,-2}},								
 				}
 			},							
 			{
@@ -155,7 +157,7 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{ direction = defines.direction.north, position = {1,-3}},								
+					{flow_direction="output", direction = defines.direction.north, position = {1,-2}},								
 				}
 			},										
 			{
@@ -164,10 +166,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{ type="input", direction = defines.direction.north, position = {0, 3}},								
+					{ flow_direction="input", direction = defines.direction.north, position = {0, 2}},								
 				}
 			},										
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -184,7 +187,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 5, 
+			emissions_per_minute = { pollution  = 5, },
 		},
 		energy_usage = "50kW",						
 		ingredient_count = 3,
@@ -203,14 +206,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,
+
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-1,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,-1}},								
 				}
 			},							
 			{
@@ -219,7 +222,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {1,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,-1}},								
 				}
 			},										
 			{
@@ -228,10 +231,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-2,1}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-1,1}},								
 				}
 			},	
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -252,7 +256,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 30, 
+			emissions_per_minute = { pollution  = 30, },
 		},
 		energy_usage = "1500kW",						
 		ingredient_count = 4,
@@ -295,7 +299,7 @@ data:extend({
 			type = "burner",
 			effectivity = 0.8,
 			fuel_inventory_size = 2,			
-			emissions_per_minute = 17.6,
+			emissions_per_minute = { pollution  = 17.6, },
 			smoke = {
 				{ name = "smoke", position = {-0.75, -1.25}, height = 1, deviation = {0.1, 0.1}, frequency = 75 },				
 			}			
@@ -326,14 +330,13 @@ data:extend({
 
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0,-2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {0,-1}},								
 				}
 			},							
 			{
@@ -342,7 +345,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {2,0}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,0}},								
 				}
 			},										
 			{
@@ -351,11 +354,11 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, 2}},								
+					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},								
 				}
 			},			
 		},
-		
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		animation =
 		{			
 			filename = "__yi_engines_F2__/graphics/entity/dna_splicer_sheet.png",			
@@ -373,7 +376,7 @@ data:extend({
 		{
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 8
+			emissions_per_minute = { pollution  = 8},
 		},
 		energy_usage = "800kW",
 		ingredient_count = 6,				

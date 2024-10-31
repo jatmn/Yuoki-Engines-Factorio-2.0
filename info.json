@@ -9,7 +9,7 @@
 "homepage": "https://github.com/jatmn/Yuoki-Engines-Factorio-2.0",
 "factorio_version": "2.0",
 "dependencies": ["base >= 2.0.0",
- "Yuoki_F2 >= 1.2.0"
+ "Yuoki_F2 >= 1.2.1"
 ],
 "description": "Yuoki Industris - Engines (Addon) for Factorio 2.0 \n additional/alternate power generation, MF, agriculture in a different way \n \n Original Creator: YuokiTani"
 }

@@ -20,9 +20,9 @@ data:extend({
 				height = 2,
 				base_level = -1,
 				pipe_connections = {
-					{type = "input", direction = defines.direction.north, position = {-1, 3}},
-					{type = "input", direction = defines.direction.north, position = { 0, 3}},
-					{type = "input", direction = defines.direction.north, position = { 1, 3}}
+					{flow_direction = "input", direction = defines.direction.north, position = {-1, 2}},
+					{flow_direction = "input", direction = defines.direction.north, position = { 0, 2}},
+					{flow_direction = "input", direction = defines.direction.north, position = { 1, 2}}
 				},
 				filter = "water"
 			},
@@ -32,9 +32,9 @@ data:extend({
 				base_area = 5,
 				height = 2,
 				pipe_connections = {
-					{type = "output", direction = defines.direction.north, position = {-1, -3}},
-					{type = "output", direction = defines.direction.north, position = { 0, -3}},
-					{type = "output", direction = defines.direction.north, position = { 1, -3}}
+					{flow_direction = "output", direction = defines.direction.north, position = {-1, -2}},
+					{flow_direction = "output", direction = defines.direction.north, position = { 0, -2}},
+					{flow_direction = "output", direction = defines.direction.north, position = { 1, -2}}
 				},			
 			},
 		},
@@ -43,10 +43,10 @@ data:extend({
 		crafting_speed = 1,
 		energy_source = {
 			type = "burner",
-			fuel_category = "yfusion",
+			fuel_categories = {"yfusion"},
 			effectivity = 1,
 			fuel_inventory_size = 1,
-			emissions_per_minute = 250,
+			emissions_per_minute = { pollution  = 250,},
 			smoke = {{	name = "smoke",deviation = {0.1, 0.1},frequency = 0.1,}}
 		},		
 		allowed_effects = {"pollution"},
@@ -83,7 +83,7 @@ data:extend({
 	-- Rezepte	
 	{
 		type = "recipe",
-		name = "ye_rheins_HT_recipe",
+		name = "ye_rheins_HT",
 		category = "yrcat_rheinsberg", -- rheinsberg
 		enabled = true,
 		energy_required = 1.00,
@@ -102,7 +102,7 @@ data:extend({
 
 	{
 		type = "recipe",
-		name = "ye_rheins_MT_recipe",
+		name = "ye_rheins_MT",
 		category = "yrcat_rheinsberg", -- rheinsberg
 		enabled = true,
 		energy_required = 1.00,
@@ -121,7 +121,7 @@ data:extend({
 
 	{
 		type = "recipe",
-		name = "ye_rheins_LT_recipe",
+		name = "ye_rheins_LT",
 		category = "yrcat_rheinsberg", -- rheinsberg
 		enabled = true,
 		energy_required = 1.00,

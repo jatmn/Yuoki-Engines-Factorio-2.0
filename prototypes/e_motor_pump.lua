@@ -19,7 +19,7 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0.5, -1.3}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0.5, -0.5}},										
 				}
 			},										
 		},
@@ -45,7 +45,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 3.5, 
+			emissions_per_minute = { pollution  = 3.5, }, 
 		},
 		energy_usage = "350kW",						
 		ingredient_count = 1,
@@ -71,8 +71,8 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {0, -2}},										
-					{type="output", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, -1}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
 				}
 			},										
 		},
@@ -98,7 +98,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 3.5, 
+			emissions_per_minute = { pollution  = 3.5, },
 		},
 		energy_usage = "350kW",						
 		ingredient_count = 1,
@@ -128,7 +128,7 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {1.5, 0.5}},										
+					{flow_direction="output", direction = defines.direction.north, position = {0.5, 0.5}},										
 				}
 			},										
 			{
@@ -137,7 +137,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {-0.5, -1.5}},								
+					{flow_direction="input", direction = defines.direction.north, position = {-0.5, -0.5}},								
 				}
 			},							
 		},
@@ -161,7 +161,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 0.01, 
+			emissions_per_minute = { pollution  = 0.01, },
 		},
 		energy_usage = "100W",						
 		ingredient_count = 1,
@@ -187,9 +187,9 @@ data:extend({
 				base_area = 2,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = { 2, 0}},										
-					{type="output", direction = defines.direction.north, position = {-2, 0}},										
-					{type="output", direction = defines.direction.north, position = { 0, 2}},										
+					{flow_direction="output", direction = defines.direction.north, position = { 1, 0}},										
+					{flow_direction="output", direction = defines.direction.north, position = {-1, 0}},										
+					{flow_direction="output", direction = defines.direction.north, position = { 0, 1}},										
 				}
 			},										
 			{
@@ -198,7 +198,7 @@ data:extend({
 				base_area = 2,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0, -2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {0, -1}},								
 				}
 			},							
 		},
@@ -221,7 +221,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 0.5, 
+			emissions_per_minute = { pollution  = 0.5, },
 		},
 		energy_usage = "50kW",						
 		ingredient_count = 1,

@@ -18,7 +18,7 @@ data:extend({
 				base_area = 150,
 				base_level = 0,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="input", direction = defines.direction.north, position = {0, 1}},										
 				}
 			},					
 			{
@@ -27,8 +27,8 @@ data:extend({
 				base_area = 2,
 				base_level = 0,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = { 2, 0}},										
-					{type="input", direction = defines.direction.north, position = {-2, 0}},										
+					{flow_direction="input", direction = defines.direction.north, position = { 1, 0}},										
+					{flow_direction="input", direction = defines.direction.north, position = {-1, 0}},										
 				}
 			},								
 		},
@@ -58,7 +58,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = -2500, 
+			emissions_per_minute = { pollution  = -2500,}, 
 		},
 		energy_usage = "1250kW",						
 		ingredient_count = 1,
@@ -90,7 +90,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 440, 
+			emissions_per_minute = { pollution  = 440,}, 
 		},
 		energy_usage = "208MW",						
 		ingredient_count = 2,
@@ -112,9 +112,9 @@ data:extend({
 		{
 			filename = "__yi_engines_F2__/graphics/entity/trade_node_sheet.png", width = 192, height = 192, scale = 0.5, shift = {0.5, -0.5}, frame_count = 9, line_length = 3, animation_speed=0.5, 							
 		},		
-		crafting_categories = {"yuoki-stargate-recipe"},
+		crafting_categories = {"yuoki-stargate"},
 		crafting_speed = 0.5,		
-		energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = 16,},
+		energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution  = 16, },},
 		energy_usage = "7.5MW",						
 		ingredient_count = 4,
 		order="a2",
@@ -132,14 +132,14 @@ data:extend({
 		corpse = "medium-remnants",		
 		fluid_boxes =
 		{
-			off_when_no_fluid_recipe = true,
+
 			{
 				volume = 200,
 				production_type = "input",
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {1,2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {1,1}},								
 				}
 			},							
 			{
@@ -148,7 +148,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", direction = defines.direction.north, position = {0,2}},								
+					{flow_direction="input", direction = defines.direction.north, position = {0,1}},								
 				}
 			},										
 			{
@@ -157,10 +157,11 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", direction = defines.direction.north, position = {2,0}},								
+					{flow_direction="output", direction = defines.direction.north, position = {1,0}},								
 				}
 			},	
 		},
+		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -177,7 +178,7 @@ data:extend({
 		energy_source = {		
 			type = "electric",
 			usage_priority = "secondary-input",
-			emissions_per_minute = 10, 
+			emissions_per_minute = { pollution  = 10,}, 
 		},
 		energy_usage = "500kW",						
 		ingredient_count = 4,

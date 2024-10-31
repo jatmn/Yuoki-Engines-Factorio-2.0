@@ -2,7 +2,7 @@ data:extend({
 
 	{
 		type = "recipe",
-		name = "ye_trade_node_recipe",
+		name = "ye_trade_node",
 		ingredients = {
 			{type="item", name="y-stargate", amount=1},
 			{type="item", name="y-bluegear", amount=2},
@@ -20,7 +20,7 @@ data:extend({
 	-- Solid Fuel Engine	
 	{
 		type = "recipe",
-		name = "y-sfe-recipe",
+		name = "y-sfe",
 		ingredients = {
 			{type="item", name="y-basic-t1-mf", amount=3},
 			{type="item", name="y-bluegear", amount=2},
@@ -35,7 +35,7 @@ data:extend({
 	-- Fluid Fuel Engine	
 	{
 		type = "recipe",
-		name = "y-ffe-recipe",
+		name = "y-ffe",
 		ingredients = {
 			{type="item", name="y-basic-t2-mf", amount=2},
 			{type="item", name="y-bluegear", amount=6},
@@ -50,7 +50,7 @@ data:extend({
 	-- Gas Fuel Engine	
 	{
 		type = "recipe",
-		name = "ye_gasmotor_recipe",
+		name = "ye_gasmotor",
 		ingredients = {
 			{type="item", name="y-basic-t2-mf", amount=2},
 			{type="item", name="yie_hard_metals", amount=5},
@@ -66,7 +66,7 @@ data:extend({
 	-- waste condense 
 	{
 		type = "recipe",
-		name = "y-waste-condense-recipe",
+		name = "y-waste-condense",
 		--category = "yrcat-eg4",				
 		enabled = true,
 		energy_required = 1,

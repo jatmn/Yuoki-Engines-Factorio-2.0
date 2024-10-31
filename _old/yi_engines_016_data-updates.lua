@@ -4,11 +4,11 @@ data.raw["item-subgroup"]["yie_fluid_handle"].order="4"
 -- Tweaking both order and values of the following recipes
 
 
-if data.raw.recipe["ye_slurry2ethanol_recipe"] then
-	data.raw.recipe["ye_slurry2ethanol_recipe"] = nil
+if data.raw.recipe["ye_slurry2ethanol"] then
+	data.raw.recipe["ye_slurry2ethanol"] = nil
 	local new_recipe = {
 		type = "recipe",
-		name = "ye_slurry2rawsyngas3_recipe",
+		name = "ye_slurry2rawsyngas3",
 		category = "chemistry", -- 
 		enabled = true,
 		energy_required = 90.00,
@@ -19,7 +19,7 @@ if data.raw.recipe["ye_slurry2ethanol_recipe"] then
 		results = {
 			{ type = "fluid", name = "y_syngas_raw", amount = 30.0, },
 		},
-		icon = "__Yuoki__/graphics/icons/obs/h2o_c_icon.png",
+		icon = "__Yuoki_F2__/graphics/icons/obs/h2o_c_icon.png",
 		subgroup = "y-fluid",
 		order = "c5"
 	}
@@ -27,12 +27,12 @@ if data.raw.recipe["ye_slurry2ethanol_recipe"] then
 end
 
 
-if data.raw.recipe["ye_biofuel_recipe"] then
-	data.raw.recipe["ye_biofuel_recipe"] = nil
+if data.raw.recipe["ye_biofuel"] then
+	data.raw.recipe["ye_biofuel"] = nil
 	local new_recipe = {
 		type = "recipe",
-		name = "ye_granulate_rabio_recipe",
-		category = "y-crushing-recipe", -- 
+		name = "ye_granulate_rabio",
+		category = "y-crushing", -- 
 		enabled = true,
 		energy_required = 1.00,
 		ingredients = {
@@ -41,7 +41,7 @@ if data.raw.recipe["ye_biofuel_recipe"] then
 		results = {
 			{ type = "item", name = "y_organic_dust", amount = 72.0, },
 		},
-		icon = "__Yuoki__/graphics/icons/sawdust_32.png",
+		icon = "__Yuoki_F2__/graphics/icons/sawdust_32.png",
 		subgroup = "y_refine_raws",
 		order = "5"
 	}
@@ -51,13 +51,13 @@ end
 -- Tweaking the order of the following recipes
 --data.raw.recipe["ye_granulate_corn_recipe"].order = "1"
 --data.raw.recipe["ye_granulate_vuger_recipe"].order = "2"
-data.raw.recipe["y_granulate_wood_recipe"].order = "3"
+data.raw.recipe["y_granulate_wood"].order = "3"
 --data.raw.recipe["ye_granulate_trifitan_recipe"].order = "4"
 
 -- Add the following recipes to productivity modules limitation table.
 for index, value in pairs(data.raw.module) do
 	if value.name:find("productivity%-module") and value.limitation then
-		table.insert(value.limitation, "ye_slurry2rawsyngas3_recipe")
+		table.insert(value.limitation, "ye_slurry2rawsyngas3")
 	end
 end
 
