@@ -20,9 +20,9 @@ data:extend({
 				height = 2,
 				base_level = -1,
 				pipe_connections = {
-					{type = "input", position = {-1, 3}},
-					{type = "input", position = { 0, 3}},
-					{type = "input", position = { 1, 3}}
+					{type = "input", direction = defines.direction.north, position = {-1, 3}},
+					{type = "input", direction = defines.direction.north, position = { 0, 3}},
+					{type = "input", direction = defines.direction.north, position = { 1, 3}}
 				},
 				filter = "water"
 			},
@@ -32,9 +32,9 @@ data:extend({
 				base_area = 5,
 				height = 2,
 				pipe_connections = {
-					{type = "output", position = {-1, -3}},
-					{type = "output", position = { 0, -3}},
-					{type = "output", position = { 1, -3}}
+					{type = "output", direction = defines.direction.north, position = {-1, -3}},
+					{type = "output", direction = defines.direction.north, position = { 0, -3}},
+					{type = "output", direction = defines.direction.north, position = { 1, -3}}
 				},			
 			},
 		},

@@ -19,7 +19,7 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {0.5, -1.3}},										
+					{type="output", direction = defines.direction.north, position = {0.5, -1.3}},										
 				}
 			},										
 		},
@@ -71,8 +71,8 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {0, -2}},										
-					{type="output", position = {0, 2}},										
+					{type="output", direction = defines.direction.north, position = {0, -2}},										
+					{type="output", direction = defines.direction.north, position = {0, 2}},										
 				}
 			},										
 		},
@@ -128,7 +128,7 @@ data:extend({
 				base_area = 1,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {1.5, 0.5}},										
+					{type="output", direction = defines.direction.north, position = {1.5, 0.5}},										
 				}
 			},										
 			{
@@ -137,7 +137,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", position = {-0.5, -1.5}},								
+					{type="input", direction = defines.direction.north, position = {-0.5, -1.5}},								
 				}
 			},							
 		},
@@ -187,9 +187,9 @@ data:extend({
 				base_area = 2,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = { 2, 0}},										
-					{type="output", position = {-2, 0}},										
-					{type="output", position = { 0, 2}},										
+					{type="output", direction = defines.direction.north, position = { 2, 0}},										
+					{type="output", direction = defines.direction.north, position = {-2, 0}},										
+					{type="output", direction = defines.direction.north, position = { 0, 2}},										
 				}
 			},										
 			{
@@ -198,7 +198,7 @@ data:extend({
 				base_area = 2,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", position = {0, -2}},								
+					{type="input", direction = defines.direction.north, position = {0, -2}},								
 				}
 			},							
 		},

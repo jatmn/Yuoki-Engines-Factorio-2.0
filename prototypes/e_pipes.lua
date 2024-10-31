@@ -426,10 +426,10 @@ data:extend(
 			base_area = 0.75,
 			pipe_connections =
 			{				
-				{ position = {0, -1} },
-				{ position = {1, 0} },
-				{ position = {0, 1} },
-				{ position = {-1, 0} }
+				{ direction = defines.direction.north, position = {0, -1} },
+				{ direction = defines.direction.north, position = {1, 0} },
+				{ direction = defines.direction.north, position = {0, 1} },
+				{ direction = defines.direction.north, position = {-1, 0} }
 			},
 		},
 		pictures = mftrans_w(),
@@ -454,10 +454,10 @@ data:extend(
 			base_area = 0.75,
 			pipe_connections =
 			{				
-				{ position = {0, -1} },
-				{ position = {1, 0} },
-				{ position = {0, 1} },
-				{ position = {-1, 0} }
+				{ direction = defines.direction.north, position = {0, -1} },
+				{ direction = defines.direction.north, position = {1, 0} },
+				{ direction = defines.direction.north, position = {0, 1} },
+				{ direction = defines.direction.north, position = {-1, 0} }
 			},
 		},
 		pictures = mftrans_red(),
@@ -484,9 +484,9 @@ data:extend(
 			--pipe_covers = pipecoverspictures(),
 			pipe_connections =
 			{
-				{ position = {0, -1} },
+				{ direction = defines.direction.north, position = {0, -1} },
 				{
-					position = {0, 1},
+					 direction = defines.direction.north, position = {0, 1},
 					max_underground_distance = 25
 				}
 			},
@@ -549,9 +549,9 @@ data:extend(
 			--pipe_covers = pipecoverspictures(),
 			pipe_connections =
 			{
-				{ position = {0, -1} },
+				{ direction = defines.direction.north, position = {0, -1} },
 				{
-					position = {0, 1},
+					 direction = defines.direction.north, position = {0, 1},
 					max_underground_distance = 25
 				}
 			},

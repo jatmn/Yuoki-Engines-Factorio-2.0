@@ -46,8 +46,8 @@ data:extend({
 				base_area = 2,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {0,-3}},										
-					{type="output", position = {0, 3}},										
+					{type="output", direction = defines.direction.north, position = {0,-3}},										
+					{type="output", direction = defines.direction.north, position = {0, 3}},										
 				}
 			},										
 		},

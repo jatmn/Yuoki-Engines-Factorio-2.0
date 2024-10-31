@@ -19,10 +19,10 @@ data:extend(
 				base_area = 100,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = { 0, 3}},					
-					{type="output", position = { 0,-3}},						
-					{type="output", position = { 3, 0}},					
-					{type="output", position = {-3, 0}},											
+					{type="output", direction = defines.direction.north, position = { 0, 3}},					
+					{type="output", direction = defines.direction.north, position = { 0,-3}},						
+					{type="output", direction = defines.direction.north, position = { 3, 0}},					
+					{type="output", direction = defines.direction.north, position = {-3, 0}},											
 				}
 			},					
 		},

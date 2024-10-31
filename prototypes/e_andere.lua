@@ -18,7 +18,7 @@ data:extend({
 				base_area = 150,
 				base_level = 0,
 				pipe_connections = {
-					{type="input", position = {0, 2}},										
+					{type="input", direction = defines.direction.north, position = {0, 2}},										
 				}
 			},					
 			{
@@ -27,8 +27,8 @@ data:extend({
 				base_area = 2,
 				base_level = 0,
 				pipe_connections = {
-					{type="input", position = { 2, 0}},										
-					{type="input", position = {-2, 0}},										
+					{type="input", direction = defines.direction.north, position = { 2, 0}},										
+					{type="input", direction = defines.direction.north, position = {-2, 0}},										
 				}
 			},								
 		},
@@ -139,7 +139,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", position = {1,2}},								
+					{type="input", direction = defines.direction.north, position = {1,2}},								
 				}
 			},							
 			{
@@ -148,7 +148,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{type="input", position = {0,2}},								
+					{type="input", direction = defines.direction.north, position = {0,2}},								
 				}
 			},										
 			{
@@ -157,7 +157,7 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{type="output", position = {2,0}},								
+					{type="output", direction = defines.direction.north, position = {2,0}},								
 				}
 			},	
 		},
