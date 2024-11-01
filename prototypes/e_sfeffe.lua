@@ -20,7 +20,7 @@ data:extend(
 				base_area = 2,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0, 1}},										
 				}
 			},					
 			{
@@ -47,41 +47,68 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		animation =
+		graphics_set =
 		{
-			north= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-nord.png",			
-				width = 112,
-				height = 128,
-				shift = {0.2, -0.1},
-				frame_count = 12,
-				line_length = 12,			
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-nord.png",			
+						width = 112,
+						height = 128,
+						shift = {0.2, -0.1},
+						frame_count = 12,
+						line_length = 12,			
+					},
+				}
 			},
-			east= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-west.png",			
-				width = 128,
-				height = 112,
-				shift = {0.25, 0.2},
-				frame_count = 12,
-				line_length = 12,			
+			east =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-west.png",			
+						width = 128,
+						height = 112,
+						shift = {0.25, 0.2},
+						frame_count = 12,
+						line_length = 12,			
+					},
+				}
 			},
-			south= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-sued.png",			
-				width = 112,
-				height = 128,
-				shift = {0.2, 0.3},
-				frame_count = 12,
-				line_length = 12,			
+			south =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-sued.png",			
+						width = 112,
+						height = 128,
+						shift = {0.2, 0.3},
+						frame_count = 12,
+						line_length = 12,			
+					},
+				}
 			},
-			west= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-ost.png",			
-				width = 128,
-				height = 112,
-				shift = {0.25, 0.2},
-				frame_count = 12,
-				line_length = 12,			
-			},			
-		},		
+			west =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-ost.png",			
+						width = 128,
+						height = 112,
+						shift = {0.25, 0.2},
+						frame_count = 12,
+						line_length = 12,			
+					},	
+				}
+			},
+		  }
+		},
 		crafting_categories = {"yrcat-mf1a"},
 		crafting_speed = 1,
 		energy_source =
@@ -123,7 +150,7 @@ data:extend(
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0, 1}},										
 				}
 			},					
 			{
@@ -157,41 +184,68 @@ data:extend(
 		collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-		animation =
+
+		graphics_set =
 		{
-			north= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-sa.png",			
-				width = 128,
-				height = 112,
-				shift = {0.4, -0.1},
-				frame_count = 15,
-				line_length = 15,			
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-sa.png",			
+						width = 128,
+						height = 112,
+						shift = {0.4, -0.1},
+						frame_count = 15,
+						line_length = 15,			
+					},
+				}
 			},
-			east= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-wa.png",			
-				width = 128,
-				height = 128,
-				shift = {0.15, -0.2},
-				frame_count = 15,
-				line_length = 15,			
+			east =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-wa.png",			
+						width = 128,
+						height = 128,
+						shift = {0.15, -0.2},
+						frame_count = 15,
+						line_length = 15,			
+					},
+				}
 			},
-			south= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-na.png",			
-				width = 128,
-				height = 128,
-				shift = {0.4, 0.0},
-				frame_count = 15,
-				line_length = 15,			
+			south =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-na.png",			
+						width = 128,
+						height = 128,
+						shift = {0.4, 0.0},
+						frame_count = 15,
+						line_length = 15,			
+					},
+				}
 			},
-			west= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-oa.png",			
-				width = 128,
-				height = 112,
-				shift = {0.25, 0.0},
-				frame_count = 15,
-				line_length = 15,			
-			},					
-			animation_speed = 0.8,
+			west =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-oa.png",			
+						width = 128,
+						height = 112,
+						shift = {0.25, 0.0},
+						frame_count = 15,
+						line_length = 15,			
+					},		
+				}
+			},
+		  }
 		},
 		crafting_categories = {"yrcat-mf1b"},
 		crafting_speed = 1,
@@ -234,7 +288,7 @@ data:extend(
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {0, 1}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0, 1}},										
 				}
 			},					
 			{
@@ -268,45 +322,71 @@ data:extend(
 		collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-		animation =
+		graphics_set =
 		{
-			north= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/gms_sheet.png",			
-				width = 256,
-				height = 256,
-				scale = 0.5,
-				shift = {0.4, -0.1},
-				frame_count = 16,
-				line_length = 4,			
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/gms_sheet.png",			
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.4, -0.1},
+						frame_count = 16,
+						line_length = 4,			
+					},
+				}
 			},
-			east= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/gmw_sheet.png",			
-				width = 256,
-				height = 256,
-				scale = 0.5,
-				shift = {0.15, -0.2},
-				frame_count = 16,
-				line_length = 4,			
+			east =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/gmw_sheet.png",			
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.15, -0.2},
+						frame_count = 16,
+						line_length = 4,			
+					},
+				}
 			},
-			south= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/gmn_sheet.png",			
-				width = 256,
-				height = 256,
-				scale = 0.5,
-				shift = {0.4, 0.0},
-				frame_count = 16,
-				line_length = 4,			
+			south =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/gmn_sheet.png",			
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.4, 0.0},
+						frame_count = 16,
+						line_length = 4,			
+					},
+				}
 			},
-			west= {
-				filename = "__yi_engines_F2__/graphics/entity/energy2/gme_sheet.png",			
-				width = 256,
-				height = 256,
-				scale = 0.5,
-				shift = {0.25, 0.0},
-				frame_count = 16,
-				line_length = 4,			
-			},					
-			animation_speed = 0.8,
+			west =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/gme_sheet.png",			
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.25, 0.0},
+						frame_count = 16,
+						line_length = 4,			
+					},			
+				}
+			},
+		  }
 		},
 		crafting_categories = {"yrcat-mf1gm"},
 		crafting_speed = 1,
@@ -341,22 +421,30 @@ data:extend(
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {0.5, 0.5}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0.5, 0.5}},										
 				}
 			},					
 		},
 		collision_box = {{-0.7, -0.8}, {0.7, 0.8}},
 		selection_box = {{-1.0, -1.0}, {1.0, 1.0}},
 		fast_replaceable_group = "assembling-machine",
-		animation =
+		graphics_set =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/energy2/stir-sheet.png",			
-			width = 96,
-			height = 96,
-			shift = {0.6, -0.25},
-			frame_count = 18,
-			line_length = 18,			
-		},		
+		  animation =
+		  {
+			layers =
+			{
+				{
+					filename = "__yi_engines_F2__/graphics/entity/energy2/stir-sheet.png",			
+					width = 96,
+					height = 96,
+					shift = {0.6, -0.25},
+					frame_count = 18,
+					line_length = 18,	
+				},	
+			}
+		  }
+		},
 		crafting_categories = {"yrcat-mf1c"},
 		crafting_speed = 1,
 		energy_source =

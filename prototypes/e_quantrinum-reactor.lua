@@ -19,25 +19,33 @@ data:extend(
 				base_area = 100,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = { 0, 2}},					
+					{flow_direction="output", direction = defines.direction.south, position = { 0, 2}},					
 					{flow_direction="output", direction = defines.direction.north, position = { 0,-2}},						
-					{flow_direction="output", direction = defines.direction.north, position = { 2, 0}},					
-					{flow_direction="output", direction = defines.direction.north, position = {-2, 0}},											
+					{flow_direction="output", direction = defines.direction.east, position = { 2, 0}},					
+					{flow_direction="output", direction = defines.direction.west, position = {-2, 0}},											
 				}
 			},					
 		},
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
-		animation =
+		graphics_set =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/energy2/qr-anim.png",			
-			width = 200,
-			height = 180,
-			shift = {0.35, 0.0},
-			frame_count = 18,
-			line_length = 9,
-			animation_speed = 0.75,
+		  animation =
+		  {
+			layers =
+			{
+				{
+					filename = "__yi_engines_F2__/graphics/entity/energy2/qr-anim.png",			
+					width = 200,
+					height = 180,
+					shift = {0.35, 0.0},
+					frame_count = 18,
+					line_length = 9,
+					animation_speed = 0.75,	
+				},	
+			}
+		  }
 		},
 		crafting_categories = {"yrcat-mf1q"},
 		crafting_speed = 1,

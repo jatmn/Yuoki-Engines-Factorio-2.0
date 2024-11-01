@@ -18,7 +18,7 @@ data:extend({
 				base_area = 150,
 				base_level = 0,
 				pipe_connections = {
-					{flow_direction="input", direction = defines.direction.north, position = {0, 1}},										
+					{flow_direction="input", direction = defines.direction.south, position = {0, 1}},										
 				}
 			},					
 			{
@@ -27,8 +27,8 @@ data:extend({
 				base_area = 2,
 				base_level = 0,
 				pipe_connections = {
-					{flow_direction="input", direction = defines.direction.north, position = { 1, 0}},										
-					{flow_direction="input", direction = defines.direction.north, position = {-1, 0}},										
+					{flow_direction="input", direction = defines.direction.east, position = { 1, 0}},										
+					{flow_direction="input", direction = defines.direction.west, position = {-1, 0}},										
 				}
 			},								
 		},
@@ -42,16 +42,25 @@ data:extend({
 			height = 128,
 			shift = {0.825, 0.0}
 		},		
-		animation =
+
+		graphics_set =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/energy2/ah-a.png",			
-			width = 130,
-			height = 128,
-			shift = {0.825, 0.0},
-			frame_count = 24,
-			line_length = 12,	
-			animation_speed = 1.5,	
-		},		
+		  animation =
+		  {
+			layers =
+			{
+				{
+					filename = "__yi_engines_F2__/graphics/entity/energy2/ah-a.png",			
+					width = 130,
+					height = 128,
+					shift = {0.825, 0.0},
+					frame_count = 24,
+					line_length = 12,	
+					animation_speed = 1.5,		
+				},	
+			}
+		  }
+		},
 		crafting_categories = {"yrcat-eg4"},
 		crafting_speed = 2.0,
 		
@@ -77,13 +86,41 @@ data:extend({
 		corpse = "medium-remnants",		
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},		
-		animation =
+
+		graphics_set =
 		{
-			south = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
-			west  = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,					
-			north = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
-			east  = { filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }	,							
-		},		
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }
+				}
+			},
+			east =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }
+				}
+			},
+			south =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }
+				}
+			},
+			west =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/science_gen.png", width = 128, height = 128, shift = {0.3, -0}, frame_count = 16, line_length = 16, animation_speed=1.0, }
+				}
+			},
+		  }
+		},
 		crafting_categories = {"yrcat_science"},
 		crafting_speed = 1.0,
 		
@@ -139,7 +176,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{flow_direction="input", direction = defines.direction.north, position = {1,1}},								
+					{flow_direction="input", direction = defines.direction.south, position = {1,1}},								
 				}
 			},							
 			{
@@ -148,7 +185,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{flow_direction="input", direction = defines.direction.north, position = {0,1}},								
+					{flow_direction="input", direction = defines.direction.south, position = {0,1}},								
 				}
 			},										
 			{
@@ -157,21 +194,48 @@ data:extend({
 				base_area = 5,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {1,0}},								
+					{flow_direction="output", direction = defines.direction.east, position = {1,0}},								
 				}
 			},	
 		},
 		fluid_boxes_off_when_no_fluid_recipe = true,
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-		fast_replaceable_group = "assembling-machine",
-		animation =
+		fast_replaceable_group = "assembling-machine",	
+		graphics_set =
 		{
-			south = { filename = "__yi_engines_F2__/graphics/entity/can-n.png", width = 128, height = 128, shift = {0.5, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
-			west  = { filename = "__yi_engines_F2__/graphics/entity/can-e.png", width = 128, height = 128, shift = {0.25, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,					
-			north = { filename = "__yi_engines_F2__/graphics/entity/can-s.png", width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
-			east  = { filename = "__yi_engines_F2__/graphics/entity/can-w.png", width = 128, height = 128, shift = {0.5, -0.3125}, frame_count = 16, line_length = 4, animation_speed=1.0, }	,							
-		},		
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/can-s.png", width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 16, line_length = 4, animation_speed=1.0, }
+				}
+			},
+			east =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/can-w.png", width = 128, height = 128, shift = {0.5, -0.3125}, frame_count = 16, line_length = 4, animation_speed=1.0, }
+				}
+			},
+			south =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/can-n.png", width = 128, height = 128, shift = {0.5, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }
+				}
+			},
+			west =
+			{
+				layers =
+				{
+					{ filename = "__yi_engines_F2__/graphics/entity/can-e.png", width = 128, height = 128, shift = {0.25, -0.375}, frame_count = 16, line_length = 4, animation_speed=1.0, }
+				}
+			},
+		  }
+		},
 		crafting_categories = {"yrcat_fluidhandle", "crafting-with-fluid"},
 		crafting_speed = 1.75,
 		

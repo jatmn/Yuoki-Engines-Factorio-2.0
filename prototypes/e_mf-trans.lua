@@ -26,13 +26,13 @@ data:extend({
 				base_area = 48,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = { -2, 0}},										
+					{flow_direction="output", direction = defines.direction.west, position = { -2, 0}},										
 					--{type="output", position = { -3, 1}},										
-					{flow_direction="output", direction = defines.direction.north, position = { -2, 2}},										
+					{flow_direction="output", direction = defines.direction.west, position = { -2, 2}},										
 					--{type="output", position = { -3, 3}},										
-					{flow_direction="output", direction = defines.direction.north, position = {  2, 0}},										
+					{flow_direction="output", direction = defines.direction.east, position = {  2, 0}},										
 					--{type="output", position = {  3, 1}},										
-					{flow_direction="output", direction = defines.direction.north, position = {  2, 2}},										
+					{flow_direction="output", direction = defines.direction.east, position = {  2, 2}},										
 					--{type="output", position = {  3, 3}},										
 				}
 			},												
@@ -40,50 +40,77 @@ data:extend({
 		collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		--fast_replaceable_group = "assembling-machine",
-		animation =
+	
+		graphics_set =
 		{
-			north ={
-				filename = "__yi_engines_F2__/graphics/entity/heater55_s.png",			
-				width = 384,
-				height = 384,
-				shift = {0.5, 0.5},
-				frame_count = 1,
-				line_length = 1,	
-				animation_speed = 0.8,	
-				scale = 0.5,
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/heater55_s.png",			
+						width = 384,
+						height = 384,
+						shift = {0.5, 0.5},
+						frame_count = 1,
+						line_length = 1,	
+						animation_speed = 0.8,	
+						scale = 0.5,
+					},
+				}
 			},
-			south ={
-				filename = "__yi_engines_F2__/graphics/entity/heater55_n.png",			
-				width = 384,
-				height = 384,
-				shift = {0.5, -0.5},
-				frame_count = 1,
-				line_length = 1,	
-				animation_speed = 0.8,	
-				scale = 0.5,
+			east =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/heater55_e.png",			
+						width = 384,
+						height = 384,
+						shift = {0.5, -0.5},
+						frame_count = 1,
+						line_length = 1,	
+						animation_speed = 0.8,	
+						scale = 0.5,
+					},
+				}
 			},
-			east ={
-				filename = "__yi_engines_F2__/graphics/entity/heater55_e.png",			
-				width = 384,
-				height = 384,
-				shift = {0.5, -0.5},
-				frame_count = 1,
-				line_length = 1,	
-				animation_speed = 0.8,	
-				scale = 0.5,
+			south =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/heater55_n.png",			
+						width = 384,
+						height = 384,
+						shift = {0.5, -0.5},
+						frame_count = 1,
+						line_length = 1,	
+						animation_speed = 0.8,	
+						scale = 0.5,
+					},
+				}
 			},
-			west ={
-				filename = "__yi_engines_F2__/graphics/entity/heater55_w.png",			
-				width = 384,
-				height = 384,
-				shift = {0.5, -0.5},
-				frame_count = 1,
-				line_length = 1,	
-				animation_speed = 0.8,	
-				scale = 0.5,
-			},					
-		},		
-		
+			west =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/heater55_w.png",			
+						width = 384,
+						height = 384,
+						shift = {0.5, -0.5},
+						frame_count = 1,
+						line_length = 1,	
+						animation_speed = 0.8,	
+						scale = 0.5,
+					},
+				}
+			},
+		  }
+		},
 		crafting_categories = {"yrcat-heater"},
 		crafting_speed = 1.0,				
 		energy_source =
@@ -141,7 +168,7 @@ data:extend({
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = {0, 3}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0, 3}},										
 					
 				}
 			},		
@@ -152,54 +179,81 @@ data:extend({
 				base_area = 3,
 				base_level = 1,
 				pipe_connections = {
-					{flow_direction="output", direction = defines.direction.north, position = { 3, 2}},	
-					{flow_direction="output", direction = defines.direction.north, position = {-3, 2}},	
+					{flow_direction="output", direction = defines.direction.east, position = { 3, 2}},	
+					{flow_direction="output", direction = defines.direction.west, position = {-3, 2}},	
 				}
 			},							
 		},
 		collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
 		selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
 		--fast_replaceable_group = "assembling-machine",
-		
-		animation = {
-			north ={
-				filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
-				width = 256,
-				height = 256,
-				shift = {0.5, -0.5},
-				frame_count = 16,
-				line_length = 4,	
-				animation_speed = 1,	
+		graphics_set =
+		{
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						line_length = 4,	
+						animation_speed = 1,	
+					},
+				}
 			},
-			south ={
-				filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
-				width = 256,
-				height = 256,
-				shift = {0.5, -0.5},
-				frame_count = 16,
-				line_length = 4,	
-				animation_speed = 1,	
+			east =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						line_length = 4,	
+						animation_speed = 1,	
+					},
+				}
 			},
-			east ={
-				filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
-				width = 256,
-				height = 256,
-				shift = {0.5, -0.5},
-				frame_count = 16,
-				line_length = 4,	
-				animation_speed = 1,	
+			south =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						line_length = 4,	
+						animation_speed = 1,	
+					},
+				}
 			},
-			west ={
-				filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
-				width = 256,
-				height = 256,
-				shift = {0.5, -0.5},
-				frame_count = 16,
-				line_length = 4,	
-				animation_speed = 1,	
-			},					
-		},	
-		
+			west =
+			{
+				layers =
+				{
+					{
+						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						line_length = 4,	
+						animation_speed = 1,	
+					},
+				}
+			},
+		  }
+		},
+	
 		crafting_categories = {"yrcat_turbine"},
 		crafting_speed = 1.0,
 		
@@ -236,9 +290,9 @@ data:extend({
 			base_level = -1,			
 			pipe_connections =
 			{
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0,  3.0} },
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 1,  3.0} },
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = {-1,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.south,  position = { 0,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.south,  position = { 1,  3.0} },
+				{ flow_direction = "input-output", direction = defines.direction.south,  position = {-1,  3.0} },
 				
 				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0, -3.0} },
 				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 1, -3.0} },
@@ -296,10 +350,10 @@ data:extend({
 			base_level = -1,			
 			pipe_connections =
 			{
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0,  3.1} },
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 3,  0} },				
+				{ flow_direction = "input-output", direction = defines.direction.south,  position = { 0,  3.1} },
+				{ flow_direction = "input-output", direction = defines.direction.east,  position = { 3,  0} },				
 				{ flow_direction = "input-output", direction = defines.direction.north,  position = { 0, -3.1} },
-				{ flow_direction = "input-output", direction = defines.direction.north,  position = {-3,  0} },
+				{ flow_direction = "input-output", direction = defines.direction.west,  position = {-3,  0} },
 			},
 			production_type = "input-output",
 			filter = "steam",

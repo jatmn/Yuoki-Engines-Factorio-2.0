@@ -20,9 +20,9 @@ data:extend({
 				height = 2,
 				base_level = -1,
 				pipe_connections = {
-					{flow_direction = "input", direction = defines.direction.north, position = {-1, 2}},
-					{flow_direction = "input", direction = defines.direction.north, position = { 0, 2}},
-					{flow_direction = "input", direction = defines.direction.north, position = { 1, 2}}
+					{flow_direction = "input", direction = defines.direction.south, position = {-1, 2}},
+					{flow_direction = "input", direction = defines.direction.south, position = { 0, 2}},
+					{flow_direction = "input", direction = defines.direction.south, position = { 1, 2}}
 				},
 				filter = "water"
 			},
@@ -54,15 +54,23 @@ data:extend({
 		ingredient_count = 2,
 		order="a[atomics]",		
 		subgroup = "yie-fluids",
-		
-		animation = {
-			filename = "__yi_engines_F2__/graphics/entity/rheinsberg.png",
-			priority = "extra-high",
-			width = 192,
-			height = 192,
-			shift = {0.34, -0.125},
-			frame_count = 1,
-			line_length = 1
+		graphics_set =
+		{
+		  animation =
+		  {
+			layers =
+			{
+				{
+					filename = "__yi_engines_F2__/graphics/entity/rheinsberg.png",
+					priority = "extra-high",
+					width = 192,
+					height = 192,
+					shift = {0.34, -0.125},
+					frame_count = 1,
+					line_length = 1
+				},	
+			}
+		  }
 		},
 		working_visualisations = {
 			animation = {

@@ -187,7 +187,8 @@ data:extend({
 	  order = "x", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
-	--ID:319 
+	--ID:319
+	--[[
 	{
 	  type = "recipe",
 	  name = "ye_tranport_tube_green_splitter",
@@ -230,6 +231,7 @@ data:extend({
 	  icon_size = 32,
 	  order = "b5", group = "yi_engines", subgroup = "yie_tubes",
 	},
+]]
 
 	--ID:315 
 	{
@@ -270,11 +272,12 @@ data:extend({
 	},
 
 	--ID:310 
+	--[[
 	{
 	  type = "recipe",
 	  name = "ye_tranport_tube_green_underground",
 	  category = "crafting", -- 
-	  enabled = true,
+	  enabled = false, -- disabled due to graphics issues
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_tranport_tube_green" , amount = 10.0, },
@@ -294,7 +297,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_orange_underground",
 	  category = "crafting", -- 
-	  enabled = true,
+	  enabled = false, -- disabled due to graphics issues
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "ye_tranport_tube_orange" , amount = 10.0, },
@@ -314,7 +317,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_green",
 	  category = "crafting", -- 
-	  enabled = true,
+	  enabled = false, -- disabled due to graphics issues
 	  energy_required = 5.00,
 	  ingredients = {
 		{ type = "item", name = "y-winding" , amount = 6.0, },
@@ -335,7 +338,7 @@ data:extend({
 	  type = "recipe",
 	  name = "ye_tranport_tube_orange",
 	  category = "crafting", -- 
-	  enabled = true,
+	  enabled = false, -- disabled due to graphics issues
 	  energy_required = 4.00,
 	  ingredients = {
 		{ type = "item", name = "yie_hard_metals" , amount = 4.0, },
@@ -349,6 +352,7 @@ data:extend({
 	  icon_size = 32,
 	  order = "b1", group = "yi_engines", subgroup = "yie_tubes",
 	},
+	]]
 
 	--ID:294 
 	{

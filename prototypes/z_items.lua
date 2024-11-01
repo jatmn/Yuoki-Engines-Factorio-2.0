@@ -33,6 +33,7 @@ data:extend({
    place_result="ye_emotor_m", 
 },
 --ID:383
+--[[
 {
    type="item", name="ye_tranport_tube_green_splitter", icon_size = 32, icon="__yi_engines_F2__/graphics/icons/green_splitter_icon.png", 
    group="yi_engines", subgroup="yie_tubes", order="b6",  
@@ -46,6 +47,7 @@ data:extend({
    stack_size = 100, default_request_amount = 15,
    place_result="ye_tranport_tube_orange_splitter", 
 },
+]]
 --ID:377
 {
    type="item", name="ye_trade_node", icon_size = 32, icon="__yi_engines_F2__/graphics/icons/trade_node_icon.png", 
@@ -54,6 +56,7 @@ data:extend({
    place_result="ye_trade_node", 
 },
 --ID:368
+--[[
 {
    type="item", name="ye_tranport_tube_green_underground", icon_size = 32, icon="__yi_engines_F2__/graphics/icons/ubg_icon.png", 
    group="yi_engines", subgroup="yie_tubes", order="b4",  
@@ -81,6 +84,7 @@ data:extend({
    stack_size = 150, default_request_amount = 75,
    place_result="ye_tranport_tube_orange", 
 },
+]]
 --ID:353
 {
    type="item", name="ye_smoker", icon_size = 32, icon="__yi_engines_F2__/graphics/entity/yie_smoker_icon.png", 

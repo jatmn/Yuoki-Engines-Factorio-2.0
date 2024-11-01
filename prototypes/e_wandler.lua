@@ -47,23 +47,50 @@ data:extend({
 				base_level = 1,
 				pipe_connections = {
 					{flow_direction="output", direction = defines.direction.north, position = {0,-2}},										
-					{flow_direction="output", direction = defines.direction.north, position = {0, 2}},										
+					{flow_direction="output", direction = defines.direction.south, position = {0, 2}},										
 				}
 			},										
 		},
 		collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
-		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},		
-		animation =
+		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},			
+		graphics_set =
 		{
-			north = { 	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
-						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},	
-			south = {	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
-						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},	
-			east = {	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
-						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25, },	
-			west = {	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
-						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},	
-		},		
+		  animation =
+		  {
+			north =
+			{
+				layers =
+				{
+					{ 	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
+						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},
+				}
+			},
+			east =
+			{
+				layers =
+				{
+					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
+						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25, },
+				}
+			},
+			south =
+			{
+				layers =
+				{
+					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
+						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},
+				}
+			},
+			west =
+			{
+				layers =
+				{
+					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
+						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},		
+				}
+			},
+		  }
+		},
 		crafting_categories = {"yrcat_mfheatmotor_m"},
 		crafting_speed = 1,
 		

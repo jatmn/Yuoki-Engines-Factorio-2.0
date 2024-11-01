@@ -4,7 +4,7 @@ Date: 30. 10. 2022
   Updates:
     - Factorio 2.0
   Known Issues:
-    - Most likely many.. 
+    - Transport belts (tubes) are disabled, the graphics need reworked/redone for 2.0 
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.02
 Date: 9. 5. 2022
