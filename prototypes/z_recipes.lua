@@ -2898,7 +2898,7 @@ data:extend({
 	--ID:15 shaft-blue
 	{
 	  type = "recipe",
-	  name = "y-shaft",
+	  name = "y-mftrans-shaft",
 	  category = "crafting", -- 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -2917,7 +2917,7 @@ data:extend({
 	--ID:14 Shaft-Red
 	{
 	  type = "recipe",
-	  name = "y-shaft-r",
+	  name = "y-mftrans-shaft-red",
 	  category = "crafting", -- 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -2936,7 +2936,7 @@ data:extend({
 	--ID:13 Underground-Shaft
 	{
 	  type = "recipe",
-	  name = "y-shaft-ground",
+	  name = "y-mftrans-shaft-ground",
 	  category = "crafting", -- 
 	  enabled = true,
 	  energy_required = 1.00,
@@ -2995,7 +2995,7 @@ data:extend({
 	--ID:10 Underground-Shaft-Red
 	{
 	  type = "recipe",
-	  name = "y-shaft-ground-r",
+	  name = "y-mftrans-shaft-ground-red",
 	  category = "crafting", -- 
 	  enabled = true,
 	  energy_required = 1.00,

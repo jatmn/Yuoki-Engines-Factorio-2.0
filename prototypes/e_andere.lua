@@ -144,11 +144,19 @@ data:extend({
 		max_health = 500,
 		corpse = "medium-remnants",		
 		collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-		selection_box = {{-1, -1}, {1, 1}},		
-		animation =
+		selection_box = {{-1, -1}, {1, 1}},				
+		graphics_set =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/trade_node_sheet.png", width = 192, height = 192, scale = 0.5, shift = {0.5, -0.5}, frame_count = 9, line_length = 3, animation_speed=0.5, 							
-		},		
+		  animation =
+		  {
+			layers =
+			{
+				{
+					filename = "__yi_engines_F2__/graphics/entity/trade_node_sheet.png", width = 192, height = 192, scale = 0.5, shift = {0.5, -0.5}, frame_count = 9, line_length = 3, animation_speed=0.5,	
+				},	
+			}
+		  }
+		},
 		crafting_categories = {"yuoki-stargate"},
 		crafting_speed = 0.5,		
 		energy_source = { type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution  = 16, },},
