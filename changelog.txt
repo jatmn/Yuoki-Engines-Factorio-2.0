@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 10. 11. 2024
+  Updates:
+    - Added migration support for saves running older versions.
+    - Added conflit flag for running main version of Yuoki
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 31. 10. 2024
   Updates:
