@@ -19,7 +19,7 @@ if data.raw.recipe["ye_slurry2ethanol"] then
 		results = {
 			{ type = "fluid", name = "y_syngas_raw", amount = 30.0, },
 		},
-		icon = "__Yuoki_F2__/graphics/icons/obs/h2o_c_icon.png",
+		icon = "__Yuoki__/graphics/icons/obs/h2o_c_icon.png",
 		subgroup = "y-fluid",
 		order = "c5"
 	}
@@ -41,7 +41,7 @@ if data.raw.recipe["ye_biofuel"] then
 		results = {
 			{ type = "item", name = "y_organic_dust", amount = 72.0, },
 		},
-		icon = "__Yuoki_F2__/graphics/icons/sawdust_32.png",
+		icon = "__Yuoki__/graphics/icons/sawdust_32.png",
 		subgroup = "y_refine_raws",
 		order = "5"
 	}

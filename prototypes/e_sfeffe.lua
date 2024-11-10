@@ -5,7 +5,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-sfe",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/sfe-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/sfe-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-sfe"},
 		max_health = 250,
@@ -56,7 +56,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-nord.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/sfe-nord.png",			
 						width = 112,
 						height = 128,
 						shift = {0.2, -0.1},
@@ -70,7 +70,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-west.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/sfe-west.png",			
 						width = 128,
 						height = 112,
 						shift = {0.25, 0.2},
@@ -84,7 +84,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-sued.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/sfe-sued.png",			
 						width = 112,
 						height = 128,
 						shift = {0.2, 0.3},
@@ -98,7 +98,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/sfe-ost.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/sfe-ost.png",			
 						width = 128,
 						height = 112,
 						shift = {0.25, 0.2},
@@ -136,7 +136,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-ffe",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/ffe-icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/ffe-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-ffe"},
 		max_health = 250,
@@ -194,7 +194,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-sa.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/ffe-sa.png",			
 						width = 128,
 						height = 112,
 						shift = {0.4, -0.1},
@@ -208,7 +208,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-wa.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/ffe-wa.png",			
 						width = 128,
 						height = 128,
 						shift = {0.15, -0.2},
@@ -222,7 +222,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-na.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/ffe-na.png",			
 						width = 128,
 						height = 128,
 						shift = {0.4, 0.0},
@@ -236,7 +236,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/ffe-oa.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/ffe-oa.png",			
 						width = 128,
 						height = 112,
 						shift = {0.25, 0.0},
@@ -265,7 +265,7 @@ data:extend(
 
 	-- Gas-Motor neu 4.5.2022
 	{
-	   type="item", name="ye_gasmotor", icon_size=64, icon="__yi_engines_F2__/graphics/entity/energy2/gasmotor64_icon.png", 
+	   type="item", name="ye_gasmotor", icon_size=64, icon="__yi_engines__/graphics/entity/energy2/gasmotor64_icon.png", 
 	   group="yi_engines", subgroup="yie-parts", order="gfe",  
 	   stack_size = 20, default_request_amount = 5,
 	   place_result="ye_gasmotor", 
@@ -274,7 +274,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_gasmotor",
-		icon_size = 64, icon =  "__yi_engines_F2__/graphics/entity/energy2/gasmotor64_icon.png",
+		icon_size = 64, icon =  "__yi_engines__/graphics/entity/energy2/gasmotor64_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.25, result = "ye_gasmotor"},
 		max_health = 250,
@@ -331,7 +331,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/gms_sheet.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/gms_sheet.png",			
 						width = 256,
 						height = 256,
 						scale = 0.5,
@@ -346,7 +346,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/gmw_sheet.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/gmw_sheet.png",			
 						width = 256,
 						height = 256,
 						scale = 0.5,
@@ -361,7 +361,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/gmn_sheet.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/gmn_sheet.png",			
 						width = 256,
 						height = 256,
 						scale = 0.5,
@@ -376,7 +376,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/gme_sheet.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/gme_sheet.png",			
 						width = 256,
 						height = 256,
 						scale = 0.5,
@@ -407,7 +407,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-1stirling-engine",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/ast-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/ast-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-1stirling-engine"},
 		max_health = 150,
@@ -435,7 +435,7 @@ data:extend(
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/energy2/stir-sheet.png",			
+					filename = "__yi_engines__/graphics/entity/energy2/stir-sheet.png",			
 					width = 96,
 					height = 96,
 					shift = {0.6, -0.25},

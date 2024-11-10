@@ -5,7 +5,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "y-emotor-s",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/e-motor-icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/e-motor-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-emotor-s"},
 		max_health = 150,
@@ -34,7 +34,7 @@ data:extend({
 			{
 				layers =
 				{
-					{ 	filename = "__yi_engines_F2__/graphics/entity/e-motor-n.png",			
+					{ 	filename = "__yi_engines__/graphics/entity/e-motor-n.png",			
 						width = 96, height = 96, shift = {0.5, -0.03}, frame_count = 1, line_length = 1, },
 				}
 			},
@@ -42,7 +42,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/e-motor-e.png",			
+					{	filename = "__yi_engines__/graphics/entity/e-motor-e.png",			
 						width = 96, height = 96, shift = {-0.09, 0.53}, frame_count = 1, line_length = 1, },
 				}
 			},
@@ -50,7 +50,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/e-motor-s.png",			
+					{	filename = "__yi_engines__/graphics/entity/e-motor-s.png",			
 						width = 96, height = 96, shift = {-0.5, 0.13}, frame_count = 1, line_length = 1, },
 				}
 			},
@@ -58,7 +58,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/e-motor-w.png",			
+					{	filename = "__yi_engines__/graphics/entity/e-motor-w.png",			
 						width = 96, height = 96, shift = {0.13, -0.47}, frame_count = 1, line_length = 1, },
 				}
 			},
@@ -85,7 +85,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_emotor_m",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/e-motor-m_icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/e-motor-m_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "ye_emotor_m"},
 		max_health = 150,
@@ -115,7 +115,7 @@ data:extend({
 			{
 				layers =
 				{
-					{ 	filename = "__yi_engines_F2__/graphics/entity/emotor-m_ns.png",			
+					{ 	filename = "__yi_engines__/graphics/entity/emotor-m_ns.png",			
 						width = 256, height = 256, shift = {0.5, -0.375}, frame_count = 4, line_length = 2, scale = 0.5, animation_speed = 0.25,},
 				}
 			},
@@ -123,7 +123,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/emotor-m_we.png",			
+					{	filename = "__yi_engines__/graphics/entity/emotor-m_we.png",			
 						width = 256, height = 256, shift = {0.5, 0}, frame_count = 4, line_length = 2, scale = 0.5, animation_speed = 0.25, },	
 				}
 			},
@@ -131,7 +131,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/emotor-m_ns.png",			
+					{	filename = "__yi_engines__/graphics/entity/emotor-m_ns.png",			
 						width = 256, height = 256, shift = {0.5, -0.375}, frame_count = 4, line_length = 2, scale = 0.5, animation_speed = 0.25,},	
 				}
 			},
@@ -139,7 +139,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/emotor-m_we.png",			
+					{	filename = "__yi_engines__/graphics/entity/emotor-m_we.png",			
 					width = 256, height = 256, shift = {0.5, 0}, frame_count = 4, line_length = 2, scale = 0.5, animation_speed = 0.25,},
 				}
 			},
@@ -170,7 +170,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "y-mwater-pump",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/pump-icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/pump-icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y-mwater-pump"},
 		max_health = 250,
@@ -208,7 +208,7 @@ data:extend({
 			{
 				layers =
 				{
-					{ 	filename = "__yi_engines_F2__/graphics/entity/pump_nna_s.png",			
+					{ 	filename = "__yi_engines__/graphics/entity/pump_nna_s.png",			
 						width = 128, height = 128, shift = {0.34, 0.53}, frame_count = 16, line_length = 16, },	
 				}
 			},
@@ -216,7 +216,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump_ena_s.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump_ena_s.png",			
 						width = 128, height = 128, shift = {0.28, 0.31}, frame_count = 16, line_length = 16, },	
 				}
 			},
@@ -224,7 +224,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump_sna_s.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump_sna_s.png",			
 						width = 128, height = 128, shift = {0.47, 0.22}, frame_count = 16, line_length = 16, },	
 				}
 			},
@@ -232,7 +232,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump_wna_s.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump_wna_s.png",			
 					width = 128, height = 128, shift = {0.47, 0.47}, frame_count = 16, line_length = 16, },	
 				}
 			},
@@ -256,7 +256,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_wpump_m",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/e-motor-m_icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/e-motor-m_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_wpump_m"},
 		max_health = 250,
@@ -295,7 +295,7 @@ data:extend({
 			{
 				layers =
 				{
-					{ 	filename = "__yi_engines_F2__/graphics/entity/pump3x3_s.png",			
+					{ 	filename = "__yi_engines__/graphics/entity/pump3x3_s.png",			
 						width = 256, height = 256, shift = {0.5, 0}, frame_count = 16, line_length = 4, scale = 0.5, animation_speed = 0.5, },
 				}
 			},
@@ -303,7 +303,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump3x3_w.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump3x3_w.png",			
 					width = 256, height = 256, shift = {0.5, 0}, frame_count = 16, line_length = 4, scale = 0.5, animation_speed = 0.5, },	
 				}
 			},
@@ -311,7 +311,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump3x3_s.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump3x3_s.png",			
 						width = 256, height = 256, shift = {0.5, 0}, frame_count = 16, line_length = 4, scale = 0.5, animation_speed = 0.5, },	
 				}
 			},
@@ -319,7 +319,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/pump3x3_w.png",			
+					{	filename = "__yi_engines__/graphics/entity/pump3x3_w.png",			
 						width = 256, height = 256, shift = {0.5, 0}, frame_count = 16, line_length = 4, scale = 0.5, animation_speed = 0.5, },	
 				}
 			},

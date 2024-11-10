@@ -4,7 +4,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_overheater",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/heater55_icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/heater55_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_overheater"},
 		max_health = 150,
@@ -50,7 +50,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/heater55_s.png",			
+						filename = "__yi_engines__/graphics/entity/heater55_s.png",			
 						width = 384,
 						height = 384,
 						shift = {0.5, 0.5},
@@ -66,7 +66,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/heater55_e.png",			
+						filename = "__yi_engines__/graphics/entity/heater55_e.png",			
 						width = 384,
 						height = 384,
 						shift = {0.5, -0.5},
@@ -82,7 +82,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/heater55_n.png",			
+						filename = "__yi_engines__/graphics/entity/heater55_n.png",			
 						width = 384,
 						height = 384,
 						shift = {0.5, -0.5},
@@ -98,7 +98,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/heater55_w.png",			
+						filename = "__yi_engines__/graphics/entity/heater55_w.png",			
 						width = 384,
 						height = 384,
 						shift = {0.5, -0.5},
@@ -139,7 +139,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_sturbine",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/turbine_icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/turbine_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.2, result = "ye_sturbine"},
 		max_health = 150,
@@ -196,7 +196,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/turbine_n.png",			
 						width = 256,
 						height = 256,
 						shift = {0.5, -0.5},
@@ -211,7 +211,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/turbine_n.png",			
 						width = 256,
 						height = 256,
 						shift = {0.5, -0.5},
@@ -226,7 +226,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/turbine_n.png",			
 						width = 256,
 						height = 256,
 						shift = {0.5, -0.5},
@@ -241,7 +241,7 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__yi_engines_F2__/graphics/entity/energy2/turbine_n.png",			
+						filename = "__yi_engines__/graphics/entity/energy2/turbine_n.png",			
 						width = 256,
 						height = 256,
 						shift = {0.5, -0.5},
@@ -272,7 +272,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "ye_tfmw_generator-s",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/energy2/hngen-o-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/energy2/hngen-o-icon.png",
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 0.2, result = "ye_tfmw_generator-s"},
 		max_health = 800,
@@ -309,7 +309,7 @@ data:extend({
 		},
 		horizontal_animation =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/energy2/hngen_v.png",
+			filename = "__yi_engines__/graphics/entity/energy2/hngen_v.png",
 			width = 288,
 			height = 288,
 			frame_count = 1,
@@ -318,7 +318,7 @@ data:extend({
 		},
 		vertical_animation =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/energy2/hgen_o_sheet.png",
+			filename = "__yi_engines__/graphics/entity/energy2/hgen_o_sheet.png",
 			width = 288,
 			height = 288,
 			frame_count = 36,
@@ -332,7 +332,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "ye_tfmw_turbine-s",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/turbine_70_icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/turbine_70_icon.png",
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 0.2, result = "ye_tfmw_turbine-s"},
 		max_health = 800,
@@ -366,7 +366,7 @@ data:extend({
 		},
 		horizontal_animation =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/turbine_70_sheet.png",
+			filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
 			width = 288,
 			height = 288,
 			frame_count = 6,
@@ -376,7 +376,7 @@ data:extend({
 		},
 		vertical_animation =
 		{
-			filename = "__yi_engines_F2__/graphics/entity/turbine_70_sheet.png",
+			filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
 			width = 288,
 			height = 288,
 			frame_count = 6,

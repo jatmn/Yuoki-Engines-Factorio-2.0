@@ -4,7 +4,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly1",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_1_icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_1_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly1"},
 		max_health = 250,
@@ -21,7 +21,7 @@ data:extend(
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/av1_sheet.png",			
+					filename = "__yi_engines__/graphics/entity/av1_sheet.png",			
 					width = 320,
 					height = 320,			
 					shift = {1.0, -1.0},
@@ -56,7 +56,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly2",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_2_icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_2_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly2"},
 		max_health = 250,
@@ -101,7 +101,7 @@ data:extend(
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/av2_sheet.png",			
+					filename = "__yi_engines__/graphics/entity/av2_sheet.png",			
 					width = 256,
 					height = 256,			
 					shift = {0.5, -0.5},
@@ -136,7 +136,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "ye_fassembly_sp",
-		 icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/factory_var_3_icon.png",
+		 icon_size = 32, icon =  "__yi_engines__/graphics/entity/factory_var_3_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_fassembly_sp"},
 		max_health = 250,
@@ -169,7 +169,7 @@ data:extend(
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/av3_sheet.png",			
+					filename = "__yi_engines__/graphics/entity/av3_sheet.png",			
 					width = 256,
 					height = 256,
 					shift = {0.5, -0.5},
@@ -218,14 +218,14 @@ data:extend(
 		order="a0",
 	},		
 	{
-		type="item", name="ye_green_ultimate",  icon_size = 32, icon = "__yi_engines_F2__/graphics/entity/green_ultimate_icon.png", 
+		type="item", name="ye_green_ultimate",  icon_size = 32, icon = "__yi_engines__/graphics/entity/green_ultimate_icon.png", 
 		group="yuoki-energy", subgroup="y_ultimate_products", order="a0", place_result = "ye_green_ultimate", 
 		stack_size = 1, default_request_amount = 1,
 	},	
 	{
 		type = "assembling-machine",
 		name = "ye_green_ultimate",
-		 icon_size = 32, icon = "__yi_engines_F2__/graphics/entity/green_ultimate_icon.png",
+		 icon_size = 32, icon = "__yi_engines__/graphics/entity/green_ultimate_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "ye_green_ultimate"},
 		max_health = 5000,
@@ -241,7 +241,7 @@ data:extend(
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/green_ultimate.png",			
+					filename = "__yi_engines__/graphics/entity/green_ultimate.png",			
 					width = 480,
 					height = 480,
 					shift = {1, -1},

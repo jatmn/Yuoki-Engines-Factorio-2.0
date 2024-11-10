@@ -28,156 +28,156 @@ mftrans_w = function()
 return {
 	straight_vertical_single =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
-		--filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-window.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
+		--filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-window.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_vertical =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_vertical_window =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-window.png",
-		--filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-window.png",
+		--filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-single.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_horizontal_single =
 	{		
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},	
 	straight_horizontal_window =
 	{		
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_horizontal =
 	{	
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},	
 	corner_up_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-up-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-up-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_up_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-up-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-up-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_down_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-down-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-down-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_down_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-down-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-down-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_up =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-up.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-up.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_down =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-down.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-down.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	cross =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-cross.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-cross.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_up =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-up.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-up.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_down =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-down.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-down.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	horizontal_window_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32
 	},
 	vertical_window_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32
 	},
 	fluid_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 20
@@ -269,154 +269,154 @@ mftrans_red = function()
 return {
 	straight_vertical_single =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-single-r.png",		
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-single-r.png",		
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_vertical =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-vertical-single-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-vertical-single-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_vertical_window =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-r.png",		
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-r.png",		
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_horizontal_single =
 	{		
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},	
 	straight_horizontal_window =
 	{		
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal-single-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	straight_horizontal =
 	{	
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-straight-horizontal.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-straight-horizontal.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},	
 	corner_up_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-up-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-up-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_up_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-up-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-up-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_down_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-down-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-down-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	corner_down_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-corner-down-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-corner-down-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_up =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-up.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-up.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_down =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-down.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-down.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-right.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-right.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	t_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-t-left.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-t-left.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	cross =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-cross-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-cross-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_up =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-up-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-up-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_down =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-down-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-down-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_right =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-right-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-right-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	ending_left =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-ending-left-r.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-ending-left-r.png",
 		priority = "extra-high",
 		width = 40,
 		height = 40
 	},
 	horizontal_window_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32
 	},
 	vertical_window_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32
 	},
 	fluid_background =
 	{
-		filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/clear.png",
+		filename = "__yi_engines__/graphics/entity/shaft-pipe/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 20
@@ -509,7 +509,7 @@ data:extend(
 	{
 		type = "pipe",
 		name = "y-mftrans-shaft",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/shaft-pipe/shaft-icon.png",
 		flags = {"placeable-neutral", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-mftrans-shaft"},
 		max_health = 100,
@@ -538,7 +538,7 @@ data:extend(
 	{
 		type = "pipe",
 		name = "y-mftrans-shaft-red",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/shaft-pipe/shaft-icon.png",
 		flags = {"placeable-neutral", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-mftrans-shaft-red"},
 		max_health = 70,
@@ -568,7 +568,7 @@ data:extend(
 	{
 		type = "pipe-to-ground",
 		name = "y-mftrans-shaft-ground",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-ground-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/shaft-pipe/shaft-ground-icon.png",
 		flags = {"placeable-neutral", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-mftrans-shaft-ground"},
 		max_health = 70,
@@ -604,28 +604,28 @@ data:extend(
 		{
 			north =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-up.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-up.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.10, -0.04}
 			},
 			south =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-down.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-down.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.05, 0}
 			},
 			west =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-left.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-left.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {-0.12, 0.1}
 			},
 			east =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-right.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-right.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.1, 0.1}
@@ -714,7 +714,7 @@ data:extend(
 	{
 		type = "pipe-to-ground",
 		name = "y-mftrans-shaft-ground-red",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/shaft-pipe/shaft-ground-r-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/shaft-pipe/shaft-ground-r-icon.png",
 		flags = {"placeable-neutral", "player-creation"},
 		minable = {mining_time = 0.25, result = "y-mftrans-shaft-ground-red"},
 		max_health = 70,
@@ -751,28 +751,28 @@ data:extend(
 		{
 			north =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-up-r.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-up-r.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.10, -0.04}
 			},
 			south =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-down-r.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-down-r.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.05, 0}
 			},
 			west =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-left-r.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-left-r.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {-0.12, 0.1}
 			},
 			east =
 			{
-				filename = "__yi_engines_F2__/graphics/entity/shaft-pipe/pipe-to-ground-right-r.png",
+				filename = "__yi_engines__/graphics/entity/shaft-pipe/pipe-to-ground-right-r.png",
 				priority = "high",
 				width = 40,
 				height = 40 --, shift = {0.1, 0.1}

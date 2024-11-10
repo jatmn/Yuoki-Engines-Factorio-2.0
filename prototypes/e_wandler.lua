@@ -15,13 +15,13 @@ data:extend({
 		{ type = "item", name = "ye_mfheatmotor_m", amount = 1.0, },
 	  },
 	  main_product = "ye_mfheatmotor_m",
-	  icon = "__yi_engines_F2__/graphics/entity/gearbox_hp_icon.png",
+	  icon = "__yi_engines__/graphics/entity/gearbox_hp_icon.png",
 	  icon_size = 32,  
 	  order = "m3", group = "yi_engines", subgroup = "yie-engines",
 	},
 
 	{
-		type="item", name="ye_mfheatmotor_m", icon_size=32, icon="__yi_engines_F2__/graphics/entity/gearbox_hp_icon.png", 
+		type="item", name="ye_mfheatmotor_m", icon_size=32, icon="__yi_engines__/graphics/entity/gearbox_hp_icon.png", 
 		group="yi_engines", subgroup="yie-engines", order="m3",  
 		stack_size = 20, default_request_amount = 5,
 		place_result="ye_mfheatmotor_m", 
@@ -32,7 +32,7 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "ye_mfheatmotor_m",
-		icon_size = 64, icon =  "__yi_engines_F2__/graphics/entity/mf_heater_icon.png",
+		icon_size = 64, icon =  "__yi_engines__/graphics/entity/mf_heater_icon.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "ye_mfheatmotor_m"},
 		max_health = 250,
@@ -61,7 +61,7 @@ data:extend({
 			{
 				layers =
 				{
-					{ 	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
+					{ 	filename = "__yi_engines__/graphics/entity/mfheater_ns.png",			
 						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},
 				}
 			},
@@ -69,7 +69,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
+					{	filename = "__yi_engines__/graphics/entity/mfheater_ew.png",			
 						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25, },
 				}
 			},
@@ -77,7 +77,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ns.png",			
+					{	filename = "__yi_engines__/graphics/entity/mfheater_ns.png",			
 						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},
 				}
 			},
@@ -85,7 +85,7 @@ data:extend({
 			{
 				layers =
 				{
-					{	filename = "__yi_engines_F2__/graphics/entity/mfheater_ew.png",			
+					{	filename = "__yi_engines__/graphics/entity/mfheater_ew.png",			
 						width = 512, height = 512, shift = {1.5, -0.5}, frame_count = 4, line_length = 4, scale = 0.5, animation_speed = 0.25,},		
 				}
 			},

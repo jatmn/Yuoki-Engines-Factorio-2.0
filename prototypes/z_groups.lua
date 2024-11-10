@@ -5,9 +5,9 @@
 data:extend({
 
 	--YI-Engines/Experiments
-	{ type="item-group", name="yi_engines", icon_size=64, icon="__yi_engines_F2__/graphics/yi-engines-icon.png", inventory_order="y", order="yi-e1" },
+	{ type="item-group", name="yi_engines", icon_size=64, icon="__yi_engines__/graphics/yi-engines-icon.png", inventory_order="y", order="yi-e1" },
 	--YI-Agronomie
-	{ type="item-group", name="yie_harvest", icon_size=64, icon="__yi_engines_F2__/graphics/yi_engines_harvest.png", inventory_order="y", order="yi-e2" },
+	{ type="item-group", name="yie_harvest", icon_size=64, icon="__yi_engines__/graphics/yi_engines_harvest.png", inventory_order="y", order="yi-e2" },
 
 	{ type="item-subgroup", group="yi_engines", order="e", name="yie-engines", }, --Engines
 	{ type="item-subgroup", group="yi_engines", order="y", name="yie-exp", }, --temporary experimental stuff

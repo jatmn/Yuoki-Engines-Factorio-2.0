@@ -3,7 +3,7 @@ data:extend({
 	{
 		type = "assembling-machine",		
 		name = "ye_rheinsberg",
-		icon_size = 32, icon =  "__yi_engines_F2__/graphics/entity/rheinsberg-icon.png",
+		icon_size = 32, icon =  "__yi_engines__/graphics/entity/rheinsberg-icon.png",
 		flags = {"placeable-neutral", "player-creation"},
 		minable = {mining_time = 0.5, result = "ye_rheinsberg"},
 		max_health = 700,
@@ -61,7 +61,7 @@ data:extend({
 			layers =
 			{
 				{
-					filename = "__yi_engines_F2__/graphics/entity/rheinsberg.png",
+					filename = "__yi_engines__/graphics/entity/rheinsberg.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -74,7 +74,7 @@ data:extend({
 		},
 		working_visualisations = {
 			animation = {
-				filename = "__yi_engines_F2__/graphics/entity/rheinsberg.png",
+				filename = "__yi_engines__/graphics/entity/rheinsberg.png",
 				priority = "extra-high",
 				width = 192,
 				height = 192,
@@ -102,7 +102,7 @@ data:extend({
 			{type = "fluid", name = "steam", amount = 400, temperature = 1000 }
 		},
 		icon_size = 32,
-		icon = "__yi_engines_F2__/graphics/icons/gear-5.png",
+		icon = "__yi_engines__/graphics/icons/gear-5.png",
 		order = "rb-3",
 		group = "yi_engines",
 		subgroup = "yie-fluids"
@@ -121,7 +121,7 @@ data:extend({
 			{type = "fluid", name = "steam", amount = 800, temperature = 500 }
 		},
 		icon_size = 32,
-		icon = "__yi_engines_F2__/graphics/icons/gear-3.png",
+		icon = "__yi_engines__/graphics/icons/gear-3.png",
 		order = "rb-2",
 		group = "yi_engines",
 		subgroup = "yie-fluids"
@@ -140,7 +140,7 @@ data:extend({
 			{type = "fluid", name = "steam", amount = 1600, temperature = 250 }
 		},
 		icon_size = 32,
-		icon = "__yi_engines_F2__/graphics/icons/gear-2.png",
+		icon = "__yi_engines__/graphics/icons/gear-2.png",
 		order = "rb-1",
 		group = "yi_engines",
 		subgroup = "yie-fluids"
