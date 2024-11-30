@@ -81,6 +81,8 @@ data:extend({
 		ingredient_count = 3,
 		order="a",
 		subgroup = "yie-engines",
+		module_slots = 2,
+		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	},
 	
 	-- alien breed		
@@ -182,6 +184,9 @@ data:extend({
 		ingredient_count = 4,
 		order="a",
 		subgroup = "yie-engines",
+
+		module_slots = 2,
+		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	},
 
 	-- fishing		
@@ -275,6 +280,9 @@ data:extend({
 		ingredient_count = 3,
 		order="a",
 		subgroup = "yie-engines",
+		module_slots = 2,
+		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+
 	},
 		
 	-- ice-machine		

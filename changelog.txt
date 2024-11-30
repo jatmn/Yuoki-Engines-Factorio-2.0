@@ -1,11 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
-Date: 00. 11. 2024
+Date: 29. 11. 2024
   Fixes:
     - Fixed module slots on Factories
     - Fixed a few recipe names and descriptions
   Updates:
     - Added setting to fatmice from JATMIN's Fixes that makes fatmice have reusable filters inspired by K2 (Default is disabled)
+  Changes:
+    - Added module slots to Farms because it made no sense that they didnt have them before
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 17. 11. 2024
