@@ -5,7 +5,7 @@ Date: 29. 11. 2024
     - Fixed module slots on Factories
     - Fixed a few recipe names and descriptions
   Updates:
-    - Added setting to fatmice from JATMIN's Fixes that makes fatmice have reusable filters inspired by K2 (Default is disabled)
+    - Added setting to fatmice from JATMN's Fixes that makes fatmice have reusable filters inspired by K2 (Default is disabled)
   Changes:
     - Added module slots to Farms because it made no sense that they didnt have them before
 ---------------------------------------------------------------------------------------------------
