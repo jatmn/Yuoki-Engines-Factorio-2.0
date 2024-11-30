@@ -34,3 +34,5 @@ require ("prototypes.e_wandler")
 
 --add list of Yuoki Engines intermediate products to vanilla intermediates (thank you Codec)
 require ("prototypes.ye_intermediates_list")
+
+require ("prototypes.j_airfilters") --- JATMN Airfilters

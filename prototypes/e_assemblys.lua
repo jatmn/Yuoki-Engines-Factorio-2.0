@@ -1,5 +1,12 @@
 data:extend(
 {  
+	
+	-- notes.. 
+	--data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"crafting", "basic-crafting", "advanced-crafting", "electronics", "pressing"}
+	--data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "electronics", "electronics-with-fluid", "pressing", "metallurgy-or-assembling", "organic-or-hand-crafting", "organic-or-assembling", "electronics-or-assembling", "cryogenics-or-assembling", "crafting-with-fluid-or-metallurgy"}
+	--data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "electronics", "electronics-with-fluid", "pressing", "metallurgy-or-assembling", "organic-or-hand-crafting", "organic-or-assembling", "electronics-or-assembling", "cryogenics-or-assembling", "crafting-with-fluid-or-metallurgy"}
+
+	
 	-- Tutorial
 	{
 		type = "assembling-machine",
@@ -43,11 +50,9 @@ data:extend(
 		},
 		energy_usage = "300kW",
 		ingredient_count = 6,				
-		module_specification =
-		{
-			module_slots = 3,			
-		},
+		module_slots = 3,
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},		
+		
 		
 		order="a[atomics]",
 		subgroup = "yie_machinery2",
@@ -123,10 +128,7 @@ data:extend(
 		},
 		energy_usage = "500kW",
 		ingredient_count = 6,				
-		module_specification =
-		{
-			module_slots = 3,			
-		},
+		module_slots = 3,
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},		
 		
 		order="a[atomics]",
@@ -191,10 +193,7 @@ data:extend(
 		},
 		energy_usage = "700kW",
 		ingredient_count = 6,				
-		module_specification =
-		{
-			module_slots = 2,			
-		},
+		module_slots = 2,
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},		
 		
 		order="a[atomics]",

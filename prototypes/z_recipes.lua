@@ -2,6 +2,87 @@
 --automatically generated file | fMT-Export (c)YT v0.04-216Mrz03
 --export-date: 2020-Feb-06
 
+
+local j_fatmice_overhaul = settings.startup["j_fatmice_behaviour"].value
+if j_fatmice_overhaul == true then
+	data:extend({
+
+
+		-- Lets make a filter!
+			{
+				type = "recipe",		
+				name = "j-airfilter",
+				order="a",
+				energy_required = 5,
+				ingredients = {
+					{type="item", name="iron-stick", amount=6, },
+					{type="item", name="y_steinmehl", amount=10, },
+					{type="item", name="y-coal-dust", amount=8, },
+				},
+				results=
+				{
+					{type="item", name="j-airfilter",  amount=1},	
+				},
+				enabled = true,		
+				 icon_size = 32, icon =  "__yi_engines__/graphics/entity/j_filter_clean.png",
+				group="yi_engines",
+				subgroup = "yie-processed",
+				--category = "yrcat-eg4",
+			},
+			
+			
+		
+		-- Produce a dirty filter in a Fatmice Machine
+			{
+				type = "recipe",		
+				name = "j-airfilter_dirty",
+				order="a",
+				energy_required = 60,
+				ingredients = {
+					{type="fluid", name="water", amount=60, },
+					{type="fluid", name="y-mechanical-force", amount=0.2, },
+					{type="item", name="j-airfilter", amount=1, },
+				},
+				results=
+				{
+					{type="item", name="j-airfilter_dirty",  amount=1},	
+				},
+				enabled = true,		
+				 icon_size = 32, icon =  "__yi_engines__/graphics/entity/j_filter_dirty.png",
+				subgroup = "yie-processed",
+				category = "yrcat-eg4",
+				group = "yi_engines",
+			},
+			
+			
+		-- How to clean a filter, in a Washer!	
+			{
+				type = "recipe",		
+				name = "j-airfilter_cleaning",
+				order="a",
+				energy_required = 10,
+				ingredients = {
+					{type="fluid", name="water", amount=110, },
+					{type="item", name="y-coal-dust", amount=8, },
+					{type="item", name="j-airfilter_dirty", amount=1, },
+				},
+				results=
+				{
+					{type="item", name="j-airfilter",  amount=1},	
+					{type="item", name="y-pol-waste",  amount=6},
+				},
+				enabled = true,		
+				 icon_size = 32, icon =  "__yi_engines__/graphics/entity/j_filter_clean.png",
+				subgroup = "yie-processed",
+				category = "yuoki-archaeology-wash",
+				group = "yi_engines",
+			},
+			
+		})
+		
+		end
+
+
 data:extend({
 
 	--ID:346 
@@ -62,7 +143,7 @@ data:extend({
 	  },
 	  main_product = "y-pure-iron",
 	  icon = "__Yuoki__/graphics/icons/pure-iron-n.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "C", group = "yie_harvest", subgroup = "yie-processed",
 	},
 
@@ -952,7 +1033,7 @@ data:extend({
 	  },
 	  main_product = "raw-fish",
 	  icon = "__base__/graphics/icons/fish.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "1", group = "yie_harvest", subgroup = "yie_fish",
 	},
 
@@ -1010,7 +1091,7 @@ data:extend({
 	  },
 	  main_product = "wood",
 	  icon = "__base__/graphics/icons/wood.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "1", group = "yuoki-energy", subgroup = "y_ultimate_products",
 	},
 
@@ -2007,7 +2088,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "4", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2026,7 +2107,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "2", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2045,7 +2126,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "1", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2542,7 +2623,7 @@ data:extend({
 	  },
 	  main_product = "y_organic_dust",
 	  icon = "__Yuoki__/graphics/icons/sawdust_32.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "p04", group = "yuoki_liquids", subgroup = "y_refine_raws",
 	},
 
@@ -2562,7 +2643,7 @@ data:extend({
 	  },
 	  main_product = "wood",
 	  icon = "__base__/graphics/icons/wood.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "p05", group = "yie_harvest", subgroup = "yie_agroproducts",
 	},
 
@@ -2894,6 +2975,9 @@ data:extend({
 	  icon_size = 32,
 	  order = "d", group = "yi_engines", subgroup = "yie_machinery",
 	},
+
+
+
 
 	--ID:15 shaft-blue
 	{
