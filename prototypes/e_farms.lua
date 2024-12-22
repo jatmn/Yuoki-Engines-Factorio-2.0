@@ -207,7 +207,7 @@ data:extend({
 				base_area = 5,
 				base_level = -1,
 				pipe_connections = {
-					{ flow_direction="output", direction = defines.direction.north, position = {-1,-2}},								
+					{ flow_direction="input", direction = defines.direction.north, position = {-1,-2}},								
 				}
 			},							
 			{
