@@ -24,12 +24,6 @@ require ("prototypes.e_wandler")
 
 
 
-
--- if problem off, fps-drops lower - with on game stalls on mouseover at any handcrafting queue, cancel can freeze game 
---require ("prototypes.y_problem_recipes")
-
-
-
 --require ("yi_engines_016_data-updates")
 
 --add list of Yuoki Engines intermediate products to vanilla intermediates (thank you Codec)

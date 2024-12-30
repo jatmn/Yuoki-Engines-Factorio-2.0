@@ -5,6 +5,16 @@ data:extend({
     setting_type = "startup",
     default_value = false,
     order = "a5"
-}
+},
+
+{
+    type = "string-setting",
+    name = "j_factories_behaviour",
+    setting_type = "startup",
+    order = "a6",
+    default_value = "No Changes",
+    allowed_values =  {"No Changes", "Balanced", "Overpowered"},
+},
+
 
 })

@@ -2225,7 +2225,7 @@ data:extend({
 	  },
 	  main_product = "y_syngas_raw",
 	  icon = "__Yuoki__/graphics/icons/obs/h2o_c_icon.png",
-	  icon_size = 32,
+	  icon_size = 64,
 	  order = "c04", group = "yuoki_liquids", subgroup = "y-fluid",
 	},
 

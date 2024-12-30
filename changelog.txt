@@ -1,10 +1,20 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.7
 Date: 30. 12. 2024
+  Major Features:
+    - Factorio Space Age compatibility - This is the first mod update that adds (minor) support for Space Age
   Fixes:
-    - 
+    - Fixed Factory machines next upgrade planner issues
+    - Added C1 Factory as next upgrade for Assembling Machine 3
+    - Fixed some more broken recipe names (yes, I know still more to go...)
   Updates:
     - Polish locals added (Thanks S3BA-pl)
+    - Minor code cleanup
+    - Added setting option for module slot count on Factory Machines. (From JATMN's Fixes Mod)
+  Changes:
+    - Factory machines now support all same recipes as Assembling Machine 3 (This supports Space Age)
+    - Added Fluid input/outputs to C1 Factory
+    - Factory machines HP increased to align with Assembling Machine progressions
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.6
 Date: 22. 12. 2024
