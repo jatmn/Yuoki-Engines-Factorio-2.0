@@ -1,0 +1,1 @@
+require("prototypes.integration.space-age.e_assemblys") -- Factories updates
