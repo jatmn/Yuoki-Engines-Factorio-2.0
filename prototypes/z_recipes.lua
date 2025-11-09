@@ -276,52 +276,6 @@ data:extend({
 		subgroup = "yie_fish",
 	},
 
-	--ID:319
-	--[[
-	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_green_splitter",
-	  category = "crafting", -- 
-	  enabled = true,
-	  energy_required = 5.00,
-	  ingredients = {
-		{ type = "item", name = "ye_buechsenblech" , amount = 6.0, },
-		{ type = "item", name = "y-emotor-s" , amount = 4.0, },
-		{ type = "item", name = "y-bluegear" , amount = 8.0, },
-		{ type = "item", name = "y-iron-case" , amount = 2.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_green_splitter", amount = 1.0, },
-	  },
-	  main_product = "ye_tranport_tube_green_splitter",
-	  icon = "__yi_engines__/graphics/icons/green_splitter_icon.png",
-	  icon_size = 32,
-	  order = "b6", group = "yi_engines", subgroup = "yie_tubes",
-	},
-
-	--ID:318 
-	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_orange_splitter",
-	  category = "crafting", -- 
-	  enabled = true,
-	  energy_required = 5.00,
-	  ingredients = {
-		{ type = "item", name = "yie_hard_metals" , amount = 6.0, },
-		{ type = "item", name = "y-emotor-s" , amount = 2.0, },
-		{ type = "item", name = "y-iron-case" , amount = 2.0, },
-		{ type = "item", name = "y-bluegear" , amount = 4.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_orange_splitter", amount = 1.0, },
-	  },
-	  main_product = "ye_tranport_tube_orange_splitter",
-	  icon = "__yi_engines__/graphics/icons/orange_splitter_icon.png",
-	  icon_size = 32,
-	  order = "b5", group = "yi_engines", subgroup = "yie_tubes",
-	},
-]]
-
 	--ID:315
 	{
 		type = "recipe",
@@ -364,88 +318,145 @@ data:extend({
 		subgroup = "yie_engines_import_a",
 	},
 
+	--ID:309
+	{
+		type = "recipe",
+		name = "ye_tranport_tube_orange_underground",
+		category = "crafting", --
+		enabled = true, -- disabled due to graphics issues
+		energy_required = 5.00,
+		ingredients = {
+			{ type = "item", name = "ye_tranport_tube_orange", amount = 11.0 },
+			{ type = "item", name = "y-iron-case", amount = 2.0 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_orange_underground", amount = 2.0 },
+		},
+		main_product = "ye_tranport_tube_orange_underground",
+		icon = "__yi_engines__/graphics/icons/ubo_icon.png",
+		icon_size = 32,
+		order = "b3",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+	},
+	--ID:307
+	{
+		type = "recipe",
+		name = "ye_tranport_tube_orange",
+		category = "crafting", --
+		enabled = true, -- disabled due to graphics issues
+		energy_required = 4.00,
+		ingredients = {
+			{ type = "item", name = "pipe", amount = 2 },
+			{ type = "item", name = "iron-stick", amount = 2 },
+			{ type = "item", name = "y-refined-yres1", amount = 2 },
+			{ type = "item", name = "y-refined-yres2", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_orange", amount = 2.0 },
+		},
+		main_product = "ye_tranport_tube_orange",
+		icon = "__yi_engines__/graphics/icons/ye_transport_orange_icon.png",
+		icon_size = 32,
+		order = "b1",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+	},
+
+	--ID:318
+	{
+		type = "recipe",
+		name = "ye_tranport_tube_orange_splitter",
+		category = "crafting", --
+		enabled = true,
+		energy_required = 5.00,
+		ingredients = {
+			{ type = "item", name = "iron-plate", amount = 6.0 },
+			{ type = "item", name = "y_chip_plate", amount = 3.0 },
+			{ type = "item", name = "ye_tranport_tube_orange", amount = 4.0 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_orange_splitter", amount = 1.0 },
+		},
+		main_product = "ye_tranport_tube_orange_splitter",
+		icon = "__yi_engines__/graphics/icons/orange_splitter_icon.png",
+		icon_size = 32,
+		order = "b5",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+	},
+
 	--ID:310
-	--[[
+
 	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_green_underground",
-	  category = "crafting", -- 
-	  enabled = false, -- disabled due to graphics issues
-	  energy_required = 5.00,
-	  ingredients = {
-		{ type = "item", name = "ye_tranport_tube_green" , amount = 10.0, },
-		{ type = "item", name = "y-iron-case" , amount = 4.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_green_underground", amount = 2.0, },
-	  },
-	  main_product = "ye_tranport_tube_green_underground",
-	  icon = "__yi_engines__/graphics/icons/ubg_icon.png",
-	  icon_size = 32,
-	  order = "b4", group = "yi_engines", subgroup = "yie_tubes",
+		type = "recipe",
+		name = "ye_tranport_tube_green_underground",
+		category = "crafting", --
+		enabled = true, -- disabled due to graphics issues
+		energy_required = 5.00,
+		ingredients = {
+			{ type = "item", name = "ye_tranport_tube_orange_underground", amount = 2.0 },
+			{ type = "item", name = "y-iron-case", amount = 4.0 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_green_underground", amount = 2.0 },
+		},
+		main_product = "ye_tranport_tube_green_underground",
+		icon = "__yi_engines__/graphics/icons/ubg_icon.png",
+		icon_size = 32,
+		order = "b4",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
 	},
 
-	--ID:309 
+	--ID:308
 	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_orange_underground",
-	  category = "crafting", -- 
-	  enabled = false, -- disabled due to graphics issues
-	  energy_required = 5.00,
-	  ingredients = {
-		{ type = "item", name = "ye_tranport_tube_orange" , amount = 10.0, },
-		{ type = "item", name = "y-iron-case" , amount = 4.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_orange_underground", amount = 2.0, },
-	  },
-	  main_product = "ye_tranport_tube_orange_underground",
-	  icon = "__yi_engines__/graphics/icons/ubo_icon.png",
-	  icon_size = 32,
-	  order = "b3", group = "yi_engines", subgroup = "yie_tubes",
+		type = "recipe",
+		name = "ye_tranport_tube_green",
+		category = "crafting", --
+		enabled = true, -- disabled due to graphics issues
+		energy_required = 5.00,
+		ingredients = {
+			{ type = "item", name = "y-winding", amount = 4.0 },
+			{ type = "item", name = "y-conductive-coil-1", amount = 2.0 },
+			{ type = "item", name = "ye_buechsenblech", amount = 4.0 },
+			{ type = "item", name = "ye_tranport_tube_orange", amount = 2.0 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_green", amount = 2.0 },
+		},
+		main_product = "ye_tranport_tube_green",
+		icon = "__yi_engines__/graphics/icons/ye_transport_green_icon.png",
+		icon_size = 32,
+		order = "b2",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
 	},
 
-	--ID:308 
-	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_green",
-	  category = "crafting", -- 
-	  enabled = false, -- disabled due to graphics issues
-	  energy_required = 5.00,
-	  ingredients = {
-		{ type = "item", name = "y-winding" , amount = 6.0, },
-		{ type = "item", name = "y-conductive-coil-1" , amount = 2.0, },
-		{ type = "item", name = "ye_buechsenblech" , amount = 8.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_green", amount = 2.0, },
-	  },
-	  main_product = "ye_tranport_tube_green",
-	  icon = "__yi_engines__/graphics/icons/ye_transport_green_icon.png",
-	  icon_size = 32,
-	  order = "b2", group = "yi_engines", subgroup = "yie_tubes",
-	},
+	--ID:319
 
-	--ID:307 
 	{
-	  type = "recipe",
-	  name = "ye_tranport_tube_orange",
-	  category = "crafting", -- 
-	  enabled = false, -- disabled due to graphics issues
-	  energy_required = 4.00,
-	  ingredients = {
-		{ type = "item", name = "yie_hard_metals" , amount = 4.0, },
-		{ type = "item", name = "y-emotor-s" , amount = 1.0, },
-	  },
-	  results = {
-		{ type = "item", name = "ye_tranport_tube_orange", amount = 4.0, },
-	  },
-	  main_product = "ye_tranport_tube_orange",
-	  icon = "__yi_engines__/graphics/icons/ye_transport_orange_icon.png",
-	  icon_size = 32,
-	  order = "b1", group = "yi_engines", subgroup = "yie_tubes",
+		type = "recipe",
+		name = "ye_tranport_tube_green_splitter",
+		category = "crafting", --
+		enabled = true,
+		energy_required = 5.00,
+		ingredients = {
+			{ type = "item", name = "ye_tranport_tube_orange_splitter", amount = 1.0 },
+			{ type = "item", name = "ye_buechsenblech", amount = 4.0 },
+			{ type = "item", name = "y-emotor-s", amount = 4.0 },
+			{ type = "item", name = "y-bluegear", amount = 4.0 },
+		},
+		results = {
+			{ type = "item", name = "ye_tranport_tube_green_splitter", amount = 1.0 },
+		},
+		main_product = "ye_tranport_tube_green_splitter",
+		icon = "__yi_engines__/graphics/icons/green_splitter_icon.png",
+		icon_size = 32,
+		order = "b6",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
 	},
-	]]
 
 	--ID:294
 	{

@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.9
+Date: 9. 11. 2025
+  Space Age:
+    - Peter T.'s Transport V-Tubes (green) is now locked behind Valcanus to craft
+    - Peter T.'s Transport V-Tubes (green) recipes updated to require Tungsten Plate as well as Foundry for crafting
+  Updates:
+    - Setting for Special Sheet Metal added to change recipe requirements, this is from jatmn's Fixes mod.
+  Fixes:
+    - Fixed Vacumatic Transport Tubes (orange) to work in 2.0. Yes I know they look odd, need someone to cleanup the sprite for me... please... 
+    - Fixed Peter T.'s Transport V-Tubes (green) to work in 2.0
+    - Fixed Peters V-Tube-Splitter recipe icon
+  Changes:
+    - Some legacy code cleanup...
+    - Vacumatic Transport Tubes (orange) - Tube (belt), underground and splitter recipes all changed considerably to be accessible early game as intended.
+    - Vacumatic Transport Tubes (orange) changes speed from 22.5 -> 20 items a second
+    - Peter T.'s Transport V-Tubes (green) - Tube (belt), underground and splitter recipes adjusted to require orange tubes (belts) and ballanced a bit
+    - Peter T.'s Transport V-Tubes (green) changed speed from 72 -> 75 items a second
+---------------------------------------------------------------------------------------------------
 Version: 1.2.8
 Date: 7. 11. 2025
   Space Age:

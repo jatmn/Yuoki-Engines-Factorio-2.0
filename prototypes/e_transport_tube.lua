@@ -1,152 +1,92 @@
--- Specifies set of pictures and animations used by more entities, to avoid duplication.
--- The standard set of transport belt pictures (vertical/horizontal + endigns + startings)
--- are used in transport belt, transport belt to ground and splitter.
+require("circuit-connector-sprites")
+local meld = require("meld")
 
-ending_patch_prototype = {
-	--[[
-	sheet =
-	{
-		filename = "__base__/graphics/entity/transport-belt/start-end-integration-patches.png",
+local ye_tranport_tube_orange_animation_set = {
+	animation_set = {
+
+		filename = "__yi_engines__/graphics/entity/ye_transport_orange_v2.png",
+		priority = "extra-high",
 		width = 40,
 		height = 40,
-		priority = "extra-high"
+		frame_count = 16,
+		direction_count = 20,
+	},
+}
+local ye_transport_green_animation_set = {
+	animation_set = {
+
+		filename = "__yi_engines__/graphics/entity/ye_transport_green_v2.png",
+		priority = "extra-high",
+		width = 40,
+		height = 40,
+		frame_count = 16,
+		direction_count = 20,
+	},
+}
+
+belt_reader_gfx = -- not local
+	{
+		belt_reader = {
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-top", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "object",
+			},
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-base", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "transport-belt-reader",
+			},
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-middle", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "floor-mechanics",
+			},
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-under-middle", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "transport-belt-endings",
+			},
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-bottom", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "floor",
+			},
+			{
+				sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-shadow", {
+					priority = "low",
+					scale = 0.5,
+					frame_count = 4,
+					direction_count = 4,
+				}),
+				render_layer = "floor",
+			},
+			-- More belt reader layers (with possibly different render layer) should go here
+		},
 	}
-	]]
-}
 
---vacumatic tube gray
-ye_basic_belt_horizontal = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	shift = { 0, 0 },
-}
-ye_basic_belt_vertical = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	shift = { 0, 0 },
-	y = 40,
-}
-ye_basic_belt_ending_top = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 80,
-}
-ye_basic_belt_ending_bottom = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 120,
-}
-ye_basic_belt_ending_side = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 160,
-}
-ye_basic_belt_starting_top = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 200,
-}
-ye_basic_belt_starting_bottom = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 240,
-}
-ye_basic_belt_starting_side = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 280,
-}
-
---vacumatic tube green
-ye_green_belt_horizontal = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	shift = { 0, 0 },
-}
-ye_green_belt_vertical = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	shift = { 0, 0 },
-	y = 40,
-}
-ye_green_belt_ending_top = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 80,
-}
-ye_green_belt_ending_bottom = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 120,
-}
-ye_green_belt_ending_side = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 160,
-}
-ye_green_belt_starting_top = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 200,
-}
-ye_green_belt_starting_bottom = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 240,
-}
-ye_green_belt_starting_side = {
-	filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-	priority = "extra-high",
-	width = 40,
-	height = 40,
-	frame_count = 16,
-	y = 280,
-}
+meld(ye_tranport_tube_orange_animation_set, belt_reader_gfx)
+meld(ye_transport_green_animation_set, belt_reader_gfx)
 
 data:extend({
 	{
@@ -169,31 +109,13 @@ data:extend({
 			max_sounds_per_type = 3,
 		},
 		animation_speed_coefficient = 8,
-		animations = {
-			filename = "__yi_engines__/graphics/entity/ye_transport_orange.png",
-			priority = "extra-high",
-			width = 40,
-			height = 40,
-			frame_count = 16,
-			direction_count = 12,
-		},
-		animation_speed_coefficient = 32,
-		belt_horizontal = ye_basic_belt_horizontal,
-		belt_vertical = ye_basic_belt_vertical,
-		ending_top = ye_basic_belt_ending_top,
-		ending_bottom = ye_basic_belt_ending_bottom,
-		ending_side = ye_basic_belt_ending_side,
-		starting_top = ye_basic_belt_starting_top,
-		starting_bottom = ye_basic_belt_starting_bottom,
-		starting_side = ye_basic_belt_starting_side,
-		ending_patch = ending_patch_prototype,
+		belt_animation_set = ye_tranport_tube_orange_animation_set,
 		fast_replaceable_group = "transport-belt",
 		related_underground_belt = "ye_tranport_tube_orange_underground",
 		next_upgrade = "ye_tranport_tube_green",
-		speed = 0.046875,
+		speed = 0.041664,
 		connector_frame_sprites = transport_belt_connector_frame_sprites,
-		circuit_connector_sprites = transport_belt_circuit_connector_sprites,
-		circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+		circuit_connector = circuit_connector_definitions["belt"],
 		circuit_wire_max_distance = transport_belt_circuit_wire_max_distance,
 	},
 
@@ -217,29 +139,12 @@ data:extend({
 			max_sounds_per_type = 3,
 		},
 		animation_speed_coefficient = 4,
-		animations = {
-			filename = "__yi_engines__/graphics/entity/ye_transport_green.png",
-			priority = "extra-high",
-			width = 40,
-			height = 40,
-			frame_count = 16,
-			direction_count = 12,
-		},
-		belt_horizontal = ye_green_belt_horizontal,
-		belt_vertical = ye_green_belt_vertical,
-		ending_top = ye_green_belt_ending_top,
-		ending_bottom = ye_green_belt_ending_bottom,
-		ending_side = ye_green_belt_ending_side,
-		starting_top = ye_green_belt_starting_top,
-		starting_bottom = ye_green_belt_starting_bottom,
-		starting_side = ye_green_belt_starting_side,
-		--ending_patch = ending_patch_prototype,
+		belt_animation_set = ye_transport_green_animation_set,
 		fast_replaceable_group = "transport-belt",
 		related_underground_belt = "ye_tranport_tube_green_underground",
-		speed = 0.15,
+		speed = 0.15625,
 		connector_frame_sprites = transport_belt_connector_frame_sprites,
-		circuit_connector_sprites = transport_belt_circuit_connector_sprites,
-		circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+		circuit_connector = circuit_connector_definitions["belt"],
 		circuit_wire_max_distance = transport_belt_circuit_wire_max_distance,
 	},
 
@@ -252,7 +157,7 @@ data:extend({
 		minable = { hardness = 0.2, mining_time = 0.1, result = "ye_tranport_tube_orange_underground" },
 		max_health = 60,
 		corpse = "small-remnants",
-		max_distance = 20,
+		max_distance = 11,
 		underground_sprite = {
 			filename = "__yi_engines__/graphics/icons/underground-lines.png",
 			priority = "high",
@@ -273,17 +178,10 @@ data:extend({
 		collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
 		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
 		animation_speed_coefficient = 16,
-		belt_horizontal = ye_basic_belt_horizontal,
-		belt_vertical = ye_basic_belt_vertical,
-		ending_top = ye_basic_belt_ending_top,
-		ending_bottom = ye_basic_belt_ending_bottom,
-		ending_side = ye_basic_belt_ending_side,
-		starting_top = ye_basic_belt_starting_top,
-		starting_bottom = ye_basic_belt_starting_bottom,
-		starting_side = ye_basic_belt_starting_side,
 		fast_replaceable_group = "transport-belt",
 		next_upgrade = "ye_tranport_tube_green_underground",
-		speed = 0.046875,
+		speed = 0.041664,
+		belt_animation_set = ye_tranport_tube_orange_animation_set,
 		structure = {
 			direction_in = {
 				sheet = {
@@ -337,16 +235,9 @@ data:extend({
 		collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
 		selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
 		animation_speed_coefficient = 4,
-		belt_horizontal = ye_green_belt_horizontal,
-		belt_vertical = ye_green_belt_vertical,
-		ending_top = ye_green_belt_ending_top,
-		ending_bottom = ye_green_belt_ending_bottom,
-		ending_side = ye_green_belt_ending_side,
-		starting_top = ye_green_belt_starting_top,
-		starting_bottom = ye_green_belt_starting_bottom,
-		starting_side = ye_green_belt_starting_side,
 		fast_replaceable_group = "transport-belt",
-		speed = 0.15,
+		speed = 0.15625,
+		belt_animation_set = ye_transport_green_animation_set,
 		structure = {
 			direction_in = {
 				sheet = {
@@ -387,18 +278,10 @@ data:extend({
 		animation_speed_coefficient = 8,
 		structure_animation_speed_coefficient = 0.7,
 		structure_animation_movement_cooldown = 10,
-		belt_horizontal = ye_basic_belt_horizontal,
-		belt_vertical = ye_basic_belt_vertical,
-		ending_top = ye_basic_belt_ending_top,
-		ending_bottom = ye_basic_belt_ending_bottom,
-		ending_side = ye_basic_belt_ending_side,
-		starting_top = ye_basic_belt_starting_top,
-		starting_bottom = ye_basic_belt_starting_bottom,
-		starting_side = ye_basic_belt_starting_side,
-		--ending_patch = ending_patch_prototype,
 		fast_replaceable_group = "transport-belt",
 		next_upgrade = "ye_tranport_tube_green_splitter",
-		speed = 0.046875,
+		speed = 0.041664,
+		belt_animation_set = ye_tranport_tube_orange_animation_set,
 		structure = {
 			north = {
 				filename = "__yi_engines__/graphics/entity/orange_splitter0004.png",
@@ -443,7 +326,7 @@ data:extend({
 		type = "splitter",
 		name = "ye_tranport_tube_green_splitter",
 		icon_size = 32,
-		icon = "__yi_engines__/graphics/icons/orange_splitter_icon.png",
+		icon = "__yi_engines__/graphics/icons/green_splitter_icon.png",
 		flags = { "placeable-neutral", "player-creation" },
 		minable = { hardness = 0.2, mining_time = 0.1, result = "ye_tranport_tube_green_splitter" },
 		max_health = 100,
@@ -454,17 +337,9 @@ data:extend({
 		animation_speed_coefficient = 4,
 		structure_animation_speed_coefficient = 0.7,
 		structure_animation_movement_cooldown = 10,
-		belt_horizontal = ye_green_belt_horizontal,
-		belt_vertical = ye_green_belt_vertical,
-		ending_top = ye_green_belt_ending_top,
-		ending_bottom = ye_green_belt_ending_bottom,
-		ending_side = ye_green_belt_ending_side,
-		starting_top = ye_green_belt_starting_top,
-		starting_bottom = ye_green_belt_starting_bottom,
-		starting_side = ye_green_belt_starting_side,
-		--ending_patch = ending_patch_prototype,
 		fast_replaceable_group = "transport-belt",
-		speed = 0.15,
+		speed = 0.15625,
+		belt_animation_set = ye_transport_green_animation_set,
 		structure = {
 			north = {
 				filename = "__yi_engines__/graphics/entity/green_splitter0004.png",

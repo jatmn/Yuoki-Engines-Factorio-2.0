@@ -1,6 +1,3 @@
---automatically generated file | fMT-Export (c)YT v0.04-216Mrz03
---export-date: 2020-Feb-06
-
 data:extend({
 
 	--ID:409
@@ -55,22 +52,6 @@ data:extend({
 		default_request_amount = 5,
 		place_result = "ye_emotor_m",
 	},
-	--ID:383
-	--[[
-{
-   type="item", name="ye_tranport_tube_green_splitter", icon_size = 32, icon="__yi_engines__/graphics/icons/green_splitter_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b6",  
-   stack_size = 100, default_request_amount = 5,
-   place_result="ye_tranport_tube_green_splitter", 
-},
---ID:382
-{
-   type="item", name="ye_tranport_tube_orange_splitter", icon_size = 32, icon="__yi_engines__/graphics/icons/orange_splitter_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b5",  
-   stack_size = 100, default_request_amount = 15,
-   place_result="ye_tranport_tube_orange_splitter", 
-},
-]]
 	--ID:377
 	{
 		type = "item",
@@ -84,36 +65,97 @@ data:extend({
 		default_request_amount = 5,
 		place_result = "ye_trade_node",
 	},
+
+	--ID:382
+	{
+		type = "item",
+		name = "ye_tranport_tube_orange_splitter",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/orange_splitter_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b5",
+		stack_size = 100,
+		default_request_amount = 15,
+		place_result = "ye_tranport_tube_orange_splitter",
+		weight = 20 * kg,
+	},
+	--ID:367
+	{
+		type = "item",
+		name = "ye_tranport_tube_orange_underground",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/ubo_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b3",
+		stack_size = 100,
+		default_request_amount = 25,
+		place_result = "ye_tranport_tube_orange_underground",
+		weight = 20 * kg,
+	},
+	--ID:365
+	{
+		type = "item",
+		name = "ye_tranport_tube_orange",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/ye_transport_orange_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b1",
+		stack_size = 150,
+		default_request_amount = 75,
+		place_result = "ye_tranport_tube_orange",
+	},
+
+	--ID:383
+
+	{
+		type = "item",
+		name = "ye_tranport_tube_green_splitter",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/green_splitter_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b6",
+		stack_size = 100,
+		default_request_amount = 5,
+		place_result = "ye_tranport_tube_green_splitter",
+		weight = 20 * kg,
+	},
+
 	--ID:368
-	--[[
-{
-   type="item", name="ye_tranport_tube_green_underground", icon_size = 32, icon="__yi_engines__/graphics/icons/ubg_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b4",  
-   stack_size = 100, default_request_amount = 25,
-   place_result="ye_tranport_tube_green_underground", 
-},
---ID:367
-{
-   type="item", name="ye_tranport_tube_orange_underground", icon_size = 32, icon="__yi_engines__/graphics/icons/ubo_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b3",  
-   stack_size = 100, default_request_amount = 25,
-   place_result="ye_tranport_tube_orange_underground", 
-},
---ID:366
-{
-   type="item", name="ye_tranport_tube_green", icon_size = 32, icon="__yi_engines__/graphics/icons/ye_transport_green_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b2",  
-   stack_size = 150, default_request_amount = 75,
-   place_result="ye_tranport_tube_green", 
-},
---ID:365
-{
-   type="item", name="ye_tranport_tube_orange", icon_size = 32, icon="__yi_engines__/graphics/icons/ye_transport_orange_icon.png", 
-   group="yi_engines", subgroup="yie_tubes", order="b1",  
-   stack_size = 150, default_request_amount = 75,
-   place_result="ye_tranport_tube_orange", 
-},
-]]
+
+	{
+		type = "item",
+		name = "ye_tranport_tube_green_underground",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/ubg_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b4",
+		stack_size = 100,
+		default_request_amount = 25,
+		place_result = "ye_tranport_tube_green_underground",
+		weight = 20 * kg,
+	},
+
+	--ID:366
+
+	{
+		type = "item",
+		name = "ye_tranport_tube_green",
+		icon_size = 32,
+		icon = "__yi_engines__/graphics/icons/ye_transport_green_icon.png",
+		group = "yi_engines",
+		subgroup = "yie_tubes",
+		order = "b2",
+		stack_size = 150,
+		default_request_amount = 75,
+		place_result = "ye_tranport_tube_green",
+		weight = 20 * kg,
+	},
+
 	--ID:353
 	{
 		type = "item",
