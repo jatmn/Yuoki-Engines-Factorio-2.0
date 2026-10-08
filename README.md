@@ -1,10 +1,10 @@
 # Yuoki Industries - Engines (Addon)
 
-The `release/1.3.0` branch targets **Factorio 2.1**. It requires Factorio **2.1.20 or newer** and **Yuoki Industries 1.3.0 or newer**. Engines 1.3.0 does not target Factorio 2.0.
+The current build is **Engines 1.3.0** for **Factorio 2.1**. It requires Factorio **2.1.20 or newer** and **Yuoki Industries 1.3.0 or newer**. Engines 1.3.0 does not target Factorio 2.0.
 
 ## Installation
 
-Install and enable both `Yuoki` and `yi_engines`. For a source checkout, put this branch's files in a `yi_engines_1.3.0` directory inside Factorio's mods directory, with `info.json` directly inside it. Use a compatible [Yuoki Industries release](https://github.com/jatmn/Yuoki-Factorio-2.x/tree/release/1.3.0) alongside it.
+Install and enable both `Yuoki` and `yi_engines`. For a source checkout, put the source files in a `yi_engines_1.3.0` directory inside Factorio's mods directory, with `info.json` directly inside it. Use a compatible [Yuoki Industries release](https://github.com/jatmn/Yuoki-Factorio-2.x) alongside it.
 
 Space Age is optional; when enabled, it must also be 2.1.20 or newer. With Space Age, the green transport tubes require tungsten plates and a foundry. Back up existing saves before upgrading the game and mods together.
 
@@ -12,7 +12,7 @@ See the [official download page](https://factorio.com/download) for the current 
 
 ## Compatibility verification
 
-Checked against the [Factorio 2.1.21 API](https://lua-api.factorio.com/2.1.21/) and the official 2.1.21 headless engine, using the actual Yuoki 1.3.0 release branch. Fresh map creation, save loading, a 600-tick simulation, and prototype data generation pass in these configurations:
+Checked against the [Factorio 2.1.21 API](https://lua-api.factorio.com/2.1.21/) and the official 2.1.21 headless engine, using Yuoki 1.3.0. Fresh map creation, save loading, a 600-tick simulation, and prototype data generation pass in these configurations:
 
 | Configuration (all include Yuoki and Engines) | Result |
 | --- | --- |
