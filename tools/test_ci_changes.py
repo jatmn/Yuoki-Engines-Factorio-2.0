@@ -74,9 +74,10 @@ class RoutingTests(unittest.TestCase):
             base = git('rev-parse', 'HEAD')
             (root / '-generated.lua').write_text('return true\n')
             git('add', '.'); git('commit', '-qm', 'option-like Lua name')
-            for name in ('Select Lua files for this event', 'Check Lua syntax'):
-                subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', workflow_block('lua.yml', name)],
-                               cwd=root, env={**os.environ, 'BASE': base}, check=True)
+            for event in ('pull_request', 'push'):
+                for name in ('Select Lua files for this event', 'Check Lua syntax'):
+                    subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', workflow_block('lua.yml', name)],
+                                   cwd=root, env={**os.environ, 'BASE': base, 'EVENT_NAME': event}, check=True)
 
     def test_lua_workflow_selects_type_changes(self):
         workflow = ROUTER.parents[1] / '.github/workflows/lua.yml'
@@ -118,7 +119,62 @@ class RoutingTests(unittest.TestCase):
                 for event in ('pull_request', 'push'):
                     subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', selection], cwd=root,
                                    env={**os.environ, 'BASE': base, 'EVENT_NAME': event}, check=True)
-                    self.assertEqual((root / '.cache/ci-lua-files').read_bytes(), b'control.lua\0')
+                    expected = b'control.lua\0'
+                    if event == 'push':
+                        expected += b'untouched.lua\0'
+                    self.assertEqual((root / '.cache/ci-lua-files').read_bytes(), expected)
+
+    @unittest.skipUnless(shutil.which('luac5.2'), 'Lua workflow installs the required Lua 5.2 compiler')
+    def test_lua_workflow_event_policy(self):
+        with tempfile.TemporaryDirectory(prefix='yuoki-lua-policy-') as directory:
+            root = Path(directory)
+
+            def git(*args):
+                return subprocess.check_output([
+                    'git', '-c', 'user.name=CI test', '-c', 'user.email=ci@example.invalid', *args
+                ], cwd=root, text=True).strip()
+
+            git('init', '-q')
+            shutil.copy(ROUTER.parents[1] / '.luacheckrc', root / '.luacheckrc')
+            (root / 'untouched.lua').write_text('return (\n')
+            (root / 'deleted.lua').write_text('return true\n')
+            (root / 'renamed.lua').write_text('return true\n')
+            git('add', '.'); git('commit', '-qm', 'base with untouched Lua defect')
+            base = git('rev-parse', 'HEAD')
+            changed = {'-generated.lua', 'space and\nnewline.lua', 'new-name.lua'}
+            git('mv', 'renamed.lua', 'new-name.lua')
+            git('rm', 'deleted.lua')
+            for name in changed:
+                (root / name).write_text('return true\n')
+            git('add', '.'); git('commit', '-qm', 'rename, delete and add Lua')
+            (root / 'untracked.lua').write_text('return (\n')
+            for config_only in (False, True):
+                if config_only:
+                    base = git('rev-parse', 'HEAD')
+                    with (root / '.luacheckrc').open('a') as config:
+                        config.write('\n-- configuration-only change\n')
+                    git('add', '.luacheckrc'); git('commit', '-qm', 'configuration only')
+                for event in ('pull_request', 'push'):
+                    with self.subTest(config_only=config_only, event=event):
+                        env = {**os.environ, 'BASE': base, 'EVENT_NAME': event}
+                        subprocess.run(['bash', '-e', '-o', 'pipefail', '-c',
+                                        workflow_block('lua.yml', 'Select Lua files for this event')],
+                                       cwd=root, env=env, check=True)
+                        manifest = (root / '.cache/ci-lua-files').read_bytes()
+                        expected = changed | {'untouched.lua'} if event == 'push' else (
+                            set() if config_only else changed)
+                        self.assertEqual(set(filter(None, manifest.split(b'\0'))),
+                                         {os.fsencode(name) for name in expected})
+                        if expected:
+                            self.assertTrue(manifest.endswith(b'\0'))
+                        checked = subprocess.run(['bash', '-e', '-o', 'pipefail', '-c',
+                                                  workflow_block('lua.yml', 'Check Lua syntax')],
+                                                 cwd=root, env=env, capture_output=True, text=True)
+                        if event == 'push':
+                            self.assertNotEqual(checked.returncode, 0)
+                            self.assertIn('untouched.lua', checked.stderr)
+                        else:
+                            self.assertEqual(checked.returncode, 0, checked.stderr)
 
     def test_surface_selection(self):
         cases = [
