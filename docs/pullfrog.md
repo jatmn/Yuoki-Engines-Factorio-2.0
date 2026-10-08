@@ -17,16 +17,26 @@ issues and PRs too.
 
 This ports the parent mod's
 [owner-command setup](https://github.com/jatmn/Yuoki-Factorio-2.x/blob/083764802d322d45b6b27a1f730a576767acdac7/docs/pullfrog.md).
-Opening a PR does not launch Pullfrog. Its agent workflow has no PR, push,
-schedule or `workflow_dispatch` trigger. The separate **CI** dispatcher runs
-authorization tests in its Python job and workflow validation in its actionlint
-job; these validation jobs never launch the agent.
+Opening a PR or marking it ready for review must not launch Pullfrog. Its agent
+workflow has no PR, push, schedule or `workflow_dispatch` trigger. The separate
+**CI** dispatcher runs authorization tests in its Python job and workflow
+validation in its actionlint job; these validation jobs never launch the agent.
 
 ## Runtime policy
 
 Keep managed mentions, automatic reviews/re-reviews, issue processing,
 review responses, CI autofix, labels, automatic approvals and auto-merge off.
 Keep non-collaborator triggers off. Keep pushes and shell access restricted.
+
+These are repository settings in the
+[Pullfrog console](https://pullfrog.com/console/jatmn?repo=Yuoki-Engines-Factorio-2.x),
+independent of the workflow triggers. In particular, `review.mode` must stay
+`none` and `review.re-review` must stay `false`: automatic reviews otherwise
+attempt to dispatch a run when a draft PR becomes ready. If the App reports a
+missing `workflow_dispatch` trigger, correct its automation settings; do not add
+that trigger to the owner-command workflow. The
+[configuration CLI](https://docs.pullfrog.com/cli-configuration) can inspect
+these settings with `npx pullfrog@0.1.97 config list --repo jatmn/Yuoki-Engines-Factorio-2.x`.
 
 The workflow selects `openai/gpt-sol`, as in the reference repository. It allows
 feature-branch pushes, blocks default-branch/tag pushes and branch deletion,
