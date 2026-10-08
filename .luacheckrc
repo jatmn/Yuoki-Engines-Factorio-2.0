@@ -27,3 +27,8 @@ files["prototypes/e_transport_tube.lua"].globals = {"belt_reader_gfx"}
 
 files["migrations/**"].globals = {"game", "storage"}
 files["migrations/**"].read_globals = {"script", "remote", "prototypes"}
+
+-- Archived data-stage script: retain its optional external electric-machine flags.
+-- It is not loaded by data.lua, but remains part of the tracked Lua baseline.
+files["_old/yi_engines_016_data-updates.lua"].globals = {"data"}
+files["_old/yi_engines_016_data-updates.lua"].read_globals = {"electric_Form_press", "electric_Crusher"}
