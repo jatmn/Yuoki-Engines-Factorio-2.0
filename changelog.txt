@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
-Date: 5. 10. 2026
+Date: 8. 10. 2026
   Compatibility:
     - Preserve hidden connection arrows and fluid icons on transmission shafts using Factorio 2.1 per-connection settings.
     - Port startup to Factorio 2.1, requiring Yuoki 1.3.0.
