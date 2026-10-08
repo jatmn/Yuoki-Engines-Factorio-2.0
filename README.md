@@ -24,3 +24,7 @@ Checked against the [Factorio 2.1.21 API](https://lua-api.factorio.com/2.1.21/) 
 The port updates recipe and fuel categories, factory module inventories and assembler pictures, generator pictures, and shaft connection overlays. It preserves the existing 1000-degree steam production used by Rheinsberg and the turbine recipes.
 
 Headless checks do not verify rendered graphics, migration of an existing 2.0 save, complete production-chain balance, or third-party mod combinations. Legacy unused-prototype-field warnings remain; successful loading does not establish that every older field still has an effect.
+
+Contributor checks and CI: [CONTRIBUTING.md](CONTRIBUTING.md) and
+[development guide](docs/development.md).
+Pullfrog usage and maintenance: [owner commands](docs/pullfrog.md).
