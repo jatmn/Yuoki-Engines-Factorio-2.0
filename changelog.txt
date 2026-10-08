@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 5. 10. 2026
+  Compatibility:
+    - Port startup to Factorio 2.1, requiring Yuoki 1.3.0.
+    - Update assembler pictures, module inventories, fuel and recipe categories, and factory crafting categories.
+    - Preserve 1000-degree steam support for the existing Rheinsberg and turbine recipes.
+    - Migrate the 50 MW generator and 70 MW turbine animations to the Factorio 2.1 picture format.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.9
 Date: 9. 11. 2025
   Space Age:
