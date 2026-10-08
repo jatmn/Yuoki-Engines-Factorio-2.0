@@ -3,12 +3,12 @@
 The lightweight CI ports the parent mod's merged
 [Pullfrog PR #14](https://github.com/jatmn/Yuoki-Factorio-2.x/pull/14) and
 [CI PR #16](https://github.com/jatmn/Yuoki-Factorio-2.x/pull/16), adapted for
-Yuoki Engines. It runs on pull requests and pushes to `main`. The dispatcher reads the
+Yuoki Engines. It runs on pull requests and pushes to `main` and `release/1.3.0`. The dispatcher reads the
 complete Git diff and calls only affected reusable workflows. It avoids
 GitHub's capped event path filters, does not duplicate runs on topic-branch
-pushes, and cancels superseded runs for the same PR. Each `main` push has a
+pushes, and cancels superseded runs for the same PR. Each `main` or `release/1.3.0` push has a
 separate concurrency group so a later documentation-only push cannot cancel
-an earlier push's incremental Lua checks. The router is loaded from the
+an earlier push's full Lua checks. The router is loaded from the
 comparison revision, so edits to the PR's router cannot disable their own
 validation. Initial installation runs all checks when that revision has no router.
 
@@ -33,18 +33,17 @@ old and new paths; deletions select their affected surface. Missing comparison
 revisions fail CI. The change job also checks diff whitespace.
 
 Lua checks use **Lua 5.2**, **Luacheck 1.2.0**, and **StyLua 2.5.2**. They check
+all tracked Lua files on relevant pushes to `main` and `release/1.3.0`. Pull requests check only
 added/modified Lua files, including renamed files and regular-file/symlink type
-changes, on both PRs and pushes to `main`. Deleted Lua files are excluded from
-the file manifest. Configuration is parsed even when no Lua files changed.
-Filenames are passed as NUL-delimited data rather than shell source.
+changes. Deleted Lua files are excluded from the file manifest on both events.
+Configuration is parsed even when no Lua files changed. Filenames are passed
+as NUL-delimited data rather than shell source, with option termination for tools.
 
-This differs temporarily from Quinityn's completed baseline: Engines' bulk
-formatting and existing lint debt are deferred to separate maintenance work. After that
-baseline passes, relevant `main` pushes can check all tracked Lua files while
-PRs continue to check changed files. No legacy warnings are suppressed to
-install this CI. Factorio stage globals and intentional Engines exports
-are declared in `.luacheckrc`; other warnings remain actionable when touching
-their files.
+The repository-wide formatting and lint baseline is complete. Factorio stage
+globals and intentional Engines exports are declared in `.luacheckrc`; an
+exact-file declaration also preserves the archived data-stage script's optional
+electric-machine flags. Other warnings remain actionable; no blanket warning
+suppression is used.
 
 ## Local commands
 
@@ -66,12 +65,22 @@ python3 tools/package.py
 python3 tools/validate_package.py
 ```
 
+To reproduce the full baseline enforced by relevant `main` and `release/1.3.0` pushes:
+
+```sh
+git ls-files -z -- '*.lua' | xargs -0 -r -n1 luac5.2 -p --
+git ls-files -z -- '*.lua' | xargs -0 -r luacheck --
+git ls-files -z -- '*.lua' | xargs -0 -r stylua --check --config-path .stylua.toml --
+```
+
 Python CI parses every tracked `.py` file with `ast.parse` without importing
 game code. Its syntax block in `.github/workflows/python.yml` can also be run
 locally. Routing regressions use real Git histories, including a Lua change
 after 3,500 documentation files, unusual filenames, renames, deletions,
 missing revisions, router self-disable attempts, and both file-type transition
-directions on both events. Lua CI runs the focused file-selection and compiler
+directions on both events. Selection tests also prove that an untouched Lua
+syntax error fails push checks but is excluded from PR checks, including on a
+configuration-only change, and that untracked files are excluded. Lua CI runs the focused file-selection and compiler
 tests even on Lua-workflow-only changes, including filenames beginning with `-`.
 Every workflow edit retains the existing Pullfrog authorization regression gate;
 Pullfrog helper edits also retain workflow linting.
