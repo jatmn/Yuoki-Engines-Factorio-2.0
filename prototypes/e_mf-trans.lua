@@ -283,22 +283,29 @@ data:extend({
       type = "electric",
       usage_priority = "secondary-output",
     },
-    horizontal_animation = {
-      filename = "__yi_engines__/graphics/entity/energy2/hngen_v.png",
-      width = 288,
-      height = 288,
-      frame_count = 1,
-      line_length = 1,
-      shift = { 1.00, -0.75 },
-    },
-    vertical_animation = {
-      filename = "__yi_engines__/graphics/entity/energy2/hgen_o_sheet.png",
-      width = 288,
-      height = 288,
-      frame_count = 36,
-      line_length = 6,
-      animation_speed = 1.0,
-      shift = { 1.00, -0.75 },
+    two_direction_only = true,
+    pictures = {
+      north = {
+        animation = {
+          filename = "__yi_engines__/graphics/entity/energy2/hgen_o_sheet.png",
+          width = 288,
+          height = 288,
+          frame_count = 36,
+          line_length = 6,
+          animation_speed = 1.0,
+          shift = { 1.00, -0.75 },
+        },
+      },
+      east = {
+        animation = {
+          filename = "__yi_engines__/graphics/entity/energy2/hngen_v.png",
+          width = 288,
+          height = 288,
+          frame_count = 1,
+          line_length = 1,
+          shift = { 1.00, -0.75 },
+        },
+      },
     },
   },
 
@@ -336,23 +343,30 @@ data:extend({
       type = "electric",
       usage_priority = "secondary-output",
     },
-    horizontal_animation = {
-      filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
-      width = 288,
-      height = 288,
-      frame_count = 6,
-      line_length = 6,
-      animation_speed = 0.5,
-      shift = { 1.00, 0 },
-    },
-    vertical_animation = {
-      filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
-      width = 288,
-      height = 288,
-      frame_count = 6,
-      line_length = 6,
-      animation_speed = 0.5,
-      shift = { 1.00, 0 },
+    two_direction_only = true,
+    pictures = {
+      north = {
+        animation = {
+          filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
+          width = 288,
+          height = 288,
+          frame_count = 6,
+          line_length = 6,
+          animation_speed = 0.5,
+          shift = { 1.00, 0 },
+        },
+      },
+      east = {
+        animation = {
+          filename = "__yi_engines__/graphics/entity/turbine_70_sheet.png",
+          width = 288,
+          height = 288,
+          frame_count = 6,
+          line_length = 6,
+          animation_speed = 0.5,
+          shift = { 1.00, 0 },
+        },
+      },
     },
   },
 })

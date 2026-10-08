@@ -17,7 +17,7 @@ a PR update; rerun affected checks after repairs. See
   `stylua --check --config-path .stylua.toml`. Also syntax-check `.luacheckrc`.
   Resolve warnings in touched files without blanket suppressions. Leave
   untouched Lua files alone during ordinary contribution work; the full baseline
-  is enforced on relevant `main` pushes.
+  is enforced on relevant `main` and `release/1.3.0` pushes.
 - Python/tools: parse tracked Python files without importing or executing game
   code and run `python3 tools/test_ci_changes.py` plus
   `python3 tools/test_pullfrog_command.py` and `python3 tools/test_package.py`.
@@ -29,7 +29,7 @@ a PR update; rerun affected checks after repairs. See
 - Documentation: verify links, commands and the resulting diff.
 
 Lua CI checks changed files on PRs and all tracked Lua files on relevant pushes
-to `main`.
+to `main` and `release/1.3.0`.
 Formatting a touched file can create a mechanical diff within that file; keep
 it separate from behavioral edits where practical. Do not reformat the whole
 repository during ordinary contribution work.

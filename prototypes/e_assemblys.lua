@@ -1,3 +1,5 @@
+local assembler_pictures = require("__base__/prototypes/entity/assembler-pictures")
+
 local j_factories = settings.startup["j_factories_behaviour"].value
 local ye_fassembly1_module_slots = 3
 local ye_fassembly2_module_slots = 3
@@ -32,51 +34,8 @@ local ye_fassembly2_crafting_categories = { "crafting", "advanced-crafting", "cr
 local ye_fassembly_sp_crafting_categories = { "crafting", "advanced-crafting", "crafting-with-fluid" }
 
 if mods["space-age"] then
-  ye_fassembly1_crafting_categories = {
-    "basic-crafting",
-    "crafting",
-    "advanced-crafting",
-    "crafting-with-fluid",
-    "electronics",
-    "electronics-with-fluid",
-    "pressing",
-    "metallurgy-or-assembling",
-    "organic-or-hand-crafting",
-    "organic-or-assembling",
-    "electronics-or-assembling",
-    "cryogenics-or-assembling",
-    "crafting-with-fluid-or-metallurgy",
-  }
-  ye_fassembly2_crafting_categories = {
-    "basic-crafting",
-    "crafting",
-    "advanced-crafting",
-    "crafting-with-fluid",
-    "electronics",
-    "electronics-with-fluid",
-    "pressing",
-    "metallurgy-or-assembling",
-    "organic-or-hand-crafting",
-    "organic-or-assembling",
-    "electronics-or-assembling",
-    "cryogenics-or-assembling",
-    "crafting-with-fluid-or-metallurgy",
-  }
-  ye_fassembly_sp_crafting_categories = {
-    "basic-crafting",
-    "crafting",
-    "advanced-crafting",
-    "crafting-with-fluid",
-    "electronics",
-    "electronics-with-fluid",
-    "pressing",
-    "metallurgy-or-assembling",
-    "organic-or-hand-crafting",
-    "organic-or-assembling",
-    "electronics-or-assembling",
-    "cryogenics-or-assembling",
-    "crafting-with-fluid-or-metallurgy",
-  }
+  -- Space Age recipes now list standard and specialist categories separately.
+  ye_fassembly1_crafting_categories = { "crafting", "advanced-crafting", "crafting-with-fluid" }
 end
 
 -- Lets make sure C1 Factory is next replace after Assembling Machine 3
@@ -101,7 +60,7 @@ data:extend({
     fluid_boxes = {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = util.table.deepcopy(assembler_pictures.assembler2pipepictures),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
@@ -111,7 +70,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = util.table.deepcopy(assembler_pictures.assembler2pipepictures),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
@@ -149,7 +108,7 @@ data:extend({
     ingredient_count = 6,
     module_slots = ye_fassembly1_module_slots,
     icons_positioning = {
-      { inventory_index = defines.inventory.assembling_machine_modules, max_icons_per_row = 5, scale = 0.5 },
+      { inventory_index = defines.inventory.crafter_modules, max_icons_per_row = 5, scale = 0.5 },
     },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
 
@@ -177,7 +136,7 @@ data:extend({
       {
         volume = 200,
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = util.table.deepcopy(assembler_pictures.assembler2pipepictures),
         pipe_covers = pipecoverspictures(),
         base_area = 5,
         base_level = -1,
@@ -187,7 +146,7 @@ data:extend({
       },
       {
         volume = 200,
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = util.table.deepcopy(assembler_pictures.assembler2pipepictures),
         pipe_covers = pipecoverspictures(),
         production_type = "output",
         base_area = 5,
@@ -226,7 +185,7 @@ data:extend({
     ingredient_count = 6,
     module_slots = ye_fassembly2_module_slots,
     icons_positioning = {
-      { inventory_index = defines.inventory.assembling_machine_modules, max_icons_per_row = 5, scale = 0.5 },
+      { inventory_index = defines.inventory.crafter_modules, max_icons_per_row = 5, scale = 0.5 },
     },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
 
@@ -252,7 +211,7 @@ data:extend({
 
       {
         volume = 200,
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = util.table.deepcopy(assembler_pictures.assembler2pipepictures),
         pipe_covers = pipecoverspictures(),
         production_type = "input",
         base_area = 5,
@@ -290,7 +249,7 @@ data:extend({
     ingredient_count = 6,
     module_slots = ye_fassembly_sp_module_slots,
     icons_positioning = {
-      { inventory_index = defines.inventory.assembling_machine_modules, max_icons_per_row = 5, scale = 0.5 },
+      { inventory_index = defines.inventory.crafter_modules, max_icons_per_row = 5, scale = 0.5 },
     },
 
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
