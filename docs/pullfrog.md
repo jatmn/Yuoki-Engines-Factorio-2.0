@@ -15,45 +15,10 @@ verifies the repository, event and original comment before the agent receives
 credentials. The verified owner role lets commands manage contributor-created
 issues and PRs too.
 
-This ports the parent mod's
-[owner-command setup](https://github.com/jatmn/Yuoki-Factorio-2.x/blob/083764802d322d45b6b27a1f730a576767acdac7/docs/pullfrog.md).
-Opening a PR does not launch Pullfrog. Its agent workflow has no PR, push,
-schedule or `workflow_dispatch` trigger. The separate **CI** dispatcher runs
-authorization tests in its Python job and workflow validation in its actionlint
-job; these validation jobs never launch the agent.
-
-## Account and repository setup
-
-Repository files alone do not activate the Pullfrog App. Engines-specific App
-access, console settings and a live owner-command run must be verified separately.
-
-1. Give the existing Pullfrog GitHub App installation access to
-   `jatmn/Yuoki-Engines-Factorio-2.x` and open its
-   [repository console](https://pullfrog.com/console/jatmn?repo=Yuoki-Engines-Factorio-2.x).
-   Use BYOK billing and the ChatGPT Codex subscription already connected to the
-   `jatmn` account. No new GitHub provider secret is needed. To reconnect that
-   account credential when necessary, use `npx pullfrog auth codex --org jatmn`;
-   see [subscription setup](https://docs.pullfrog.com/codex-auth).
-2. Keep managed mentions, automatic reviews/re-reviews, issue processing,
-   review responses, CI autofix, labels, automatic approvals and auto-merge off.
-   Keep non-collaborator triggers off. Keep pushes and shell access restricted.
-3. Merge the reviewed workflow PR to `main`. If the console still shows
-   **Needs setup**, use **Verify manual installation**. Leave **Add workflow
-   directly** untouched: this repository supplies its own owner-command workflow.
-4. Post a new owner command to verify a live run, for example:
-
-   ```text
-   @pullfrog read README.md and summarize this repository in one sentence. Do not modify files or create a PR.
-   ```
-
-The workflow selects `openai/gpt-sol`, as in the reference repository. It allows
-feature-branch pushes, blocks default-branch/tag pushes and branch deletion,
-and uses restricted shell access. Subscription credentials remain in Pullfrog's
-encrypted store. A matching provider API key stored there can be a fallback
-when subscription quota is exhausted; omit that fallback if API billing is
-unwanted. Native status/verdict checks apply only to explicitly requested PR
-commands, with `review.status-check` and `review.approval-check` enabled in the
-console; they do not turn on automatic reviews or approving reviews.
+Opening a PR or marking it ready for review must not launch Pullfrog. Its agent
+workflow has no PR, push, schedule or `workflow_dispatch` trigger. The separate
+**CI** dispatcher runs authorization tests in its Python job and workflow
+validation in its actionlint job; these validation jobs never launch the agent.
 
 ## Maintenance and checks
 
